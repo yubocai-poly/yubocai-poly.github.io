@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>📊 ECO-102 Topics in Economics (Econometrics, Development Economics, Social Economics) 经济学主题(计量经济学，发展经济学与社会经济学) | Yubo Cai 蔡宇博</title>
+    <link>https://yubocai-poly.github.io/courses/example-copy-2/</link>
+      <atom:link href="https://yubocai-poly.github.io/courses/example-copy-2/index.xml" rel="self" type="application/rss+xml" />
+    <description>📊 ECO-102 Topics in Economics (Econometrics, Development Economics, Social Economics) 经济学主题(计量经济学，发展经济学与社会经济学)</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://yubocai-poly.github.io/courses/example-copy-2/featured.jpg</url>
+      <title>📊 ECO-102 Topics in Economics (Econometrics, Development Economics, Social Economics) 经济学主题(计量经济学，发展经济学与社会经济学)</title>
+      <link>https://yubocai-poly.github.io/courses/example-copy-2/</link>
+    </image>
+    
+  </channel>
+</rss>

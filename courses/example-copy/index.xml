@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>📊 CSE101 - Computer Programming 计算机编程 | Yubo Cai 蔡宇博</title>
+    <link>https://yubocai-poly.github.io/courses/example-copy/</link>
+      <atom:link href="https://yubocai-poly.github.io/courses/example-copy/index.xml" rel="self" type="application/rss+xml" />
+    <description>📊 CSE101 - Computer Programming 计算机编程</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://yubocai-poly.github.io/courses/example-copy/featured.jpg</url>
+      <title>📊 CSE101 - Computer Programming 计算机编程</title>
+      <link>https://yubocai-poly.github.io/courses/example-copy/</link>
+    </image>
+    
+  </channel>
+</rss>

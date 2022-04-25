@@ -1,0 +1,1278 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Yubo Cai" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The aim of Introduction to Numerical Analysis (MAA106) is to provide students with practical knowledge of basic mathematic algorithms and computer programming." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://yubocai-poly.github.io/courses/example/" />
+
+  
+  
+  
+    <meta name="theme-color" content="hsl(339, 90%, 68%)" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'" disabled>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'">
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.483823b49802e3bfc12a727dbc71499e.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+    <link rel="alternate" href="/courses/example/index.xml" type="application/rss+xml" title="Yubo Cai 蔡宇博" />
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://yubocai-poly.github.io/courses/example/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Yubo Cai 蔡宇博" />
+  <meta property="og:url" content="https://yubocai-poly.github.io/courses/example/" />
+  <meta property="og:title" content="📊 MAA106 - Introduction to Numerical Analysis 数值分析导入 | Yubo Cai 蔡宇博" />
+  <meta property="og:description" content="The aim of Introduction to Numerical Analysis (MAA106) is to provide students with practical knowledge of basic mathematic algorithms and computer programming." /><meta property="og:image" content="https://yubocai-poly.github.io/courses/example/featured.jpg" />
+    <meta property="twitter:image" content="https://yubocai-poly.github.io/courses/example/featured.jpg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2021-01-24T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+
+
+  
+  
+  
+  
+  
+    <script src="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.js" integrity="sha512-yXXqOFjdjHNH1GND+1EO0jbvvebABpzGKD66djnUfiKlYME5HGMUJHoCaeE4D5PTG2YsSJf6dwqyUUvQvS0vaA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/osano/cookieconsent@3.1.1/build/cookieconsent.min.css" integrity="sha512-LQ97camar/lOliT/MqjcQs5kWgy6Qz/cCRzzRzUCfv0fotsCTC9ZHXaPQmJV8Xu/PVALfJZ7BDezl5lW3/qBxg==" crossorigin="anonymous">
+  
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "hsl(339, 90%, 68%)",
+          "text": "rgb(255, 255, 255)"
+        },
+        "button": {
+          "background": "rgb(255, 255, 255)",
+          "text": "hsl(339, 90%, 68%)"
+        }
+      },
+      "theme": "classic",
+      "content": {
+        "message": "This website uses cookies to ensure you get the best experience on our website.",
+        "dismiss": "Got it!",
+        "link": "Learn more",
+        "href": "https://www.cookiesandyou.com"
+      }
+    })});
+  </script>
+
+
+  
+
+
+
+
+
+  <title>📊 MAA106 - Introduction to Numerical Analysis 数值分析导入 | Yubo Cai 蔡宇博</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper  dark " data-wc-page-id="59c3ce8e202293146a8a934d37a4070b" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.81c97db460a2777caa20174a3f5a5693.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Yubo Cai 蔡宇博</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Yubo Cai 蔡宇博</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Demo</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/courses/"><span>Courses</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+            
+            <li class="nav-item d-none d-lg-inline-flex">
+              <a class="nav-link" href="/" data-toggle="tooltip" data-placement="bottom" title="Follow me on Twitter"  aria-label="Follow me on Twitter">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Courses
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i>Courses</a></li>
+      </ul>
+
+      
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link  active" href="/courses/example/">Data Science</a>
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#professors">Professors</a></li>
+        <li><a href="#course-organization">Course Organization</a></li>
+        <li><a href="#-objective-introduction-to-computational-mathematics">📚 Objective: Introduction to computational mathematics</a></li>
+        <li><a href="#-arrangement-of-this-course">📚 Arrangement of this course</a></li>
+        <li><a href="#tools-of-this-course">Tools of this course</a></li>
+        <li><a href="#copyright">Copyright</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+            
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+    
+  
+    
+  
+
+    <li class="breadcrumb-item">
+      <a href="/">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/courses/">
+        
+          Courses
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        Data Science
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+          
+
+          <h1>📊 MAA106 - Introduction to Numerical Analysis 数值分析导入</h1>
+
+          <div class="article-style">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /courses/example/featured_hu76eaa58daf827988c1005eeac201f4e9_1602413_e081f3cb64ac5f53b66ffaff3e12d201.webp 400w,
+               /courses/example/featured_hu76eaa58daf827988c1005eeac201f4e9_1602413_6d986ee3f4d1802f62dca9b23cdfb090.webp 760w,
+               /courses/example/featured_hu76eaa58daf827988c1005eeac201f4e9_1602413_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/courses/example/featured_hu76eaa58daf827988c1005eeac201f4e9_1602413_e081f3cb64ac5f53b66ffaff3e12d201.webp"
+               width="760"
+               height="507"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<details class="toc-inpage d-print-none d-xl-none " open>
+  <summary class="font-weight-bold">Table of Contents</summary>
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#professors">Professors</a></li>
+        <li><a href="#course-organization">Course Organization</a></li>
+        <li><a href="#-objective-introduction-to-computational-mathematics">📚 Objective: Introduction to computational mathematics</a></li>
+        <li><a href="#-arrangement-of-this-course">📚 Arrangement of this course</a></li>
+        <li><a href="#tools-of-this-course">Tools of this course</a></li>
+        <li><a href="#copyright">Copyright</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</details>
+
+<h3 id="professors">Professors</h3>
+<ul>
+<li><a href="https://sites.google.com/site/maximebreden/" target="_blank" rel="noopener">Maxime Breden</a></li>
+</ul>
+<h3 id="course-organization">Course Organization</h3>
+<ul>
+<li>7 lectures (2h) and 7 Tutorials (2h) 28 hours in total with 3 ECTS</li>
+</ul>
+<h3 id="-objective-introduction-to-computational-mathematics">📚 Objective: Introduction to computational mathematics</h3>
+<ul>
+<li>Practical knowledge of basic (but fundamental) mathematical algorithms</li>
+<li>Theoretical study: introduction to the notions of error / convergence / speed of convergence</li>
+<li>Practical implementation: lab sessions using Python and Jupyter notebooks</li>
+</ul>
+<h3 id="-arrangement-of-this-course">📚 Arrangement of this course</h3>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Chapter 0: Introduction to numerical analysis and introduction to <strong>Numpy</strong> and <strong>matplotlib</strong> (1 lec, 1 TD)</li>
+<li><input checked="" disabled="" type="checkbox"> Chapter 1: solving equations of one variable (2 lec, 2 TD)</li>
+<li><input disabled="" type="checkbox"> Chapter 2: polynomial approximation (2 lec, 2 TD)</li>
+<li><input disabled="" type="checkbox"> Chapter 3: numerical integration (2 lec, 2 TD)</li>
+</ul>
+<h4 id="--chapter-0-introduction-to-numerical-analysis-and-introduction-to-numpy-and-matplotlib">✏️  Chapter 0: Introduction to numerical analysis and introduction to <strong>Numpy</strong> and <strong>matplotlib</strong></h4>
+<ul>
+<li>Machine Number</li>
+<li>Introduction to numerical analysis</li>
+<li>Introduction to Numpy and Matplotlib</li>
+</ul>
+<pre><code class="language-python">t = np.linspace(0, 12 * pi, 1000)
+x = np.sin(t) * (np.exp(np.cos(t)) - 2 * np.cos(4 * t) + np.sin(t / 12))
+y = np.cos(t) * (np.exp(np.cos(t)) - 2 * np.cos(4 * t) + np.sin(t / 12))
+
+plt.figure()
+plt.plot(x, y)  # 绘制图像
+plt.axis('equal')  # 使x轴和y轴的单位长度相等
+plt.title(&quot;The butterfly curve!&quot;)
+plt.show()
+</code></pre>
+<img src="img0_1.png" width = "600px" />
+<h4 id="--chapter-1-solving-equations-of-one-variable">✏️  Chapter 1: solving equations of one variable</h4>
+<ul>
+<li>Convergence / order of convergence</li>
+<li>Error estimator</li>
+<li>Stopping criterion</li>
+<li>the bisection method 二分法</li>
+</ul>
+<pre><code class="language-python"># Test for f(x)=x^3-2 on I=[1,2]
+
+xstar = 2**(1.0/3)
+
+# parameters
+a0 = 1
+b0 = 2
+k_max = 100
+eps = 0.0000000001
+
+# compute the iterations of the bisection method for I0=[1,2], with guaranteed stopping criterion
+x = Bisection(ftest, a0, b0, k_max, eps)
+
+#print x^* and x
+print('xstar =', xstar)
+print('x =', x)
+
+# create the vector tabk : tabk[k] = k for each iteration made
+tabk = np.arange(0, len(x))
+
+# err is a vector, err[k] = |x[k]-x^*|
+err = np.abs(x - xstar)
+errEstim = (b0 - a0)/(2**tabk) # 也就是beta, error estimator
+
+# plot the error versus k, and the error estimator versus k with the y-axis in log-scale
+fig = plt.figure(figsize=(12, 8))
+plt.plot(tabk, err, marker=&quot;o&quot;, label='error')
+plt.plot(tabk, errEstim, marker=&quot;o&quot;, label='Error Estimator')
+plt.legend(loc='upper right', fontsize=18)
+# set log scale for the error (y-axis)
+plt.yscale('log')  # 把y轴变成用log所表示，目的是分别出在error很小的时候的区别
+plt.xlabel('$k$', fontsize=18)
+plt.ylabel('$error_{k}$', fontsize=18)
+# set title of the figure and labels of the axis
+plt.title('Convergence of the Bisection Method, $f(x) = x^{3} + 2$', fontsize=18)
+
+plt.show()
+</code></pre>
+<img src="img1_1.png" width = "600px" />
+<ul>
+<li>Fixed point iterations 定点迭代法</li>
+</ul>
+<pre><code class="language-python"># initialization
+x0 = xstar + 1
+
+# parameters for the algorithms
+k_max = 100
+eps = 1e-8
+
+# computation of the iterates 
+x3 = FixedPoint(g3, x0, k_max, eps)
+x4 = FixedPoint(g4, x0, k_max, eps)
+x5 = FixedPoint(g5, x0, k_max, eps)
+
+# computation of the errors
+err3 = abs(x3-xstar)
+err4 = abs(x4-xstar)
+err5 = abs(x5-xstar)
+
+# the index of each iterate stopping at the appropriate value in each case
+tabk3 = np.arange(0, err3.size, dtype='float')
+tabk4 = np.arange(0, err4.size, dtype='float')
+tabk5 = np.arange(0, err5.size, dtype='float')
+
+fig = plt.figure(figsize=(20, 10))
+
+plt.subplot(121) # plot of e_k versus k for the three cases
+plt.plot(tabk3, err3, marker='.', label='$e_{k}$ vs k of $g_{3}$')
+plt.plot(tabk4, err4, marker='.', label='$e_{k}$ vs k of $g_{4}$') 
+plt.plot(tabk5, err5, marker='.', label='$e_{k}$ vs k of $g_{5}$')
+plt.legend(loc='upper right', fontsize=15)
+plt.xlabel('k', fontsize=15)
+plt.ylabel('$e_{k}$', fontsize=15)
+plt.yscale('log') # log scale for the error
+plt.title('Convergence', fontsize=15)
+
+plt.subplot(122) # plot of log e_{k+1} versus log e_{k} for the three cases
+plt.loglog(err3[👎], err3[1:], marker='.', label='$e_{k+1}$ vs $e_{k}$ of $g_{3}$')
+plt.loglog(err4[👎], err4[1:], marker=&quot;.&quot;, label='$e_{k+1}$ vs $e_{k}$ of $g_{4}$')
+plt.loglog(err5[👎], err5[1:], marker=&quot;.&quot;, label='$e_{k+1}$ vs $e_{k}$ of $g_{5}$')
+plt.loglog(err5[👎], err5[👎], marker=&quot;.&quot;, label='$Slope 1$')
+plt.legend(loc='lower right', fontsize=15)
+plt.xlabel('$e_k$', fontsize=15)
+plt.ylabel('$e_{k+1}$', fontsize=15)
+plt.title('Order of convergence', fontsize=15)
+
+plt.show()
+</code></pre>
+<img src="img1_2.png" width = "600px" />
+<ul>
+<li>The Newton-Raphson method 牛顿二分法</li>
+</ul>
+<p>We have the interest rate i formula:</p>
+<img src="https://render.githubusercontent.com/render/math?math=f(i) = d \frac{(1 + i)^{n_{end}}-1}{i} - S =0 \quad{} \text{ where } \quad{} S=30\,000, \quad{} d=30,\quad{} \text{and} \quad{} n_{end} = 120" width = "700">
+<pre><code class="language-python">S = 30000
+d = 30
+n_end = 120
+
+def function_fund(i):
+    return d*((1+i)**n_end-1)/i-S
+
+# Then we can plot the graph of the state equation of investment fund
+pts = np.linspace(0.027, 0.03, 500)
+fig = plt.figure(figsize=(12, 8))
+plt.plot(pts, function_fund(pts))
+plt.plot(pts, 0*pts, '--k')
+plt.xlabel('interest rate i', fontsize=18)
+plt.ylabel('$f(i)$', fontsize=18)
+plt.title('function $f$ for case study 2', fontsize=18)
+
+plt.show()
+
+# Then we can apply the function bisection2
+
+imin = 0.01
+imax = 0.05
+eps = 1.0e-6
+k_max = 1000
+i = Bisection2(function_fund, imin, imax, k_max, eps)
+print(Bisection2(function_fund, imin, imax, k_max, eps))
+
+print('precision: eps =', eps)
+print('The minimum interest rate is =', i.size)
+print('minimus interest rate =', i[-1])
+</code></pre>
+<img src="img1_3.png" width = "600px" />
+<h4 id="--chapter-2-polynomial-approximation">✏️  Chapter 2: polynomial approximation</h4>
+<h4 id="--chapter-3-numerical-integration">✏️  Chapter 3: numerical integration</h4>
+<h3 id="tools-of-this-course">Tools of this course</h3>
+<p>JupyterLab, Python, Numpy, matplotlib, mathematical analysis</p>
+<h3 id="copyright">Copyright</h3>
+<p>Copyright by Maxime Breden, Yubo Cai, Ecole Polytechnique</p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 24, 2021</p>
+
+          
+
+
+
+
+
+          
+
+
+
+
+          
+
+
+  
+  
+
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.0047d4febf356e7f0b988e541f50b065.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/gh/mermaid-js/mermaid@v8.8.4/dist/mermaid.min.js" integrity="sha512-+TNmhaRJf3jyYHTpzEq/5I6b+aGyhzWb21mGdHAjxSGSYwxN9Grug3Y3B9qVxWfKKY8MscE/6mr9walWvFLFvQ==" crossorigin="anonymous" title="mermaid"></script>
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/stata.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/Javascript.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.31ba171fa2d48135dd9ba17bfb10af4a.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>
