@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Front-End | Yubo CAI 蔡宇博</title>
+    <link>https://example.com/tag/front-end/</link>
+      <atom:link href="https://example.com/tag/front-end/index.xml" rel="self" type="application/rss+xml" />
+    <description>Front-End</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Front-End</title>
+      <link>https://example.com/tag/front-end/</link>
+    </image>
+    
+    <item>
+      <title>Collected Game Website</title>
+      <link>https://example.com/project/104/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/104/</guid>
+      <description>&lt;p&gt;CSE104 is the courses held by Professor Rohmer Damien at Ecole Polytechnique. And this is the final project related to this course. In this project, we tried to create an integrated website by using HTML, CSS and Javascript, with a recreation of the classic trivia game with those tools.&lt;/p&gt;
+&lt;h2 id=&#34;website&#34;&gt;Website&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://project.frankutils.xyz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://imagecomputing.net/damien.rohmer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rohmer Damien&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/frank2002&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junyuan Wang&lt;/a&gt;, &lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
+&lt;p&gt;VScode, HTML, CSS, Javascript&lt;/p&gt;
+&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;Copyright by Yubo Cai and Junyuan Wang&lt;/p&gt;
+&lt;iframe id=&#34;myframe&#34;
+      src=&#34;https://example.com/project/104/CSE104_Final_Project.pdf &#34;
+      width=&#34;100%&#34; height=&#34;850&#34; frameborder=&#34;1&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

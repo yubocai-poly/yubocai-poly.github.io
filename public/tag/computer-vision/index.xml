@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computer Vision | Yubo CAI 蔡宇博</title>
+    <link>https://example.com/tag/computer-vision/</link>
+      <atom:link href="https://example.com/tag/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <description>Computer Vision</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Computer Vision</title>
+      <link>https://example.com/tag/computer-vision/</link>
+    </image>
+    
+    <item>
+      <title>Lossy Image Compression</title>
+      <link>https://example.com/project/example/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/example/</guid>
+      <description>&lt;h1 id=&#34;cse102-advanced-programming-final-project&#34;&gt;CSE102-Advanced-Programming-Final-Project&lt;/h1&gt;
+&lt;h2 id=&#34;project-instruction&#34;&gt;Project Instruction&lt;/h2&gt;
+&lt;p&gt;The goal of this project is to develop a lossy image compression format close to JPEG. Lossy compression algorithms allow to greatly reduce the size of image files at the price of loosing some data from the original image. In general, a lossy image compression works by pruning the information the human eye is not sensible to. This is the case, for instance, in the JPEG file format.&lt;/p&gt;
+&lt;p&gt;The JPEG compression algorithm can be decomposed into several steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In theory, JPEG-based compression schemes are independent of the image color-space (e.g. Red-Green-Blue). However the best rates of compression are obtained in a color space that separates the light-intensity (luminance) from the color information (chrominance). Indeed, the human eye is quite sensitive to luminance but little to chrominance and we can then afford to lose more chrominance information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hence, the algorithm starts by converting the original image from its initial RGB (Red-Green-Blue) colorimetric model towards the YCbCr model of type luminance/chrominance. In this model, Y is the information of luminance, and Cb and Cr give chrominance values, respectively the blue minus Y and the red minus Y.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This low sensitivity of the human eye to chrominance is exploited by performing a subsampling of the color signals. The principle of the operation is to reduce the size of several blocks of chrominance in a single value.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The image is then split into blocks of 8×8 subpixels.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A 2D DCT (Discrete Cosine Transform) is then applied to each block. The DCT is a variant of the Fourier transform. It decomposes a block, considered as a function in two variables, into a sum of cosine functions. Each block is thus described in a map of frequencies and amplitudes rather than in pixels and color information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then, a quantization step takes place. The quantization consists in dividing the DCT matrix by another one, called quantization matrix. The goal here is to attenuate the high frequencies, i.e. those to which the human eye is very insensitive. These frequencies have low amplitudes, and they are further attenuated by quantization (some coefficients are even often reduced to 0).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, each block is coded using a variation of the Run-length encoding associated with an arithmetic coding – both are lossless data compression algorithm.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;project-schedule&#34;&gt;Project Schedule&lt;/h2&gt;
+&lt;p&gt;The goal of this project is to write a JPEG-like image encoder/decoder. This is a 3-week project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;during the first week, we will focus on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;loading / saving image files,&lt;/li&gt;
+&lt;li&gt;converting images between the RGB &amp;amp; the YCbCr color space, and&lt;/li&gt;
+&lt;li&gt;performing channels subsampling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;during the second week, we will focus on the DCT transform, and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;during the third week, we will consider the RLE &amp;amp; arithmetic coding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.strub.nu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pierre-Yves Strub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
+&lt;p&gt;VScode, Python, Numpy, matplotlib, mathematical analysis&lt;/p&gt;
+&lt;p&gt;In this project, you need some basic knowledge about Linear Algebra like &lt;strong&gt;Matrix multplication&lt;/strong&gt; and &lt;strong&gt;Fouier Transformation&lt;/strong&gt;. However &lt;strong&gt;Numpy&lt;/strong&gt; is forbiddened in this project.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yubo CAI 蔡宇博</title>
+    <link>https://example.com/</link>
+      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yubo CAI 蔡宇博</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Yubo CAI 蔡宇博</title>
+      <link>https://example.com/</link>
+    </image>
+    
+    <item>
+      <title>Collected Game Website</title>
+      <link>https://example.com/project/104/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/104/</guid>
+      <description>&lt;p&gt;CSE104 is the courses held by Professor Rohmer Damien at Ecole Polytechnique. And this is the final project related to this course. In this project, we tried to create an integrated website by using HTML, CSS and Javascript, with a recreation of the classic trivia game with those tools.&lt;/p&gt;
+&lt;h2 id=&#34;website&#34;&gt;Website&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://project.frankutils.xyz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://imagecomputing.net/damien.rohmer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rohmer Damien&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/frank2002&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junyuan Wang&lt;/a&gt;, &lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
+&lt;p&gt;VScode, HTML, CSS, Javascript&lt;/p&gt;
+&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;Copyright by Yubo Cai and Junyuan Wang&lt;/p&gt;
+&lt;iframe id=&#34;myframe&#34;
+      src=&#34;https://example.com/project/104/CSE104_Final_Project.pdf &#34;
+      width=&#34;100%&#34; height=&#34;850&#34; frameborder=&#34;1&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lossy Image Compression</title>
+      <link>https://example.com/project/example/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/example/</guid>
+      <description>&lt;h1 id=&#34;cse102-advanced-programming-final-project&#34;&gt;CSE102-Advanced-Programming-Final-Project&lt;/h1&gt;
+&lt;h2 id=&#34;project-instruction&#34;&gt;Project Instruction&lt;/h2&gt;
+&lt;p&gt;The goal of this project is to develop a lossy image compression format close to JPEG. Lossy compression algorithms allow to greatly reduce the size of image files at the price of loosing some data from the original image. In general, a lossy image compression works by pruning the information the human eye is not sensible to. This is the case, for instance, in the JPEG file format.&lt;/p&gt;
+&lt;p&gt;The JPEG compression algorithm can be decomposed into several steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In theory, JPEG-based compression schemes are independent of the image color-space (e.g. Red-Green-Blue). However the best rates of compression are obtained in a color space that separates the light-intensity (luminance) from the color information (chrominance). Indeed, the human eye is quite sensitive to luminance but little to chrominance and we can then afford to lose more chrominance information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hence, the algorithm starts by converting the original image from its initial RGB (Red-Green-Blue) colorimetric model towards the YCbCr model of type luminance/chrominance. In this model, Y is the information of luminance, and Cb and Cr give chrominance values, respectively the blue minus Y and the red minus Y.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This low sensitivity of the human eye to chrominance is exploited by performing a subsampling of the color signals. The principle of the operation is to reduce the size of several blocks of chrominance in a single value.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The image is then split into blocks of 8×8 subpixels.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A 2D DCT (Discrete Cosine Transform) is then applied to each block. The DCT is a variant of the Fourier transform. It decomposes a block, considered as a function in two variables, into a sum of cosine functions. Each block is thus described in a map of frequencies and amplitudes rather than in pixels and color information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then, a quantization step takes place. The quantization consists in dividing the DCT matrix by another one, called quantization matrix. The goal here is to attenuate the high frequencies, i.e. those to which the human eye is very insensitive. These frequencies have low amplitudes, and they are further attenuated by quantization (some coefficients are even often reduced to 0).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, each block is coded using a variation of the Run-length encoding associated with an arithmetic coding – both are lossless data compression algorithm.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;project-schedule&#34;&gt;Project Schedule&lt;/h2&gt;
+&lt;p&gt;The goal of this project is to write a JPEG-like image encoder/decoder. This is a 3-week project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;during the first week, we will focus on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;loading / saving image files,&lt;/li&gt;
+&lt;li&gt;converting images between the RGB &amp;amp; the YCbCr color space, and&lt;/li&gt;
+&lt;li&gt;performing channels subsampling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;during the second week, we will focus on the DCT transform, and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;during the third week, we will consider the RLE &amp;amp; arithmetic coding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.strub.nu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pierre-Yves Strub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
+&lt;p&gt;VScode, Python, Numpy, matplotlib, mathematical analysis&lt;/p&gt;
+&lt;p&gt;In this project, you need some basic knowledge about Linear Algebra like &lt;strong&gt;Matrix multplication&lt;/strong&gt; and &lt;strong&gt;Fouier Transformation&lt;/strong&gt;. However &lt;strong&gt;Numpy&lt;/strong&gt; is forbiddened in this project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Research Porject about Acceleration of the solution of Fractional Diffusion Equations in time</title>
+      <link>https://example.com/project/inria/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/inria/</guid>
+      <description>&lt;p&gt;This research project is under the supervision of Professor Olivier about his new method and algorithms in the numerical solution of time-fractional diffusion equation. Our overall thinking is based on these two papers: &lt;a href=&#34;https://arxiv.org/abs/2106.14146&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper1&lt;/a&gt; and &lt;a href=&#34;https://www.cambridge.org/core/journals/communications-in-computational-physics/article/abs/fast-evaluation-of-the-caputo-fractional-derivative-and-its-applications-to-fractional-diffusion-equations/AF5FDC74FD7A010ED0ACD291BB1A92B1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper2&lt;/a&gt;. Professor has already accomplished the algorithms in paper1 with a complexity of $O(N_{T}N_{S})$ and has been tested in multiple dimensions in C++. However, the paper2 came up an new algorithms with higher effiency and complexity. The algorithms is accomplished in Matlab.&lt;/p&gt;
+&lt;p&gt;$$
+\partial_t u(x, t)-\nabla \cdot\left(\partial_t^{1-\alpha} \kappa_\alpha \nabla u-\boldsymbol{F} \partial_t^{1-\alpha} u\right)(x, t)=f(x, t), \quad \text { for } x \in \Omega \text { and } 0&amp;lt;t&amp;lt;T
+$$&lt;/p&gt;
+&lt;p&gt;My job was about the topics of optimization of the computing algorithms of the time-fractional diffusion equation. My work was based on the newly proposed more efficient Caputo fractional derivative numerical method for a time-fractional equation using Matlab to implement the algorithm in one and two dimensions. And I convert the Matlab code to C++, integrate it with the original code of the second-order accurate scheme algorithms, and test it. This work has succeeded in reducing the complexity of the code from $O(N_{T}N_{S})$ to $O(N_{S} \cdot logN_{T})$ in dimensions 1 and 2 and significantly reduces the space complexity.&lt;/p&gt;
+&lt;p&gt;However, due to certain reason and time restriction of the project. We only accomplished the code transfer and we trying to improve our merged algorithms in the future.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Joe Hisaishi Concert</title>
+      <link>https://example.com/talk/joe-hisaishi-concert/</link>
+      <pubDate>Sat, 07 May 2022 20:00:00 +0000</pubDate>
+      <guid>https://example.com/talk/joe-hisaishi-concert/</guid>
+      <description>&lt;p&gt;从小到大我一直非常喜欢久石让，可能是因为学钢琴的缘故，在厌倦了枯燥的练习曲后，久石让的音乐总能够给我平静和安慰。无论是从《天空之城》还是到《Summer》，自己也一直希望能够用机会能够去现场听一次。虽然这次只是幽灵公主中的配乐，而且是常规巡演，因此音乐会质量肯定算不上完美，但是我觉得还是一次难忘的经历。&lt;/p&gt;
+&lt;p&gt;Sony相机的收音效果还是不错的，没有外接设备的情况下录的音质和视频质量也说的过去。我带耳机听还是觉得相当震撼的。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Courses Lists</title>
+      <link>https://example.com/post/getting-started/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/getting-started/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Here are the courses that I learned from Ecole Polytechnique and ESSEC, I seperate them into several parts. Also you can find some really useful information and material in this parts.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;courses&#34;&gt;Courses&lt;/h2&gt;
+&lt;h4 id=&#34;maa201---reduction-of-endomorphisms-abstract-algebra&#34;&gt;MAA201 - Reduction of Endomorphisms (Abstract Algebra)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Introduction:&lt;/font&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Reference:&lt;/font&gt;&lt;/em&gt; Here is the course page of &lt;a href=&#34;https://webusers.imj-prg.fr/~jan.nekovar/co/algar/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Algèbre et arithmétique&lt;/a&gt; from Sorbonne University second year course. The textbook in this courses in really detailed in explaination and information, also more organized. You can also find some TD in the course page but however is much easier than the Exercise at l&amp;rsquo;X.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;maa202---topology-and-multivariables&#34;&gt;MAA202 - Topology and Multivariables&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Introduction:&lt;/font&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Reference:&lt;/font&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cse203---proof-and-logic-coq&#34;&gt;CSE203 - Proof and Logic (Coq)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Introduction:&lt;/font&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Reference:&lt;/font&gt;&lt;/em&gt; Since it&amp;rsquo;s really hard to get some good material explaining $Coq$. You can find &lt;a href=&#34;https://www.cs.cornell.edu/courses/cs3110/2018sp/a5/coq-tactics-cheatsheet.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this material&lt;/a&gt; provided by Cornell. Also you can find &lt;a href=&#34;https://cs3110.github.io/textbook/cover.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CS3110 - OCaml Programming: Correct + Efficient + Beautiful&lt;/a&gt; from Cornell University which is much more comprehensive and organized courses about $Coq$ and $OCaml$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;mermaid&#34;&gt;graph TD;
+  Math--&gt;CS;
+  Math--&gt;Econ;
+  Math--&gt;Physics;
+&lt;/div&gt;
+&lt;h4 id=&#34;pure-mathematics-and-applied-mathematics&#34;&gt;Pure Mathematics and Applied Mathematics&lt;/h4&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+&lt;/style&gt;
+&lt;table class=&#34;tg&#34; style=&#34;undefined;table-layout: fixed; width: 720px&#34;&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 65px&#34;&gt;
+&lt;col style=&#34;width: 429px&#34;&gt;
+&lt;col style=&#34;width: 204px&#34;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-c3ow&#34;&gt;Number&lt;/th&gt;
+    &lt;th class=&#34;tg-c3ow&#34;&gt;Courses&lt;/th&gt;
+    &lt;th class=&#34;tg-c3ow&#34;&gt;Professor&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;MAA101&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Linear Algebra  &lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Stéphane Bijakowski&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;MAA102&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Mathematical Analysis 1&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Frank Pacard&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;MAA103&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Discrete Mathematics 2&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Alouges François&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA105&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Mathematical Anlysis 2: Integral and Differential Calculus&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Jérémie Bettinelli&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA106&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Introduction to Numerical Analysis&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Breden Maxime&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;LAB101&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Calculus&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Guin Laurent&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;LAB102&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Discrete Mathematics 1&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Sabin Julien&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;LAB151&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Vector and Fouier Analysis&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Le Hur Karine &amp;amp; &lt;span style=&#34;font-weight:400;font-style:normal&#34;&gt;Goutéraux Blaise&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA201&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Reduction of endomorphisms&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;N/A&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA202&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Topology and multivariable calculus&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Anne-Sophie de Suzzoni&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA203&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Introduction to Probability&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Giovanni Conforti&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA204&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Introduction to Statistics&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;D. Métivier&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA205&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Algorithms for Discrete Mathematics&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;LUCAS GERIN&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA206&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Quadratic Forms and Applications&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Annalaura Stingo&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA207&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Series of Functions, Differential Equations&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;N/A&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA208&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Numerical Linear Algebra&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Teddy Pichard&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;MAA209&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;A First Step in Numerical Optimization&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Beniamin Bogosel&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;computer-sciences&#34;&gt;Computer Sciences&lt;/h4&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+&lt;/style&gt;
+&lt;table class=&#34;tg&#34; style=&#34;undefined;table-layout: fixed; width:720px&#34;&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 65px&#34;&gt;
+&lt;col style=&#34;width: 329px&#34;&gt;
+&lt;col style=&#34;width: 204px&#34;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-c3ow&#34;&gt;Number&lt;/th&gt;
+    &lt;th class=&#34;tg-c3ow&#34;&gt;Courses&lt;/th&gt;
+    &lt;th class=&#34;tg-c3ow&#34;&gt;Professor&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;CSE101&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Computer Programming&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;&lt;span style=&#34;font-weight:400;font-style:normal&#34;&gt;Smith Benjamin&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;CSE102&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Advanced Programming&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Pierre-Yves Strub&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;CSE103&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Introduction to Algorithms&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Damiano Mazza&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;CSE104&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Web Programming&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Rohmer Damien&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;CSE201&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Objected-Oriented Programming in C++&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Stephane Redon&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;CSE202&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Design and Analysis of Algorithms&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Bruno Salvy&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;CSE203&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Logic and Prove&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;&lt;span style=&#34;font-weight:400;font-style:normal&#34;&gt;Pierre-Yves Strub&lt;/span&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;CSE204&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Machine Learning&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Jesse Read&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;CSE205&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Computer Architechture&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Bourke Timothy&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;CSE206&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Introduction to Formal Languages&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;N/A&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;economic--finance-physics-social-courses&#34;&gt;Economic &amp;amp; Finance, Physics, Social Courses&lt;/h4&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+&lt;/style&gt;
+&lt;table class=&#34;tg&#34; style=&#34;undefined;table-layout: fixed; width: 720px&#34;&gt;
+&lt;colgroup&gt;
+&lt;col style=&#34;width: 65px&#34;&gt;
+&lt;col style=&#34;width: 329px&#34;&gt;
+&lt;col style=&#34;width: 204px&#34;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th class=&#34;tg-c3ow&#34;&gt;Number&lt;/th&gt;
+    &lt;th class=&#34;tg-c3ow&#34;&gt;Courses&lt;/th&gt;
+    &lt;th class=&#34;tg-c3ow&#34;&gt;Professor&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;ECO101&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Introduction to Microeconomics and Macroeconomics&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Yukio Koriyama &amp;amp; Jean-Baptiste Michau&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;ECO102&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Topics in Economics&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Schmutz Benoit &amp;amp; Barrows Geoffery Masters&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;ECO204&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;Introduction to Finance&lt;/td&gt;
+    &lt;td class=&#34;tg-c3ow&#34;&gt;N/A&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;PHY101&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Mechanics and Heat&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Ramananarivo Sophie&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;LAB103&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Introduction to Experiement&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;NA&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;HSS151&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;French Identity&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Renaudeau Pierre-Marc&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;HSS102&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Geopolitics in Ceberspace&lt;/td&gt;
+    &lt;td class=&#34;tg-baqh&#34;&gt;Louis Pétiniaud&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://example.com/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Three
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Only the speaker can read these notes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Press &lt;span class=&#34;sb&#34;&gt;`S`&lt;/span&gt; key to view
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{% /speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/media/boards.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;navy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/publication/example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/example/</guid>
+      <description>&lt;h1 id=&#34;---&#34;&gt;&amp;mdash;&lt;/h1&gt;
+&lt;h1 id=&#34;title-an-example-conference-paper&#34;&gt;title: &amp;lsquo;An example conference paper&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-authors&#34;&gt;# Authors&lt;/h1&gt;
+&lt;h1 id=&#34;-if-you-created-a-profile-for-a-user-eg-the-default-admin-user-write-the-username-folder-name-here&#34;&gt;# If you created a profile for a user (e.g. the default &lt;code&gt;admin&lt;/code&gt; user), write the username (folder name) here&lt;/h1&gt;
+&lt;h1 id=&#34;-and-it-will-be-replaced-with-their-full-name-and-linked-to-their-profile&#34;&gt;# and it will be replaced with their full name and linked to their profile.&lt;/h1&gt;
+&lt;h1 id=&#34;authors&#34;&gt;authors:&lt;/h1&gt;
+&lt;h1 id=&#34;--admin&#34;&gt;- admin&lt;/h1&gt;
+&lt;h1 id=&#34;--robert-ford&#34;&gt;- Robert Ford&lt;/h1&gt;
+&lt;h1 id=&#34;heading-1&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-author-notes-optional&#34;&gt;# Author notes (optional)&lt;/h1&gt;
+&lt;h1 id=&#34;author_notes&#34;&gt;author_notes:&lt;/h1&gt;
+&lt;h1 id=&#34;--equal-contribution&#34;&gt;- &amp;lsquo;Equal contribution&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;--equal-contribution-1&#34;&gt;- &amp;lsquo;Equal contribution&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;heading-2&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;date-2013-07-01t000000z&#34;&gt;date: &amp;lsquo;2013-07-01T00:00:00Z&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;doi-&#34;&gt;doi: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;heading-3&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-schedule-page-publish-date-not-publications-date&#34;&gt;# Schedule page publish date (NOT publication&amp;rsquo;s date).&lt;/h1&gt;
+&lt;h1 id=&#34;publishdate-2017-01-01t000000z&#34;&gt;publishDate: &amp;lsquo;2017-01-01T00:00:00Z&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;heading-4&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-publication-type&#34;&gt;# Publication type.&lt;/h1&gt;
+&lt;h1 id=&#34;-legend-0--uncategorized-1--conference-paper-2--journal-article&#34;&gt;# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;&lt;/h1&gt;
+&lt;h1 id=&#34;-3--preprint--working-paper-4--report-5--book-6--book-section&#34;&gt;# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;&lt;/h1&gt;
+&lt;h1 id=&#34;-7--thesis-8--patent&#34;&gt;# 7 = Thesis; 8 = Patent&lt;/h1&gt;
+&lt;h1 id=&#34;publication_types-1&#34;&gt;publication_types: [&amp;lsquo;1&amp;rsquo;]&lt;/h1&gt;
+&lt;h1 id=&#34;heading-5&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-publication-name-and-optional-abbreviated-publication-name&#34;&gt;# Publication name and optional abbreviated publication name.&lt;/h1&gt;
+&lt;h1 id=&#34;publication-in-wowchemy-conference&#34;&gt;publication: In &lt;em&gt;Wowchemy Conference&lt;/em&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;publication_short-in-icw&#34;&gt;publication_short: In &lt;em&gt;ICW&lt;/em&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;heading-6&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;abstract-lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-duis-posuere-tellus-ac-convallis-placerat-proin-tincidunt-magna-sed-ex-sollicitudin-condimentum-sed-ac-faucibus-dolor-scelerisque-sollicitudin-nisi-cras-purus-urna-suscipit-quis-sapien-eu-pulvinar-tempor-diam-quisque-risus-orci-mollis-id-ante-sit-amet-gravida-egestas-nisl-sed-ac-tempus-magna-proin-in-dui-enim-donec-condimentum-sem-id-dapibus-fringilla-tellus-enim-condimentum-arcu-nec-volutpat-est-felis-vel-metus-vestibulum-sit-amet-erat-at-nulla-eleifend-gravida&#34;&gt;abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/h1&gt;
+&lt;h1 id=&#34;heading-7&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-summary-an-optional-shortened-abstract&#34;&gt;# Summary. An optional shortened abstract.&lt;/h1&gt;
+&lt;h1 id=&#34;summary-lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit-duis-posuere-tellus-ac-convallis-placerat-proin-tincidunt-magna-sed-ex-sollicitudin-condimentum&#34;&gt;summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.&lt;/h1&gt;
+&lt;h1 id=&#34;heading-8&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;tags-&#34;&gt;tags: []&lt;/h1&gt;
+&lt;h1 id=&#34;heading-9&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-display-this-page-in-the-featured-widget&#34;&gt;# Display this page in the Featured widget?&lt;/h1&gt;
+&lt;h1 id=&#34;featured-true&#34;&gt;featured: true&lt;/h1&gt;
+&lt;h1 id=&#34;heading-10&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-custom-links-uncomment-lines-below&#34;&gt;# Custom links (uncomment lines below)&lt;/h1&gt;
+&lt;h1 id=&#34;-links&#34;&gt;# links:&lt;/h1&gt;
+&lt;h1 id=&#34;---name-custom-link&#34;&gt;# - name: Custom Link&lt;/h1&gt;
+&lt;h1 id=&#34;---url-httpexampleorg&#34;&gt;#   url: &lt;a href=&#34;http://example.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://example.org&lt;/a&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;heading-11&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;url_pdf-&#34;&gt;url_pdf: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;url_code-&#34;&gt;url_code: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;url_dataset-&#34;&gt;url_dataset: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;url_poster-&#34;&gt;url_poster: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;url_project-&#34;&gt;url_project: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;url_slides-&#34;&gt;url_slides: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;url_source-&#34;&gt;url_source: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;url_video-&#34;&gt;url_video: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;heading-12&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-featured-image&#34;&gt;# Featured image&lt;/h1&gt;
+&lt;h1 id=&#34;-to-use-add-an-image-named-featuredjpgpng-to-your-pages-folder&#34;&gt;# To use, add an image named &lt;code&gt;featured.jpg/png&lt;/code&gt; to your page&amp;rsquo;s folder.&lt;/h1&gt;
+&lt;h1 id=&#34;image&#34;&gt;image:&lt;/h1&gt;
+&lt;h1 id=&#34;caption-image-credit-unsplashhttpsunsplashcomphotosplcdaamflte&#34;&gt;caption: &amp;lsquo;Image credit: &lt;a href=&#34;https://unsplash.com/photos/pLCdAaMFLTE&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Unsplash&lt;/strong&gt;&lt;/a&gt;&amp;rsquo;&lt;/h1&gt;
+&lt;h1 id=&#34;focal_point-&#34;&gt;focal_point: &#39;&#39;&lt;/h1&gt;
+&lt;h1 id=&#34;preview_only-false&#34;&gt;preview_only: false&lt;/h1&gt;
+&lt;h1 id=&#34;heading-13&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-associated-projects-optional&#34;&gt;# Associated Projects (optional).&lt;/h1&gt;
+&lt;h1 id=&#34;---associate-this-publication-with-one-or-more-of-your-projects&#34;&gt;#   Associate this publication with one or more of your projects.&lt;/h1&gt;
+&lt;h1 id=&#34;---simply-enter-your-projects-folder-or-file-name-without-extension&#34;&gt;#   Simply enter your project&amp;rsquo;s folder or file name without extension.&lt;/h1&gt;
+&lt;h1 id=&#34;---eg-internal-project-references-contentprojectinternal-projectindexmd&#34;&gt;#   E.g. &lt;code&gt;internal-project&lt;/code&gt; references &lt;code&gt;content/project/internal-project/index.md&lt;/code&gt;.&lt;/h1&gt;
+&lt;h1 id=&#34;---otherwise-set-projects-&#34;&gt;#   Otherwise, set &lt;code&gt;projects: []&lt;/code&gt;.&lt;/h1&gt;
+&lt;h1 id=&#34;projects&#34;&gt;projects:&lt;/h1&gt;
+&lt;h1 id=&#34;--example&#34;&gt;- example&lt;/h1&gt;
+&lt;h1 id=&#34;heading-14&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;-slides-optional&#34;&gt;# Slides (optional).&lt;/h1&gt;
+&lt;h1 id=&#34;---associate-this-publication-with-markdown-slides&#34;&gt;#   Associate this publication with Markdown slides.&lt;/h1&gt;
+&lt;h1 id=&#34;---simply-enter-your-slide-decks-filename-without-extension&#34;&gt;#   Simply enter your slide deck&amp;rsquo;s filename without extension.&lt;/h1&gt;
+&lt;h1 id=&#34;---eg-slides-example-references-contentslidesexampleindexmd&#34;&gt;#   E.g. &lt;code&gt;slides: &amp;quot;example&amp;quot;&lt;/code&gt; references &lt;code&gt;content/slides/example/index.md&lt;/code&gt;.&lt;/h1&gt;
+&lt;h1 id=&#34;---otherwise-set-slides-&#34;&gt;#   Otherwise, set &lt;code&gt;slides: &amp;quot;&amp;quot;&lt;/code&gt;.&lt;/h1&gt;
+&lt;h1 id=&#34;slides-example&#34;&gt;slides: example&lt;/h1&gt;
+&lt;h1 id=&#34;----1&#34;&gt;&amp;mdash;&lt;/h1&gt;
+&lt;h1 id=&#34;heading-15&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;div-classalert-alert-note&#34;&gt;&lt;div class=&#34;alert alert-note&#34;&gt;&lt;/h1&gt;
+  &lt;div&gt;
+    &lt;h1 id=&#34;click-the-_cite_-button-above-to-demo-the-feature-to-enable-visitors-to-import-publication-metadata-into-their-reference-management-software&#34;&gt;Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.&lt;/h1&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;heading-16&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;div-classalert-alert-note-1&#34;&gt;&lt;div class=&#34;alert alert-note&#34;&gt;&lt;/h1&gt;
+  &lt;div&gt;
+    &lt;h1 id=&#34;create-your-slides-in-markdown---click-the-_slides_-button-to-check-out-the-example&#34;&gt;Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.&lt;/h1&gt;
+&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id=&#34;heading-17&#34;&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;supplementary-notes-can-be-added-here-including-code-math-and-imageshttpswowchemycomdocswriting-markdown-latex&#34;&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MAA203 - Introduction to Statistics</title>
+      <link>https://example.com/post/statistic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/statistic/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;This is the introduction course of probability and statistics at Ecole Polytechnique. In bachelor program of Ecole Polytechnique, you will learn statistics later after this course and in third year you will learn about Asymptotic Statistics provided by &lt;a href=&#34;https://en.wikipedia.org/wiki/%C3%89ric_Moulines&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. E. Moulines&lt;/a&gt; and Stochastic Processes by &lt;a href=&#34;https://ieor.berkeley.edu/people/thibaut-mastrolia/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. T. Mastrolia&lt;/a&gt;. You can find some important information and material which is helpful for this course.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;chapter&#34;&gt;Chapter&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 1 - Discrete Probability Spaces:&lt;/strong&gt; In this chapter, you will know the definition and basic concept of DPS, also we will introduce some combinatorial calculus and conditioning, independence those baisc knowledge in Probability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 2 - Random Variables:&lt;/strong&gt; The main content of this chapter is about some basic concepts of RV in DPS, such as Joint densites and marginal densitis, expecation, Variance, Covariance, PDF, CDF, MGF of the random variable. Also we will try to see $L^{P}$ spaces this concept in this chapter.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 3 - General Probability spaces adn random variables:&lt;/strong&gt; Since in the last chapter we only discuss the situation in DPS. In this chapter we will expend those concepts into absolution continuous random variables.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 4 - Convergence of random variables and law of large numbers:&lt;/strong&gt; For the last chapter, we will introduce different types convergence for absolute continuous variable and learn about laws of large numbers. Also we will talk a little bit about Monte carlo methods at the end of the courses.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;extra-reference-and-material&#34;&gt;Extra Reference and Material&lt;/h2&gt;
+&lt;p&gt;The professor of this course is the worst that I ever seen in l&amp;rsquo;X. So I collected some material that might be helpful. The first note in written by me which contains most important definition and proposition of the course. Also I add some extra important points or conclusion I learned while I do the TD and cheat sheet of Expectatioin, variance, CDF, PDF, MGF of common distributions. You can find the notes from this &lt;a href=&#34;&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also, I have some recommendation of material for this course. You can find &lt;a href=&#34;https://github.com/xitongsys/ML/blob/master/books/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%28%E6%B5%99%E5%A4%A7%E5%9B%9B%E7%89%88%29.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;概率论与数理统计（浙大第四版)&lt;/a&gt; and &lt;a href=&#34;http://julio.staff.ipb.ac.id/files/2015/02/Ross_8th_ed_English.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A First Course in Prabability&lt;/a&gt; by Sheldon Ross. All of them are really classical textbook for probability. However, MAA203 in l&amp;rsquo;X is really theoretical and you have to prove a lot basic definition or proposition in thie course. Also, you can find this &lt;a href=&#34;http://gerin.perso.math.cnrs.fr/Enseignements/PolyX-HEC.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Textbook&lt;/a&gt; from X-HEC DSBA program by &lt;a href=&#34;http://gerin.perso.math.cnrs.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lucas Gerin&lt;/a&gt; who is also our professor for MAA205-Algorithms for Discrete Mathematics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MAA205 - Algorithms for Discrete Mathematics</title>
+      <link>https://example.com/post/algorithms_for_discrete_math/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/post/algorithms_for_discrete_math/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;This is the advanced course of MAA103-Discrete Mathematics and we trying to use programming to apply some algorithms in discrete mathematics.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;chapter&#34;&gt;Chapter&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
