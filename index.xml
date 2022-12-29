@@ -5,7 +5,7 @@
     <link>https://example.com/</link>
       <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Yubo CAI 蔡宇博</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Yubo CAI 蔡宇博</title>
@@ -13,125 +13,39 @@
     </image>
     
     <item>
-      <title>Collected Game Website</title>
-      <link>https://example.com/project/104/</link>
-      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/104/</guid>
-      <description>&lt;p&gt;CSE104 is the courses held by Professor Rohmer Damien at Ecole Polytechnique. And this is the final project related to this course. In this project, we tried to create an integrated website by using HTML, CSS and Javascript, with a recreation of the classic trivia game with those tools.&lt;/p&gt;
-&lt;h2 id=&#34;website&#34;&gt;Website&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://project.frankutils.xyz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://imagecomputing.net/damien.rohmer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rohmer Damien&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/frank2002&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junyuan Wang&lt;/a&gt;, &lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
-&lt;p&gt;VScode, HTML, CSS, Javascript&lt;/p&gt;
+      <title>Nim Games</title>
+      <link>https://example.com/project/203/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/203/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;This serious of books are really helpful for understanding the course and if you want to go further in this field, and even the basic stuff in this book can be really helpful. &lt;a href=&#34;https://softwarefoundations.cis.upenn.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;. Here is the &lt;a href=&#34;https://coq-zh.github.io/SF-zh/lf-current/Basics.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Version in Chinese&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;explanation-of-the-function-in-the-project&#34;&gt;Explanation of the function in the project&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-coq&#34; data-lang=&#34;coq&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;Notation&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;[ &amp;#39;seq&amp;#39; E | i &amp;lt; n ]&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mkseq&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;fun&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;level&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;E&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;level&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;99&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   &lt;span class=&#34;n&#34;&gt;format&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;[ &amp;#39;seq&amp;#39;  E  |  i  &amp;lt;  n ]&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;seq_scope&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;, &lt;code&gt;Junyuan Wang&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rigorous Proof of Frobenius Reduction</title>
+      <link>https://example.com/project/201/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/201/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;This work is originally from the Homework of the abstract algebra course at Ecole Polytechnique for &lt;strong&gt;MAA201-Reduction of Endomorphisms&lt;/strong&gt;. And I spend this work on this project.&lt;/p&gt;
+&lt;p&gt;In the first part you can see some rigorous proof of &lt;strong&gt;Gauss’s Lemma&lt;/strong&gt; and &lt;strong&gt;Eisenstein’s Criterion&lt;/strong&gt;, and some application in the analysis of the reducibility of the monic polynomials.&lt;/p&gt;
+&lt;p&gt;And in the second part, we will see the proof of &lt;strong&gt;Frobenius Reduction&lt;/strong&gt; which in French is &lt;strong&gt;Decomposition de Frobenius&lt;/strong&gt;. Since there is no really detailed proof of this in English so here you can find the Lemma and proof relatively in order to prove this theorem.&lt;/p&gt;
 &lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
-&lt;p&gt;Copyright by Yubo Cai and Junyuan Wang&lt;/p&gt;
-&lt;iframe id=&#34;myframe&#34;
-      src=&#34;https://example.com/project/104/CSE104_Final_Project.pdf &#34;
-      width=&#34;100%&#34; height=&#34;850&#34; frameborder=&#34;1&#34;&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lossy Image Compression</title>
-      <link>https://example.com/project/example/</link>
-      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/</guid>
-      <description>&lt;h1 id=&#34;cse102-advanced-programming-final-project&#34;&gt;CSE102-Advanced-Programming-Final-Project&lt;/h1&gt;
-&lt;h2 id=&#34;project-instruction&#34;&gt;Project Instruction&lt;/h2&gt;
-&lt;p&gt;The goal of this project is to develop a lossy image compression format close to JPEG. Lossy compression algorithms allow to greatly reduce the size of image files at the price of loosing some data from the original image. In general, a lossy image compression works by pruning the information the human eye is not sensible to. This is the case, for instance, in the JPEG file format.&lt;/p&gt;
-&lt;p&gt;The JPEG compression algorithm can be decomposed into several steps:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;In theory, JPEG-based compression schemes are independent of the image color-space (e.g. Red-Green-Blue). However the best rates of compression are obtained in a color space that separates the light-intensity (luminance) from the color information (chrominance). Indeed, the human eye is quite sensitive to luminance but little to chrominance and we can then afford to lose more chrominance information.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Hence, the algorithm starts by converting the original image from its initial RGB (Red-Green-Blue) colorimetric model towards the YCbCr model of type luminance/chrominance. In this model, Y is the information of luminance, and Cb and Cr give chrominance values, respectively the blue minus Y and the red minus Y.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;This low sensitivity of the human eye to chrominance is exploited by performing a subsampling of the color signals. The principle of the operation is to reduce the size of several blocks of chrominance in a single value.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The image is then split into blocks of 8×8 subpixels.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A 2D DCT (Discrete Cosine Transform) is then applied to each block. The DCT is a variant of the Fourier transform. It decomposes a block, considered as a function in two variables, into a sum of cosine functions. Each block is thus described in a map of frequencies and amplitudes rather than in pixels and color information.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Then, a quantization step takes place. The quantization consists in dividing the DCT matrix by another one, called quantization matrix. The goal here is to attenuate the high frequencies, i.e. those to which the human eye is very insensitive. These frequencies have low amplitudes, and they are further attenuated by quantization (some coefficients are even often reduced to 0).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Finally, each block is coded using a variation of the Run-length encoding associated with an arithmetic coding – both are lossless data compression algorithm.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;project-schedule&#34;&gt;Project Schedule&lt;/h2&gt;
-&lt;p&gt;The goal of this project is to write a JPEG-like image encoder/decoder. This is a 3-week project:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;during the first week, we will focus on:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;loading / saving image files,&lt;/li&gt;
-&lt;li&gt;converting images between the RGB &amp;amp; the YCbCr color space, and&lt;/li&gt;
-&lt;li&gt;performing channels subsampling.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;during the second week, we will focus on the DCT transform, and&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;during the third week, we will consider the RLE &amp;amp; arithmetic coding.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.strub.nu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pierre-Yves Strub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
-&lt;p&gt;VScode, Python, Numpy, matplotlib, mathematical analysis&lt;/p&gt;
-&lt;p&gt;In this project, you need some basic knowledge about Linear Algebra like &lt;strong&gt;Matrix multplication&lt;/strong&gt; and &lt;strong&gt;Fouier Transformation&lt;/strong&gt;. However &lt;strong&gt;Numpy&lt;/strong&gt; is forbiddened in this project.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Research Porject about Acceleration of the solution of Fractional Diffusion Equations in time</title>
-      <link>https://example.com/project/inria/</link>
-      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/inria/</guid>
-      <description>&lt;p&gt;This research project is under the supervision of Professor Olivier about his new method and algorithms in the numerical solution of time-fractional diffusion equation. Our overall thinking is based on these two papers: &lt;a href=&#34;https://arxiv.org/abs/2106.14146&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper1&lt;/a&gt; and &lt;a href=&#34;https://www.cambridge.org/core/journals/communications-in-computational-physics/article/abs/fast-evaluation-of-the-caputo-fractional-derivative-and-its-applications-to-fractional-diffusion-equations/AF5FDC74FD7A010ED0ACD291BB1A92B1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper2&lt;/a&gt;. Professor has already accomplished the algorithms in paper1 with a complexity of $O(N_{T}N_{S})$ and has been tested in multiple dimensions in C++. However, the paper2 came up an new algorithms with higher effiency and complexity. The algorithms is accomplished in Matlab.&lt;/p&gt;
-&lt;p&gt;$$
-\partial_t u(x, t)-\nabla \cdot\left(\partial_t^{1-\alpha} \kappa_\alpha \nabla u-\boldsymbol{F} \partial_t^{1-\alpha} u\right)(x, t)=f(x, t), \quad \text { for } x \in \Omega \text { and } 0&amp;lt;t&amp;lt;T
-$$&lt;/p&gt;
-&lt;p&gt;My job was about the topics of optimization of the computing algorithms of the time-fractional diffusion equation. My work was based on the newly proposed more efficient Caputo fractional derivative numerical method for a time-fractional equation using Matlab to implement the algorithm in one and two dimensions. And I convert the Matlab code to C++, integrate it with the original code of the second-order accurate scheme algorithms, and test it. This work has succeeded in reducing the complexity of the code from $O(N_{T}N_{S})$ to $O(N_{S} \cdot logN_{T})$ in dimensions 1 and 2 and significantly reduces the space complexity.&lt;/p&gt;
-&lt;p&gt;However, due to certain reason and time restriction of the project. We only accomplished the code transfer and we trying to improve our merged algorithms in the future.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Joe Hisaishi Concert</title>
-      <link>https://example.com/talk/joe-hisaishi-concert/</link>
-      <pubDate>Sat, 07 May 2022 20:00:00 +0000</pubDate>
-      <guid>https://example.com/talk/joe-hisaishi-concert/</guid>
-      <description>&lt;p&gt;从小到大我一直非常喜欢久石让，可能是因为学钢琴的缘故，在厌倦了枯燥的练习曲后，久石让的音乐总能够给我平静和安慰。无论是从《天空之城》还是到《Summer》，自己也一直希望能够用机会能够去现场听一次。虽然这次只是幽灵公主中的配乐，而且是常规巡演，因此音乐会质量肯定算不上完美，但是我觉得还是一次难忘的经历。&lt;/p&gt;
-&lt;p&gt;Sony相机的收音效果还是不错的，没有外接设备的情况下录的音质和视频质量也说的过去。我带耳机听还是觉得相当震撼的。&lt;/p&gt;
-</description>
+&lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
       <title>Courses Lists</title>
       <link>https://example.com/post/getting-started/</link>
-      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://example.com/post/getting-started/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
 &lt;ol&gt;
@@ -140,15 +54,43 @@ $$&lt;/p&gt;
 &lt;h2 id=&#34;courses&#34;&gt;Courses&lt;/h2&gt;
 &lt;h4 id=&#34;maa201---reduction-of-endomorphisms-abstract-algebra&#34;&gt;MAA201 - Reduction of Endomorphisms (Abstract Algebra)&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Introduction:&lt;/font&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Introduction:&lt;/font&gt;&lt;/em&gt; In this course we will introduce the basic concepts in abstract algebra.
+&lt;ul&gt;
+&lt;li&gt;Basic notions of groups, rings and their ideals, commutative fields (3 weeks)&lt;/li&gt;
+&lt;li&gt;arithmetics of the set of integers, ideals of the set of integers (2 weeks)&lt;/li&gt;
+&lt;li&gt;Basic notions of polynomials, Euclidean division (d’Alembert-Gauss fundamental theorem of algebra is admitted) (2 weeks)&lt;/li&gt;
+&lt;li&gt;Basic matrix reduction: eigenvalues, eigenspaces, characteristic polynomial, diagonalization and trigonalization (4 weeks)&lt;/li&gt;
+&lt;li&gt;Advanced matrix reduction: minimal polynomial, the kernel lemma, characteristic spaces, Cayley-Hamilton theorem, Dunford reduction of a matrix. No Jordan reduction (3 weeks)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Reference:&lt;/font&gt;&lt;/em&gt; Here is the course page of &lt;a href=&#34;https://webusers.imj-prg.fr/~jan.nekovar/co/algar/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Algèbre et arithmétique&lt;/a&gt; from Sorbonne University second year course. The textbook in this courses in really detailed in explaination and information, also more organized. You can also find some TD in the course page but however is much easier than the Exercise at l&amp;rsquo;X.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;maa202---topology-and-multivariables&#34;&gt;MAA202 - Topology and Multivariables&lt;/h4&gt;
+&lt;h4 id=&#34;maa202---topology-and-multivariables-calculus&#34;&gt;MAA202 - Topology and Multivariables Calculus&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Introduction:&lt;/font&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Introduction:&lt;/font&gt;&lt;/em&gt; The goal of this course is to extend notions of analysis in $\mathbf{R}$, $\mathbf{C}$ and of calculus in $\mathbf{R}$ seen in the first year (mainly in MAA102 and MAA105) to notions of analysis in normed vector spaces and of calculus in $\mathbf{R}^d$, $d\in \mathbf{N}$. Throughout the semester we will discuss the following topics:
+&lt;ul&gt;
+&lt;li&gt;topology, convergence of sequences, continuity and compactness;&lt;/li&gt;
+&lt;li&gt;important properties concerning the particular case of finite dimensional vector spaces,&lt;/li&gt;
+&lt;li&gt;differentiability in finite dimensional vector spaces and tools to compute the extrema of functions of several variables,&lt;/li&gt;
+&lt;li&gt;some notions of integrals of functions of several variables.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Reference:&lt;/font&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;cse203---proof-and-logic-coq&#34;&gt;CSE203 - Proof and Logic (Coq)&lt;/h4&gt;
+&lt;h4 id=&#34;maa203---introduction-to-statistics&#34;&gt;MAA203 - Introduction to Statistics&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Introduction:&lt;/font&gt;&lt;/em&gt; This is the introduction course of probability and statistics at Ecole Polytechnique. In bachelor program of Ecole Polytechnique, you will learn statistics later after this course and in third year you will learn about Asymptotic Statistics provided by &lt;a href=&#34;https://en.wikipedia.org/wiki/%C3%89ric_Moulines&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. E. Moulines&lt;/a&gt; and Stochastic Processes by &lt;a href=&#34;https://ieor.berkeley.edu/people/thibaut-mastrolia/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. T. Mastrolia&lt;/a&gt;. You can find some important information and material which is helpful for this course.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Chapters:&lt;/font&gt;&lt;/em&gt; Here are the chapters of this course.
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 1 - Discrete Probability Spaces:&lt;/strong&gt; In this chapter, you will know the definition and basic concept of DPS, also we will introduce some combinatorial calculus and conditioning, independence those baisc knowledge in Probability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 2 - Random Variables:&lt;/strong&gt; The main content of this chapter is about some basic concepts of RV in DPS, such as Joint densites and marginal densitis, expecation, Variance, Covariance, PDF, CDF, MGF of the random variable. Also we will try to see $L^{P}$ spaces this concept in this chapter.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 3 - General Probability spaces adn random variables:&lt;/strong&gt; Since in the last chapter we only discuss the situation in DPS. In this chapter we will expend those concepts into absolution continuous random variables.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 4 - Convergence of random variables and law of large numbers:&lt;/strong&gt; For the last chapter, we will introduce different types convergence for absolute continuous variable and learn about laws of large numbers. Also we will talk a little bit about Monte carlo methods at the end of the courses.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Reference:&lt;/font&gt;&lt;/em&gt; The professor of this course is the worst that I ever seen in l&amp;rsquo;X. So I collected some material that might be helpful. The first note in written by me which contains most important definition and proposition of the course. Also I add some extra important points or conclusion I learned while I do the TD and cheat sheet of Expectatioin, variance, CDF, PDF, MGF of common distributions. You can find the notes from this &lt;a href=&#34;&#34;&gt;link&lt;/a&gt;. Also, I have some recommendation of material for this course. You can find &lt;a href=&#34;https://github.com/xitongsys/ML/blob/master/books/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%28%E6%B5%99%E5%A4%A7%E5%9B%9B%E7%89%88%29.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;概率论与数理统计（浙大第四版)&lt;/a&gt; and &lt;a href=&#34;http://julio.staff.ipb.ac.id/files/2015/02/Ross_8th_ed_English.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A First Course in Prabability&lt;/a&gt; by Sheldon Ross. All of them are really classical textbook for probability. However, MAA203 in l&amp;rsquo;X is really theoretical and you have to prove a lot basic definition or proposition in thie course. Also, you can find this &lt;a href=&#34;http://gerin.perso.math.cnrs.fr/Enseignements/PolyX-HEC.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Textbook&lt;/a&gt; from X-HEC DSBA program by &lt;a href=&#34;http://gerin.perso.math.cnrs.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lucas Gerin&lt;/a&gt; who is also our professor for MAA205-Algorithms for Discrete Mathematics. And here is my &lt;a href=&#34;https://drive.google.com/file/d/18M1Wr7A3tkJwDE0gYl8pPRmwUeL3IOe4/view?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;notes&lt;/a&gt; which collected all the basic concepts and important proposition from courses and exercises and a &lt;a href=&#34;https://scholar.harvard.edu/files/charlescywang/files/basic_statistics_and_probability_for_econometrics_econ_270a.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;collection of concepts&lt;/a&gt; in probability and statistics from Harvard University which is really useful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;cse203---proof-and-logic-formal-language-1---coq-and-ocaml-programming&#34;&gt;CSE203 - Proof and Logic (Formal Language 1 - Coq and OCaml Programming)&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Introduction:&lt;/font&gt;&lt;/em&gt;&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;&lt;font color=Blue&gt;Reference:&lt;/font&gt;&lt;/em&gt; Since it&amp;rsquo;s really hard to get some good material explaining $Coq$. You can find &lt;a href=&#34;https://www.cs.cornell.edu/courses/cs3110/2018sp/a5/coq-tactics-cheatsheet.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this material&lt;/a&gt; provided by Cornell. Also you can find &lt;a href=&#34;https://cs3110.github.io/textbook/cover.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CS3110 - OCaml Programming: Correct + Efficient + Beautiful&lt;/a&gt; from Cornell University which is much more comprehensive and organized courses about $Coq$ and $OCaml$.&lt;/li&gt;
@@ -409,6 +351,189 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Pricing an option with binomial models</title>
+      <link>https://example.com/project/107/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/107/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;The objective is to study how can we apply binomial models in the pricing of some financial products like saving, stocks and options.&lt;/p&gt;
+&lt;p&gt;In the first part of the project we discuss more general situations about the non-risky products like savings and risky products like stocks which evolve randomly with respect to time. Then in the second part of the project, we gonna discuss options in different time periods and give the general case with more details.&lt;/p&gt;
+&lt;p&gt;At the end of the project, we give another expression and our conclusion and remarks.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;general-assumptions-and-underlying-models&#34;&gt;General assumptions and underlying models&lt;/h2&gt;
+&lt;p&gt;To begin with, we assume that all the financial assets in our problem can be infinitely divided. Also, we regard that they can be sold even if the agent does not have them. That is, we can own actually negative units of a certain financial asset. In our project, we will always consider a simple financial market that only contains the following three types of financial assets:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Non-risky products (savings in particular) with an interest $r$.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Risky products (stocks in particular) which evolves randomly with respect to time.&lt;/strong&gt;
+We can model the price of stocks (denoted by S) in the following way. Assume at each step, the price will either be multiplied by a scalar u ($ u \geq 1$), or be multiplied by another scalar d ($d \leq 1$). To note that  this process is assumed to be perfectly fair. That is to say, the price will either go through a fixed rising process or a fixed decreasing process and the probability of which is equal. We denote the rising process as  H  and the decreasing process as  T  and use them to manifest the index of the price. For instance, if the price first went up, then went down for successively two times, we can denote the index as (H, T, T). The figure below gives a more complete example. We will denote $\Omega$ as the set of all the possible indices at the last stage involved in the process. We have:
+
+   $$
+   \Omega=\left\{\begin{array}{l}
+   \{H H, H T, T H, T T\}, \text { after two steps } \\
+   \{H H H, H H T, H T H, H T T, T H H, T H T, T T H, T T T\}, \text { after three steps }
+   \end{array}\right.
+   $$
+   
+If $\omega$ is an element of $\Omega$, we will denote $\omega_{k}$ as the $k^{th}$ component of $\omega$. The price of the stock with all the possible outcomes up to two steps with $S_0=4$, $u=2$ and $d=\frac{1}{2}$ is given below:
+&lt;img src=&#34;pic1.png&#34;&gt;
+Here $S_n(\omega)=p \times S_{n-1}(\omega-\omega_n)$, where $p=2$ if ${\omega_n}=H$ and $p=\frac{1}{2}$ if ${\omega_n}=T$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Another risky product: option.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We will consider a European option, which is, by definition, a version of an options contract that limits execution to its expiration date. In other words, if the underlying security has moved in price, an investor would not be able to exercise the option early and take delivery of or sell the shares. If the strike price of an option is denoted by K and the expiration is n years, our final payoff of such a call option denoted by $V_{n}$ will satisfy that $V_{n}(\omega) = max{0, S_{n}(\omega)-K}$. Indeed, under an index $\omega$ of the stock price, if the price is higher than the strike price, we will sell the stocks and get some money, if the price is lower than the strike price, the best choice is obviously to do nothing as one will lose money otherwise.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;, &lt;code&gt;Tianli Xu&lt;/code&gt;, &lt;code&gt;Zhuoya Zhang&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Collected Game Website</title>
+      <link>https://example.com/project/104/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/104/</guid>
+      <description>&lt;p&gt;CSE104 is the courses held by Professor Rohmer Damien at Ecole Polytechnique. And this is the final project related to this course. In this project, we tried to create an integrated website by using HTML, CSS and Javascript, with a recreation of the classic trivia game with those tools.&lt;/p&gt;
+&lt;h2 id=&#34;website&#34;&gt;Website&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://project.frankutils.xyz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://imagecomputing.net/damien.rohmer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rohmer Damien&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/frank2002&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junyuan Wang&lt;/a&gt;, &lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
+&lt;p&gt;VScode, HTML, CSS, Javascript&lt;/p&gt;
+&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;Copyright by Yubo Cai and Junyuan Wang&lt;/p&gt;
+&lt;iframe id=&#34;myframe&#34;
+      src=&#34;https://docdro.id/Z02e8Wp&#34;
+      width=&#34;100%&#34; height=&#34;800&#34; frameborder=&#34;1&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lossy Image Compression</title>
+      <link>https://example.com/project/example/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/example/</guid>
+      <description>&lt;h1 id=&#34;cse102-advanced-programming-final-project&#34;&gt;CSE102-Advanced-Programming-Final-Project&lt;/h1&gt;
+&lt;h2 id=&#34;project-instruction&#34;&gt;Project Instruction&lt;/h2&gt;
+&lt;p&gt;The goal of this project is to develop a lossy image compression format close to JPEG. Lossy compression algorithms allow to greatly reduce the size of image files at the price of loosing some data from the original image. In general, a lossy image compression works by pruning the information the human eye is not sensible to. This is the case, for instance, in the JPEG file format.&lt;/p&gt;
+&lt;p&gt;The JPEG compression algorithm can be decomposed into several steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In theory, JPEG-based compression schemes are independent of the image color-space (e.g. Red-Green-Blue). However the best rates of compression are obtained in a color space that separates the light-intensity (luminance) from the color information (chrominance). Indeed, the human eye is quite sensitive to luminance but little to chrominance and we can then afford to lose more chrominance information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hence, the algorithm starts by converting the original image from its initial RGB (Red-Green-Blue) colorimetric model towards the YCbCr model of type luminance/chrominance. In this model, Y is the information of luminance, and Cb and Cr give chrominance values, respectively the blue minus Y and the red minus Y.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;This low sensitivity of the human eye to chrominance is exploited by performing a subsampling of the color signals. The principle of the operation is to reduce the size of several blocks of chrominance in a single value.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The image is then split into blocks of 8×8 subpixels.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A 2D DCT (Discrete Cosine Transform) is then applied to each block. The DCT is a variant of the Fourier transform. It decomposes a block, considered as a function in two variables, into a sum of cosine functions. Each block is thus described in a map of frequencies and amplitudes rather than in pixels and color information.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Then, a quantization step takes place. The quantization consists in dividing the DCT matrix by another one, called quantization matrix. The goal here is to attenuate the high frequencies, i.e. those to which the human eye is very insensitive. These frequencies have low amplitudes, and they are further attenuated by quantization (some coefficients are even often reduced to 0).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, each block is coded using a variation of the Run-length encoding associated with an arithmetic coding – both are lossless data compression algorithm.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;project-schedule&#34;&gt;Project Schedule&lt;/h2&gt;
+&lt;p&gt;The goal of this project is to write a JPEG-like image encoder/decoder. This is a 3-week project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;during the first week, we will focus on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;loading / saving image files,&lt;/li&gt;
+&lt;li&gt;converting images between the RGB &amp;amp; the YCbCr color space, and&lt;/li&gt;
+&lt;li&gt;performing channels subsampling.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;during the second week, we will focus on the DCT transform, and&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;during the third week, we will consider the RLE &amp;amp; arithmetic coding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.strub.nu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pierre-Yves Strub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
+&lt;p&gt;VScode, Python, Numpy, matplotlib, mathematical analysis&lt;/p&gt;
+&lt;p&gt;In this project, you need some basic knowledge about Linear Algebra like &lt;strong&gt;Matrix multplication&lt;/strong&gt; and &lt;strong&gt;Fouier Transformation&lt;/strong&gt;. However &lt;strong&gt;Numpy&lt;/strong&gt; is forbiddened in this project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Research Porject about Acceleration of the solution of Fractional Diffusion Equations in time</title>
+      <link>https://example.com/project/inria/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/inria/</guid>
+      <description>&lt;p&gt;This research project is under the supervision of Professor Olivier about his new method and algorithms in the numerical solution of time-fractional diffusion equation. Our overall thinking is based on these two papers: &lt;a href=&#34;https://arxiv.org/abs/2106.14146&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper1&lt;/a&gt; and &lt;a href=&#34;https://www.cambridge.org/core/journals/communications-in-computational-physics/article/abs/fast-evaluation-of-the-caputo-fractional-derivative-and-its-applications-to-fractional-diffusion-equations/AF5FDC74FD7A010ED0ACD291BB1A92B1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;paper2&lt;/a&gt;. Professor has already accomplished the algorithms in paper1 with a complexity of $O(N_{T}N_{S})$ and has been tested in multiple dimensions in C++. However, the paper2 came up an new algorithms with higher effiency and complexity. The algorithms is accomplished in Matlab.&lt;/p&gt;
+&lt;p&gt;$$
+\partial_t u(x, t)-\nabla \cdot\left(\partial_t^{1-\alpha} \kappa_\alpha \nabla u-\boldsymbol{F} \partial_t^{1-\alpha} u\right)(x, t)=f(x, t), \quad \text { for } x \in \Omega \text { and } 0&amp;lt;t&amp;lt;T
+$$&lt;/p&gt;
+&lt;p&gt;My job was about the topics of optimization of the computing algorithms of the time-fractional diffusion equation. My work was based on the newly proposed more efficient Caputo fractional derivative numerical method for a time-fractional equation using Matlab to implement the algorithm in one and two dimensions. And I convert the Matlab code to C++, integrate it with the original code of the second-order accurate scheme algorithms, and test it. This work has succeeded in reducing the complexity of the code from $O(N_{T}^{2}N_{S})$ to $O(N_{S} \cdot logN_{T})O(\log^{2}N_{T})$ in dimensions 1 and 2 and significantly reduces the space complexity.&lt;/p&gt;
+&lt;p&gt;However, due to certain reason and time restriction of the project. We only accomplished the code transfer and we trying to improve our merged algorithms in the future.&lt;/p&gt;
+&lt;p&gt;We are also very curious about the application of this algorithm in the field of financial mathematics and quantitative finance. Many option-related models ultimately boil down to a diffusion equation, which is a partial differential equation. So the two algorithms have a high similarity, for example, by the two numerical methods Monte Carlo or finite differnece.&lt;/p&gt;
+&lt;p&gt;Diffusion Equation:
+$$
+\frac{\partial \phi(\mathbf{r}, t)}{\partial t}=\nabla \cdot[D(\phi, \mathbf{r}) \nabla \phi(\mathbf{r}, t)]
+$$
+Spatial derivatives are replaced by finite differences:
+$$
+\frac{d f}{d x} \rightarrow \frac{f(x+\Delta x)-f(x-\Delta x)}{2 \Delta x} .
+$$
+Similarly for time derivatives:
+$$
+\frac{d Q}{d t} \rightarrow \frac{Q^{n+1}-Q^{n-1}}{2 \Delta t}=F^n
+$$
+This can immediately be solved for $Q^{n+1}$ :
+$$
+Q^{n+1}=Q^{n-1} \cdot 2\Delta t F^{n}
+$$
+Ito&amp;rsquo;s lemma: If there is a Wiener process $X$ and a normally distributed increment $dX$ with mean 0 and variance $dt$, then the function $F(X)$ of the increment can be expressed by a Taylor second-order expansion as
+$$
+d F=\frac{d F}{d X} d X+\frac{1}{2} \frac{d^2 F}{d X^2} d t
+$$
+More strictly,
+$$
+d f\left(t, X_t\right)=\left(\frac{\partial f}{\partial t}+\mu_t \frac{\partial f}{\partial x}+\frac{\sigma_t^2}{2} \frac{\partial^2 f}{\partial x^2}\right) d t+\sigma_t \frac{\partial f}{\partial x} d B_t .
+$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Joe Hisaishi Concert</title>
+      <link>https://example.com/talk/joe-hisaishi-concert/</link>
+      <pubDate>Sat, 07 May 2022 20:00:00 +0000</pubDate>
+      <guid>https://example.com/talk/joe-hisaishi-concert/</guid>
+      <description>&lt;p&gt;从小到大我一直非常喜欢久石让，可能是因为学钢琴的缘故，在厌倦了枯燥的练习曲后，久石让的音乐总能够给我平静和安慰。无论是从《天空之城》还是到《Summer》，自己也一直希望能够用机会能够去现场听一次。虽然这次只是幽灵公主中的配乐，而且是常规巡演，因此音乐会质量肯定算不上完美，但是我觉得还是一次难忘的经历。&lt;/p&gt;
+&lt;p&gt;Sony相机的收音效果还是不错的，没有外接设备的情况下录的音质和视频质量也说的过去。我带耳机听还是觉得相当震撼的。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Slides</title>
       <link>https://example.com/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
@@ -643,24 +768,42 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>MAA203 - Introduction to Statistics</title>
-      <link>https://example.com/post/statistic/</link>
+      <title>CSE202 - Design and Analysis of Algorithms</title>
+      <link>https://example.com/post/cse202/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/statistic/</guid>
+      <guid>https://example.com/post/cse202/</guid>
       <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;This is the introduction course of probability and statistics at Ecole Polytechnique. In bachelor program of Ecole Polytechnique, you will learn statistics later after this course and in third year you will learn about Asymptotic Statistics provided by &lt;a href=&#34;https://en.wikipedia.org/wiki/%C3%89ric_Moulines&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. E. Moulines&lt;/a&gt; and Stochastic Processes by &lt;a href=&#34;https://ieor.berkeley.edu/people/thibaut-mastrolia/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. T. Mastrolia&lt;/a&gt;. You can find some important information and material which is helpful for this course.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;chapter&#34;&gt;Chapter&lt;/h2&gt;
+&lt;p&gt;This course discusses the design and analysis of algorithms. It insists on important paradigms in algorithm design, illustrating the ideas through many examples and introducing data structures when needed. As much as possible, the examples will be implemented in Python, with which the students will experiment.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;instructor&#34;&gt;Instructor&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Chapter 1 - Discrete Probability Spaces:&lt;/strong&gt; In this chapter, you will know the definition and basic concept of DPS, also we will introduce some combinatorial calculus and conditioning, independence those baisc knowledge in Probability.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Chapter 2 - Random Variables:&lt;/strong&gt; The main content of this chapter is about some basic concepts of RV in DPS, such as Joint densites and marginal densitis, expecation, Variance, Covariance, PDF, CDF, MGF of the random variable. Also we will try to see $L^{P}$ spaces this concept in this chapter.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Chapter 3 - General Probability spaces adn random variables:&lt;/strong&gt; Since in the last chapter we only discuss the situation in DPS. In this chapter we will expend those concepts into absolution continuous random variables.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Chapter 4 - Convergence of random variables and law of large numbers:&lt;/strong&gt; For the last chapter, we will introduce different types convergence for absolute continuous variable and learn about laws of large numbers. Also we will talk a little bit about Monte carlo methods at the end of the courses.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.bliudze.me/simon/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bliudze Simon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lix.polytechnique.fr/~cenea/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Constantin Enea&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;extra-reference-and-material&#34;&gt;Extra Reference and Material&lt;/h2&gt;
-&lt;p&gt;The professor of this course is the worst that I ever seen in l&amp;rsquo;X. So I collected some material that might be helpful. The first note in written by me which contains most important definition and proposition of the course. Also I add some extra important points or conclusion I learned while I do the TD and cheat sheet of Expectatioin, variance, CDF, PDF, MGF of common distributions. You can find the notes from this &lt;a href=&#34;&#34;&gt;link&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Also, I have some recommendation of material for this course. You can find &lt;a href=&#34;https://github.com/xitongsys/ML/blob/master/books/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%28%E6%B5%99%E5%A4%A7%E5%9B%9B%E7%89%88%29.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;概率论与数理统计（浙大第四版)&lt;/a&gt; and &lt;a href=&#34;http://julio.staff.ipb.ac.id/files/2015/02/Ross_8th_ed_English.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A First Course in Prabability&lt;/a&gt; by Sheldon Ross. All of them are really classical textbook for probability. However, MAA203 in l&amp;rsquo;X is really theoretical and you have to prove a lot basic definition or proposition in thie course. Also, you can find this &lt;a href=&#34;http://gerin.perso.math.cnrs.fr/Enseignements/PolyX-HEC.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Textbook&lt;/a&gt; from X-HEC DSBA program by &lt;a href=&#34;http://gerin.perso.math.cnrs.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lucas Gerin&lt;/a&gt; who is also our professor for MAA205-Algorithms for Discrete Mathematics.&lt;/p&gt;
+&lt;h3 id=&#34;chapter&#34;&gt;Chapter&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 1:&lt;/strong&gt; Overview and Basics
+&lt;ul&gt;
+&lt;li&gt;Week 1. Binary Powering, Correctness, Complexity, Lower Bounds, Reductions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 2:&lt;/strong&gt; Divide and Conquer
+&lt;ul&gt;
+&lt;li&gt;Week 2. Divide and Conquer 1 - Karatsuba’s Algorithm for polynomial and integers, matrix multiplication&lt;/li&gt;
+&lt;li&gt;Week 3. Divide and Conquer 2 - Rankings, Selection&lt;/li&gt;
+&lt;li&gt;Week 4. Divide and Conquer 3 - Master Theorem and Advanced &amp;ldquo;Conquer&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 3:&lt;/strong&gt; Randomization
+&lt;ul&gt;
+&lt;li&gt;Week 5. Randomization 1 - Freivalds&amp;rsquo; algorithm, Mincut, Quicksort&lt;/li&gt;
+&lt;li&gt;Week 6. Randomization 2 - Hashing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 4:&lt;/strong&gt; Amortization, balancing&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Chapter 5:&lt;/strong&gt; P vs NP. Approximation algorithms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;extra-reference-and-material&#34;&gt;Extra Reference and Material&lt;/h3&gt;
 </description>
     </item>
     
@@ -669,11 +812,75 @@ $$&lt;/p&gt;
       <link>https://example.com/post/algorithms_for_discrete_math/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.com/post/algorithms_for_discrete_math/</guid>
-      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;This is the advanced course of MAA103-Discrete Mathematics and we trying to use programming to apply some algorithms in discrete mathematics.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;chapter&#34;&gt;Chapter&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This is the advanced course of MAA103-Discrete Mathematics and we trying to use programming to apply some algorithms in discrete mathematics.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Here are some information of the course&lt;/p&gt;
+&lt;h3 id=&#34;instructor&#34;&gt;Instructor&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gerin.perso.math.cnrs.fr/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lucas Gerin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MAA106 - Introduction to Numerical Analysis&lt;/li&gt;
+&lt;li&gt;MAA104 - Algebra&lt;/li&gt;
+&lt;li&gt;MAA103 - Discrete Mathematics&lt;/li&gt;
+&lt;li&gt;CSE101 - Computer Programming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;chapter&#34;&gt;Chapter&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Part A - &lt;a href=&#34;https://github.com/yubocai-poly/Algorithms-for-Discrete-Mathematics/blob/main/Part_A/MAA205_Notebook_1.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Graphs and Matrices&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Mathematical Toolbox:
+&lt;ul&gt;
+&lt;li&gt;Graphs and Matrices&lt;/li&gt;
+&lt;li&gt;Probabilistic graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python Notebooks
+&lt;ul&gt;
+&lt;li&gt;Enumeration in graphs&lt;/li&gt;
+&lt;li&gt;Probabilistic graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Part B - &lt;a href=&#34;&#34;&gt;Symbolic Computation&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Mathematical Toolbox:
+&lt;ul&gt;
+&lt;li&gt;Generating functions and polynomials&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python Notebooks:
+&lt;ul&gt;
+&lt;li&gt;Introduction to the &lt;strong&gt;SymPy&lt;/strong&gt; library&lt;/li&gt;
+&lt;li&gt;Solving equations with &lt;strong&gt;SymPy&lt;/strong&gt;. Proofs with &lt;strong&gt;SymPy&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Generating functions with &lt;strong&gt;SymPy&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Part C - Experimental Mathematics
+&lt;ul&gt;
+&lt;li&gt;Mathematical Toolbox:
+&lt;ul&gt;
+&lt;li&gt;Dynamics and asymptotics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Python Notebooks:
+&lt;ul&gt;
+&lt;li&gt;Prime numbers, factorization of integers&lt;/li&gt;
+&lt;li&gt;Arithmetic of square roots. Arithmetic of modulos&lt;/li&gt;
+&lt;li&gt;Numbers and dynamics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;reference&#34;&gt;Reference&lt;/h3&gt;
+&lt;p&gt;Here is a great textbook (available at Polytechnique&amp;rsquo;s library) that covers the 3 lectures: &lt;a href=&#34;https://www.csie.ntu.edu.tw/~r97002/temp/Concrete%20Mathematics%202e.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Concrete Mathematics: A Foundation for Computer Science. R.Graham, D.E.Knuth, O.Patashnik&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, this book is too broad. If you want to get to know this course more quickly. Here you can access the &lt;a href=&#34;https://github.com/yubocai-poly/Algorithms-for-Discrete-Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;github repository&lt;/a&gt;, where the course is consist of Tutorial in Jupyter Notebook and Lecture. For lecture information you can find my lecture notes token from courses for each chapter from the link above.&lt;/p&gt;
 </description>
     </item>
     
