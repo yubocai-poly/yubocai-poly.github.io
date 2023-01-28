@@ -5,12 +5,20 @@
     <link>https://example.com/tag/computational-mathematics/</link>
       <atom:link href="https://example.com/tag/computational-mathematics/index.xml" rel="self" type="application/rss+xml" />
     <description>Computational Mathematics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
       <title>Computational Mathematics</title>
       <link>https://example.com/tag/computational-mathematics/</link>
     </image>
+    
+    <item>
+      <title>Algorithms for Numerical Analysis of Catalan Numbers</title>
+      <link>https://example.com/project/205/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/205/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Research Porject about Acceleration of the solution of Fractional Diffusion Equations in time</title>

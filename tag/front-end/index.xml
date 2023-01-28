@@ -5,12 +5,26 @@
     <link>https://example.com/tag/front-end/</link>
       <atom:link href="https://example.com/tag/front-end/index.xml" rel="self" type="application/rss+xml" />
     <description>Front-End</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
       <title>Front-End</title>
       <link>https://example.com/tag/front-end/</link>
     </image>
+    
+    <item>
+      <title>Rigorous Proof of Frobenius Reduction</title>
+      <link>https://example.com/project/201/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/201/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;This work is originally from the Homework of the abstract algebra course at Ecole Polytechnique for &lt;strong&gt;MAA201-Reduction of Endomorphisms&lt;/strong&gt;. And I spend this work on this project.&lt;/p&gt;
+&lt;p&gt;In the first part you can see some rigorous proof of &lt;strong&gt;Gauss’s Lemma&lt;/strong&gt; and &lt;strong&gt;Eisenstein’s Criterion&lt;/strong&gt;, and some application in the analysis of the reducibility of the monic polynomials.&lt;/p&gt;
+&lt;p&gt;And in the second part, we will see the proof of &lt;strong&gt;Frobenius Reduction&lt;/strong&gt; which in French is &lt;strong&gt;Decomposition de Frobenius&lt;/strong&gt;. Since there is no really detailed proof of this in English so here you can find the Lemma and proof relatively in order to prove this theorem.&lt;/p&gt;
+&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     
     <item>
       <title>Collected Game Website</title>
@@ -20,7 +34,7 @@
       <description>&lt;p&gt;CSE104 is the courses held by Professor Rohmer Damien at Ecole Polytechnique. And this is the final project related to this course. In this project, we tried to create an integrated website by using HTML, CSS and Javascript, with a recreation of the classic trivia game with those tools.&lt;/p&gt;
 &lt;h2 id=&#34;website&#34;&gt;Website&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://project.frankutils.xyz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://webgamecse104.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
 &lt;ul&gt;
@@ -28,7 +42,8 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/frank2002&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junyuan Wang&lt;/a&gt;, &lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/frank2002&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junyuan Wang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
 &lt;p&gt;VScode, HTML, CSS, Javascript&lt;/p&gt;

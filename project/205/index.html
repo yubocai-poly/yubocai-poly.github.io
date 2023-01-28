@@ -41,8 +41,8 @@
   
     
       
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap&display=swap" media="print" onload="this.media='all'">
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
     
   
 
@@ -111,8 +111,8 @@
     
       
       
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/paraiso-light.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/paraiso-light.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
       
     
 
@@ -253,7 +253,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.9a70cd304b0ae82f7ee6af658deb4f95.css" />
+  <link rel="stylesheet" href="/css/wowchemy.c0bf96c03f60b252cd29339462beec2c.css" />
 
   
 
@@ -631,6 +631,31 @@
           
           
 
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/"><span>Resume</span></a>
+          </li>
+
+          
+          
+
         
 
           
@@ -757,7 +782,7 @@
 
 <div class="btn-links mb-3">
   
-  <a class="btn btn-outline-primary my-1" href="ff" target="_blank" rel="noopener">Go to Project Site</a>
+  <a class="btn btn-outline-primary my-1" href="https://catalan.netlify.app/" target="_blank" rel="noopener">Go to Project Site</a>
   
   
 
@@ -774,7 +799,7 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header" href="https://github.com/yubocai-poly/Algorithms-for-Discrete-Mathematics-and-Final-Project" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://drive.google.com/file/d/1zvtbcwvfCU3Eh_8UOTtTe66fCsBBrsAr/view?usp=sharing" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -785,12 +810,16 @@
   
     
   
-<a class="btn btn-outline-primary btn-page-header" href="https://github.com/yubocai-poly/Algorithms-for-Discrete-Mathematics-and-Final-Project" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/yubocai-poly/Algorithms-for-Discrete-Mathematics-and-Final-Project/blob/main/MAA205_FinalProject/Project_CatalanNumbers_Yubo_%20Cai.ipynb" target="_blank" rel="noopener">
   Code
 </a>
 
 
 
+
+<a class="btn btn-outline-primary btn-page-header" href="https://catalan.netlify.app/" target="_blank" rel="noopener">
+  Project
+</a>
 
 
 
@@ -820,77 +849,7 @@
   <div class="article-container">
 
     <div class="article-style">
-      <blockquote>
-<p>This is a blockquote.</p>
-</blockquote>
-<div class="alert alert-note">
-  <div>
-    A Markdown callout is useful for displaying notices, hints, or definitions to your readers.
-  </div>
-</div>
-<div class="alert alert-warning">
-  <div>
-    Here&rsquo;s some important information&hellip;
-  </div>
-</div>
-<h2 id="initialisation-of-the-library">Initialisation of the Library</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1">## loading python libraries</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># necessary to display plots inline:</span>
-</span></span><span class="line"><span class="cl"><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>   
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># load the libraries</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># 2D plotting library</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>              <span class="c1"># package for scientific computing  </span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="o">*</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>              <span class="c1"># package for mathematics (pi, arctan, sqrt, factorial ...)</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sympy</span> <span class="k">as</span> <span class="nn">sympy</span>             <span class="c1"># package for symbolic computation</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
-</span></span></code></pre></div><h2 id="1-computing-calatan-numbers">1. Computing Calatan Numbers</h2>
-<p>The <a href="https://en.wikipedia.org/wiki/Catalan_number">Catalan numbers</a> $c_0,c_1,c_2,\dots$ are defined recursively as follows:
-
-\begin{align*}
-c_0&=1\\
-c_1&=1\\
-c_n&=\sum_{k=0}^{n-1} c_kc_{n-1-k}=c_0c_{n-1}+c_1c_{n-2}+\dots +c_{n-1}c_0 \qquad (\text{ for }n\geq 2). \tag{$\star$}
-\end{align*}
-For example,
-\begin{align*}
-c_2&=c_0c_1+c_1c_0=1\times 1+1\times 1=2,\\
-c_3&=c_0c_2+c_1c_1+c_2c_0=1\times 2+1\times 1+2\times 1=5,\\
-\dots
-\end{align*}
-
-We use the recursive method and non-recursive method to compute $n − th$ Catalan number which <code>python</code> code. can use a Python function to compute it.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">CatalanRecursive</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">Cn</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="n">Cn</span> <span class="o">+=</span> <span class="n">CatalanRecursive</span><span class="p">(</span><span class="n">j</span><span class="p">)</span> <span class="o">*</span> <span class="n">CatalanRecursive</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">Cn</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Questions 1.2 - NonRecursive implementation of Catalan numbers</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">CatalanNonRecursive</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="n">C</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">C</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="n">C</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">            <span class="n">C</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">C</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">C</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">C</span><span class="p">[</span><span class="n">n</span><span class="p">]</span>
-</span></span></code></pre></div>
+      
     </div>
 
     
@@ -899,6 +858,8 @@ We use the recursive method and non-recursive method to compute $n − th$ Catal
 
 
 <div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/computational-mathematics/">Computational Mathematics</a>
   
 </div>
 
@@ -1137,6 +1098,10 @@ We use the recursive method and non-recursive method to compute $n − th$ Catal
         <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
         
         <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/coq.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/cpp.min.js" crossorigin="anonymous"></script>
         
       
 
