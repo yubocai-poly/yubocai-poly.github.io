@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Financial Mathematics | Yubo CAI 蔡宇博</title>
-    <link>https://example.com/tag/financial-mathematics/</link>
-      <atom:link href="https://example.com/tag/financial-mathematics/index.xml" rel="self" type="application/rss+xml" />
-    <description>Financial Mathematics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <title>Papers | Yubo CAI 蔡宇博</title>
+    <link>https://example.com/papers/</link>
+      <atom:link href="https://example.com/papers/index.xml" rel="self" type="application/rss+xml" />
+    <description>Papers</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
-      <title>Financial Mathematics</title>
-      <link>https://example.com/tag/financial-mathematics/</link>
+      <title>Papers</title>
+      <link>https://example.com/papers/</link>
     </image>
+    
+    <item>
+      <title>Rigorous Proof of Frobenius Reduction</title>
+      <link>https://example.com/papers/201/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/papers/201/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;This work is originally from the Homework of the abstract algebra course at Ecole Polytechnique for &lt;strong&gt;MAA201-Reduction of Endomorphisms&lt;/strong&gt;. And I spend this work on this project.&lt;/p&gt;
+&lt;p&gt;In the first part you can see some rigorous proof of &lt;strong&gt;Gauss’s Lemma&lt;/strong&gt; and &lt;strong&gt;Eisenstein’s Criterion&lt;/strong&gt;, and some application in the analysis of the reducibility of the monic polynomials.&lt;/p&gt;
+&lt;p&gt;And in the second part, we will see the proof of &lt;strong&gt;Frobenius Reduction&lt;/strong&gt; which in French is &lt;strong&gt;Decomposition de Frobenius&lt;/strong&gt;. Since there is no really detailed proof of this in English so here you can find the Lemma and proof relatively in order to prove this theorem.&lt;/p&gt;
+&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
+&lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
     
     <item>
       <title>Pricing an option with binomial models</title>

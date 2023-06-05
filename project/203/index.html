@@ -625,6 +625,43 @@
           
 
           <li class="nav-item">
+            <a class="nav-link " href="/#featured"><span>Papers</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
             <a class="nav-link " href="/#contact"><span>Contact</span></a>
           </li>
 
@@ -882,7 +919,7 @@
 <h2 id="code-for-operations-and-lemma-on-weights">Code for Operations and Lemma on weights</h2>
 <hr>
 <p>This part of code are operations and Lemma on weights, we prove by induction and operations in bxor.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-coq" data-lang="coq"><span class="line"><span class="cl"><span class="kn">Lemma</span> <span class="n">weight_empty</span> <span class="o">:</span> <span class="n">weight</span> <span class="o">(</span><span class="k">fun</span><span class="o">=&gt;</span> <span class="n">0</span><span class="o">)</span> <span class="o">=</span> <span class="n">0</span><span class="o">%:</span><span class="n">B</span><span class="o">.</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-coq" data-lang="coq"><span class="line"><span class="cl"><span class="kn">Lemma</span> <span class="n">weight_empty</span> <span class="o">:</span> <span class="n">weight</span> <span class="o">(</span><span class="k">fun</span><span class="o">=&gt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">=</span> <span class="mi">0</span><span class="o">%:</span><span class="n">B</span><span class="o">.</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kn">Lemma</span> <span class="n">weight_r0</span><span class="o">:</span> <span class="n">weight_r</span> <span class="n">nil</span> <span class="o">=</span> <span class="n">bits0</span><span class="o">.</span>
 </span></span><span class="line"><span class="cl">
@@ -897,10 +934,10 @@
 <hr>
 <p>We apply contradiction to prove <strong>z2nz</strong> that if $s = 0$, then $t \neq 0$ no matter what move is made.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-coq" data-lang="coq"><span class="line"><span class="cl"><span class="kn">Lemma</span> <span class="n">z2nz</span> <span class="o">(</span><span class="n">i</span> <span class="o">:</span> <span class="k">&#39;</span><span class="n">I_p</span><span class="o">)</span> <span class="o">(</span><span class="n">s1</span> <span class="n">s2</span> <span class="o">:</span> <span class="n">state</span><span class="o">)</span> <span class="o">:</span>
-</span></span><span class="line"><span class="cl">  <span class="n">R</span> <span class="n">i</span> <span class="n">s1</span> <span class="n">s2</span> <span class="o">-&gt;</span> <span class="n">weight</span> <span class="n">s1</span> <span class="o">=</span> <span class="n">0</span><span class="o">%:</span><span class="n">B</span> <span class="o">-&gt;</span> <span class="n">weight</span> <span class="n">s2</span> <span class="o">&lt;&gt;</span> <span class="n">0</span><span class="o">%:</span><span class="n">B</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl">  <span class="n">R</span> <span class="n">i</span> <span class="n">s1</span> <span class="n">s2</span> <span class="o">-&gt;</span> <span class="n">weight</span> <span class="n">s1</span> <span class="o">=</span> <span class="mi">0</span><span class="o">%:</span><span class="n">B</span> <span class="o">-&gt;</span> <span class="n">weight</span> <span class="n">s2</span> <span class="o">&lt;&gt;</span> <span class="mi">0</span><span class="o">%:</span><span class="n">B</span><span class="o">.</span>
 </span></span></code></pre></div><p>We need to prove other two Lemma where $x \oplus x=0$ and $\forall n \in \mathbb{N}, n &lt; n, \rightarrow false$ in order to create contradiction.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-coq" data-lang="coq"><span class="line"><span class="cl"><span class="kn">Lemma</span> <span class="n">b02bnbb</span> <span class="o">(</span><span class="n">x</span> <span class="o">:</span> <span class="k">&#39;</span><span class="n">I_p</span><span class="o">)</span> <span class="o">(</span><span class="n">s</span> <span class="o">:</span> <span class="n">state</span><span class="o">):</span>
-</span></span><span class="line"><span class="cl">  <span class="n">0</span><span class="o">%:</span><span class="n">B</span> <span class="o">=</span> <span class="n">n2b</span> <span class="o">(</span><span class="n">s</span> <span class="n">x</span><span class="o">)</span> <span class="o">.+</span> <span class="n">n2b</span> <span class="o">(</span><span class="n">s</span> <span class="n">x</span><span class="o">).</span>
+</span></span><span class="line"><span class="cl">  <span class="mi">0</span><span class="o">%:</span><span class="n">B</span> <span class="o">=</span> <span class="n">n2b</span> <span class="o">(</span><span class="n">s</span> <span class="n">x</span><span class="o">)</span> <span class="o">.+</span> <span class="n">n2b</span> <span class="o">(</span><span class="n">s</span> <span class="n">x</span><span class="o">).</span>
 </span></span><span class="line"><span class="cl">  
 </span></span><span class="line"><span class="cl"><span class="kn">Lemma</span> <span class="n">ltf</span> <span class="o">(</span><span class="n">n</span> <span class="o">:</span> <span class="kt">nat</span><span class="o">):</span>
 </span></span><span class="line"><span class="cl">  <span class="n">n</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="o">-&gt;</span> <span class="bp">false</span><span class="o">.</span>
@@ -1137,7 +1174,7 @@
       
 
     
-    <script src="/js/vendor-bundle.min.0047d4febf356e7f0b988e541f50b065.js"></script>
+    <script src="/js/vendor-bundle.min.9592335d574f7a97010f99b90ad0f310.js"></script>
 
     
     
@@ -1212,7 +1249,7 @@
     
     
     
-    <script src="/en/js/wowchemy.min.15e09e1f21bd02eb4e7ddabd16b47c59.js"></script>
+    <script src="/en/js/wowchemy.min.c5f7c55d45024b8b0652c3b7a5b78007.js"></script>
 
     
     

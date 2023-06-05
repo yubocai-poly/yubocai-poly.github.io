@@ -14,9 +14,9 @@
     
     <item>
       <title>Rigorous Proof of Frobenius Reduction</title>
-      <link>https://example.com/project/201/</link>
+      <link>https://example.com/papers/201/</link>
       <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/201/</guid>
+      <guid>https://example.com/papers/201/</guid>
       <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;This work is originally from the Homework of the abstract algebra course at Ecole Polytechnique for &lt;strong&gt;MAA201-Reduction of Endomorphisms&lt;/strong&gt;. And I spend this work on this project.&lt;/p&gt;
 &lt;p&gt;In the first part you can see some rigorous proof of &lt;strong&gt;Gauss’s Lemma&lt;/strong&gt; and &lt;strong&gt;Eisenstein’s Criterion&lt;/strong&gt;, and some application in the analysis of the reducibility of the monic polynomials.&lt;/p&gt;
