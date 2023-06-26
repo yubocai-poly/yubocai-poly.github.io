@@ -5,7 +5,7 @@
     <link>https://example.com/</link>
       <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Yubo CAI 蔡宇博</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 20 May 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 20 Jun 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
       <title>Yubo CAI 蔡宇博</title>
@@ -15,7 +15,7 @@
     <item>
       <title>OCR for Chinese Characters with CNN and EfficientNet</title>
       <link>https://example.com/project/cse204/</link>
-      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/project/cse204/</guid>
       <description></description>
     </item>
@@ -23,17 +23,22 @@
     <item>
       <title>Numerical Optimization</title>
       <link>https://example.com/project/maa209/</link>
-      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/project/maa209/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Quadratization in the reachability problem for ODEs</title>
+      <title> Quadratization preprocessing for the reachability Problem</title>
       <link>https://example.com/publication/preprint/</link>
       <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/publication/preprint/</guid>
-      <description></description>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    More Information on this &lt;a href=&#34;https://yubocai-poly.github.io/intro.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
     </item>
     
     <item>

@@ -5,7 +5,7 @@
     <link>https://example.com/project/</link>
       <atom:link href="https://example.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 20 May 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 20 Jun 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
@@ -15,7 +15,7 @@
     <item>
       <title>OCR for Chinese Characters with CNN and EfficientNet</title>
       <link>https://example.com/project/cse204/</link>
-      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/project/cse204/</guid>
       <description></description>
     </item>
@@ -23,7 +23,7 @@
     <item>
       <title>Numerical Optimization</title>
       <link>https://example.com/project/maa209/</link>
-      <pubDate>Mon, 15 May 2023 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/project/maa209/</guid>
       <description></description>
     </item>
