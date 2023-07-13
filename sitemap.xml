@@ -18,6 +18,12 @@
   <url>
     <loc>https://example.com/project/maa209/</loc><lastmod>2023-06-15T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://example.com/tag/financial-mathematics/</loc><lastmod>2023-06-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://example.com/teaching/107/</loc><lastmod>2023-06-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://example.com/teaching/</loc><lastmod>2023-06-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc></loc><lastmod>2023-04-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/publication/preprint/</loc><lastmod>2023-04-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -48,14 +54,6 @@
   <url>
     <loc>https://example.com/papers/201/</loc><lastmod>2022-12-15T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://example.com/post/getting-started/</loc><lastmod>2022-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/post/</loc><lastmod>2022-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc></loc><lastmod>2022-12-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/tag/financial-mathematics/</loc><lastmod>2022-12-04T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://example.com/papers/107/</loc><lastmod>2022-12-04T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/project/104/</loc><lastmod>2022-08-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -66,12 +64,14 @@
   <url>
     <loc>https://example.com/event/</loc><lastmod>2022-05-07T20:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc></loc><lastmod>2022-05-07T20:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://example.com/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/slides/example/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/categories/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://example.com/post/cse202/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://example.com/post/algorithms_for_discrete_math/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://example.com/post/algorithms_for_discrete_math/</loc><changefreq>weekly</changefreq></url></urlset>
+    <loc>https://example.com/post/</loc><changefreq>weekly</changefreq></url></urlset>
