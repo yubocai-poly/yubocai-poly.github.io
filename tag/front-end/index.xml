@@ -5,12 +5,20 @@
     <link>https://example.com/tag/front-end/</link>
       <atom:link href="https://example.com/tag/front-end/index.xml" rel="self" type="application/rss+xml" />
     <description>Front-End</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
       <title>Front-End</title>
       <link>https://example.com/tag/front-end/</link>
     </image>
+    
+    <item>
+      <title>DQbee</title>
+      <link>https://example.com/software/dqbee/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/software/dqbee/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Rigorous Proof of Frobenius Reduction</title>
@@ -23,7 +31,7 @@
 &lt;p&gt;And in the second part, we will see the proof of &lt;strong&gt;Frobenius Reduction&lt;/strong&gt; which in French is &lt;strong&gt;Decomposition de Frobenius&lt;/strong&gt;. Since there is no really detailed proof of this in English so here you can find the Lemma and proof relatively in order to prove this theorem.&lt;/p&gt;
 &lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
 &lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+</description>
     </item>
     
     <item>
@@ -53,6 +61,14 @@
       src=&#34;https://docdro.id/Z02e8Wp&#34;
       width=&#34;100%&#34; height=&#34;800&#34; frameborder=&#34;1&#34;&gt;&lt;/iframe&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>PaperFriend-Desktop</title>
+      <link>https://example.com/software/paperfriend/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/software/paperfriend/</guid>
+      <description></description>
     </item>
     
   </channel>

@@ -5,12 +5,41 @@
     <link>https://example.com/</link>
       <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Yubo CAI 蔡宇博</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 20 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
       <title>Yubo CAI 蔡宇博</title>
       <link>https://example.com/</link>
     </image>
+    
+    <item>
+      <title>DQbee</title>
+      <link>https://example.com/software/dqbee/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/software/dqbee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title> Dissipative quadratizations of polynomial ODE systems</title>
+      <link>https://example.com/publication/dissipative/</link>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/dissipative/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Please find the webpage of the paper in this &lt;a href=&#34;https://yubocai-poly.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>INFORMS Undergraduate Scholarship</title>
+      <link>https://example.com/honor/inform/</link>
+      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/honor/inform/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>OCR for Chinese Characters with CNN and EfficientNet</title>
@@ -50,10 +79,10 @@
     </item>
     
     <item>
-      <title>PaperFriend</title>
-      <link>https://example.com/project/cse201/</link>
-      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/cse201/</guid>
+      <title>MITACS Globalink Research Scholarship</title>
+      <link>https://example.com/honor/mitacs/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/honor/mitacs/</guid>
       <description></description>
     </item>
     
@@ -153,7 +182,7 @@
 &lt;p&gt;And in the second part, we will see the proof of &lt;strong&gt;Frobenius Reduction&lt;/strong&gt; which in French is &lt;strong&gt;Decomposition de Frobenius&lt;/strong&gt;. Since there is no really detailed proof of this in English so here you can find the Lemma and proof relatively in order to prove this theorem.&lt;/p&gt;
 &lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
 &lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+</description>
     </item>
     
     <item>
@@ -195,7 +224,7 @@ Here $S_n(\omega)=p \times S_{n-1}(\omega-\omega_n)$, where $p=2$ if ${\omega_n}
 &lt;hr&gt;
 &lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
 &lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;, &lt;code&gt;Tianli Xu&lt;/code&gt;, &lt;code&gt;Zhuoya Zhang&lt;/code&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+</description>
     </item>
     
     <item>
@@ -289,6 +318,14 @@ Here $S_n(\omega)=p \times S_{n-1}(\omega-\omega_n)$, where $p=2$ if ${\omega_n}
 &lt;p&gt;VScode, Python, Numpy, matplotlib, mathematical analysis&lt;/p&gt;
 &lt;p&gt;In this project, you need some basic knowledge about Linear Algebra like &lt;strong&gt;Matrix multplication&lt;/strong&gt; and &lt;strong&gt;Fouier Transformation&lt;/strong&gt;. However &lt;strong&gt;Numpy&lt;/strong&gt; is forbiddened in this project.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>PaperFriend-Desktop</title>
+      <link>https://example.com/software/paperfriend/</link>
+      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/software/paperfriend/</guid>
+      <description></description>
     </item>
     
     <item>

@@ -5,7 +5,7 @@
     <link>https://example.com/tag/financial-mathematics/</link>
       <atom:link href="https://example.com/tag/financial-mathematics/index.xml" rel="self" type="application/rss+xml" />
     <description>Financial Mathematics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
       <title>Financial Mathematics</title>
@@ -13,10 +13,26 @@
     </image>
     
     <item>
+      <title>INFORMS Undergraduate Scholarship</title>
+      <link>https://example.com/honor/inform/</link>
+      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/honor/inform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>HEC Montreal - MATH 20604A - Linear Optimisation Models</title>
       <link>https://example.com/teaching/107/</link>
       <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/teaching/107/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MITACS Globalink Research Scholarship</title>
+      <link>https://example.com/honor/mitacs/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/honor/mitacs/</guid>
       <description></description>
     </item>
     
@@ -59,7 +75,7 @@ Here $S_n(\omega)=p \times S_{n-1}(\omega-\omega_n)$, where $p=2$ if ${\omega_n}
 &lt;hr&gt;
 &lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
 &lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;, &lt;code&gt;Tianli Xu&lt;/code&gt;, &lt;code&gt;Zhuoya Zhang&lt;/code&gt;&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
+</description>
     </item>
     
   </channel>
