@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Differential Equations | Yubo CAI 蔡宇博</title>
+    <link>https://example.com/tag/differential-equations/</link>
+      <atom:link href="https://example.com/tag/differential-equations/index.xml" rel="self" type="application/rss+xml" />
+    <description>Differential Equations</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
+      <title>Differential Equations</title>
+      <link>https://example.com/tag/differential-equations/</link>
+    </image>
+    
+    <item>
+      <title> Dissipative quadratizations of polynomial ODE systems</title>
+      <link>https://example.com/publication/dissipative/</link>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/dissipative/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Please find the webpage of the paper in this &lt;a href=&#34;https://yubocai-poly.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
