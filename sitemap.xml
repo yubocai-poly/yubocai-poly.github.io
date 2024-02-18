@@ -4,6 +4,16 @@
   
   
   <url>
+    <loc>https://example.com/honor/tacas/</loc><lastmod>2024-02-17T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://example.com/tag/financial-mathematics/</loc><lastmod>2024-02-17T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://example.com/honor/</loc><lastmod>2024-02-17T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://example.com/tags/</loc><lastmod>2024-02-17T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://example.com/</loc><lastmod>2024-02-17T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc></loc><lastmod>2023-12-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/publication/dissipative/</loc><lastmod>2023-12-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -22,11 +32,7 @@
   <url>
     <loc>https://example.com/tag/quadratization/</loc><lastmod>2023-12-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://example.com/tags/</loc><lastmod>2023-12-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc></loc><lastmod>2023-12-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/</loc><lastmod>2023-12-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/publication-type/3/</loc><lastmod>2023-12-15T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -45,10 +51,6 @@
     <loc>https://example.com/tag/front-end/</loc><lastmod>2023-10-12T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/software/</loc><lastmod>2023-10-12T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/tag/financial-mathematics/</loc><lastmod>2023-09-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://example.com/honor/</loc><lastmod>2023-09-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/honor/inform/</loc><lastmod>2023-09-26T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>

@@ -5,12 +5,20 @@
     <link>https://example.com/</link>
       <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Yubo CAI 蔡宇博</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 21 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
       <title>Yubo CAI 蔡宇博</title>
       <link>https://example.com/</link>
     </image>
+    
+    <item>
+      <title>ETAPS Student Scholarship</title>
+      <link>https://example.com/honor/tacas/</link>
+      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.com/honor/tacas/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title> Dissipative quadratizations of polynomial ODE systems</title>
