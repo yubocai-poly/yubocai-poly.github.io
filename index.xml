@@ -5,12 +5,20 @@
     <link>https://example.com/</link>
       <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Yubo CAI 蔡宇博</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 17 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 10 Apr 2024 16:30:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
       <title>Yubo CAI 蔡宇博</title>
       <link>https://example.com/</link>
     </image>
+    
+    <item>
+      <title>My first academic presentation at TACAS 2024</title>
+      <link>https://example.com/talk/my-first-academic-presentation-at-tacas-2024/</link>
+      <pubDate>Wed, 10 Apr 2024 16:30:00 +0000</pubDate>
+      <guid>https://example.com/talk/my-first-academic-presentation-at-tacas-2024/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ETAPS Student Scholarship</title>
