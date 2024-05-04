@@ -19,10 +19,420 @@
       <guid>https://example.com/publication/dissipative/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Please find the webpage of the paper in this &lt;a href=&#34;https://yubocai-poly.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.
+    Please find our paper in this &lt;a href=&#34;https://arxiv.org/abs/2311.02508&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
-</description>
+&lt;!-- &lt;figure&gt;
+  &lt;img src=&#34;elephant.jpg&#34;&gt;
+  &lt;figcaption&gt;&lt;h4&gt;An elephant at sunset&lt;/h4&gt;&lt;/figcaption&gt;
+&lt;/figure&gt; --&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&#34;color: orange; font-size: 16pt; font-family:serif&#34;&gt;Table of contents (TOC):&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#1-what-is-quadratization&#34;&gt;1. What is Quadratization?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#2-why-quadratization&#34;&gt;2. Why Quadratization?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#3-what-do-we-know-so-far&#34;&gt;3. What do we know so far?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#4-what-is-our-problem&#34;&gt;4. What is our problem?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#5-our-solution-dissipative-quadratization&#34;&gt;5. Our solution: Dissipative Quadratization&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#51-some-definitions&#34;&gt;5.1. Some definitions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#52-our-algorithm&#34;&gt;5.2. Our algorithm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#53-why-it-works&#34;&gt;5.3. Why it works?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#6-applications&#34;&gt;6. Applications&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#61-reachability-analysis&#34;&gt;6.1. Reachability analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#62-coupled-duffing-oscillators-how-far-it-can-go-with-our-package&#34;&gt;6.2. Coupled duffing oscillators (How far it can go with our package?)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#summary&#34;&gt;Summary:&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#future-work&#34;&gt;Future work:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;1-what-is-quadratization&#34;&gt;1. What is Quadratization?&lt;/h3&gt;
+&lt;p&gt;I&amp;rsquo;d like to introduce &lt;em&gt;quadratization&lt;/em&gt; from a Toy example. Consider a one-dimensional ODE system:
+$$
+x^{\prime}=x^4 \quad \text{(degree of RHS $=$ 4)}
+$$
+&lt;strong&gt;&lt;font color=&#39;orange&#39;&gt;Goal:&lt;/font&gt;&lt;/strong&gt; Add new variables that $\Rightarrow$ $\deg \leqslant 2$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#39;#218fd2&#39;&gt;Solution:&lt;/font&gt;&lt;/strong&gt; We introduce $y=x^{3}$:
+$$
+\begin{cases}
+x^{\prime}=\underline{x y} \\
+y^{\prime}=3 x^2 x^{\prime} =3 x^6 = \underline{3 y^2}
+\end{cases}
+$$
+&lt;strong&gt;&lt;font color=&#39;GREEN&#39;&gt;DONE!&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For more formal definition, please check the first section of our paper. Simply say, &lt;font color=&#39;purple&#39;&gt;quadratization&lt;/font&gt; is the technique of reducing the degree of an ODE system to 2 by introducing &lt;font color=&#39;purple&#39;&gt;new variables&lt;/font&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;2-why-quadratization&#34;&gt;2. Why Quadratization?&lt;/h3&gt;
+&lt;p&gt;Applications of Quadratization focus on chemical kinetics, systems and control, and numerical solution of ODEs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#39;purple&#39;&gt;Synthesis of chemical reaction networks:&lt;/font&gt;
+$$
+\operatorname{deg} \leqslant 2 \Rightarrow \text{bimolecular network} \Rightarrow \text{Elementary CRN (ECRN)}
+$$
+(Hemery, Fages, Soliman&amp;rsquo; 2020)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#39;purple&#39;&gt;Model order reduction:&lt;/font&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Quadratize&lt;/li&gt;
+&lt;li&gt;Use a dedicated algorithm for reducing a quadratic system&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;(Gu&amp;rsquo; 2011, Kramer&amp;amp; Willcox&amp;rsquo; 2019)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#39;purple&#39;&gt;Solving differential equations numerically:&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;(Cochelin &amp;amp; Vergez&amp;rsquo; 2009, Guillot, Cochelin, Vergez&amp;rsquo; 2019)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#39;purple&#39;&gt;Reachability analysis: &lt;/font&gt; explicit error bounds for Carleman linearization in the quadratic case&lt;/p&gt;
+&lt;p&gt;(Marcelo Forets &amp;amp; Christian Schilling 2021)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-what-do-we-know-so-far&#34;&gt;3. What do we know so far?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#218fd2&#34;&gt;Theorem:&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Every ODE system has a quadratization&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;(Appelroth&amp;rsquo; 1902, Lagutinskii&amp;rsquo; 1911)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Computing optimal quadratization is an NP-hard problem&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;(Hemery, Fages, Soliman&amp;rsquo; 2020)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;#218fd2&#34;&gt;Existing software (monomial quadratizations):&lt;/font&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;BioCham&lt;/font&gt;  (Hemery, Fages, Soliman&amp;rsquo; 2020)&lt;/p&gt;
+&lt;p&gt;Via encoding as a MAX-SAT problem. Often &lt;font color=&#34;green&#34;&gt;optimal&lt;/font&gt; but not &lt;font color=&#34;red&#34;&gt;always&lt;/font&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Qbee&lt;/font&gt;  (Bychkov, Pogudin&amp;rsquo; 2021)&lt;/p&gt;
+&lt;p&gt;Branch &amp;amp; Bound search. Optimality &lt;font color=&#34;green&#34;&gt;guaranteed&lt;/font&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4-what-is-our-problem&#34;&gt;4. What is our problem?&lt;/h3&gt;
+&lt;p&gt;We notice that many systems may lose their numerical properties after quadratization. For example, the system $x&amp;rsquo; = -x + x^3$, add a new variable $y=g_{1}(x)= x^{2}$:
+$$
+\mathcal x&amp;rsquo; = -x + xy\quad \text{ and }\quad y&amp;rsquo; = -2y + 2y^2. \tag{1} \label{eq:stable}
+$$
+We can add/subtract $y - x^2$ with any coefficients from the RHS:
+\begin{equation}
+x&amp;rsquo; = -x + xy\quad \text{and} \quad y&amp;rsquo; = -2y + 2y^2 + 12(y - x^2) = 10y - 12x^2 + 2y^2. \tag{2} \label{eq:unstable}
+\end{equation}
+We can &lt;font color=&#34;orange&#34;&gt;numerically integrate&lt;/font&gt; the system \ref{eq:stable} and \ref{eq:unstable} to see the difference.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;figure/example2_conference.png&#34;&gt;
+  &lt;figcaption&gt;&lt;h4&gt;&lt;font color=&#34;#218fd2&#34;&gt;Figure 1:&lt;/font&gt; Plot of the equation \eqref{eq:stable} and \eqref{eq:unstable} after quadratizaiton with initial condition $\mathcal{X}_0 = [x_{0}, y_{0}=x_{0}^{2}]=[0.1, 0.01]$. Simulation code in &lt;a href = &#34;https://github.com/yubocai-poly/DQbee/blob/main/Examples/Conference_pre/conference_example.ipynb&#34; style=&#34;color: #218fd2;&#34;&gt;[conference_example.ipynb]&lt;/a&gt; &lt;/h4&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The two systems are &lt;font color=&#34;red&#34;&gt;mathematically equivalent&lt;/font&gt;; however, the results obtained through &lt;font color=&#34;red&#34;&gt;numerical integration&lt;/font&gt; differ! Therefore, a natural question arises: &lt;font color=&#34;purple&#34;&gt;How to find such a quadratization that &lt;strong&gt;preserve&lt;/strong&gt; certain &lt;strong&gt;dynamical/numerical&lt;/strong&gt; properties of the &lt;strong&gt;original&lt;/strong&gt; system?&lt;/font&gt;&lt;/p&gt;
+&lt;h3 id=&#34;5-our-solution-dissipative-quadratization&#34;&gt;5. Our solution: Dissipative Quadratization&lt;/h3&gt;
+&lt;h4 id=&#34;51-some-definitions&#34;&gt;5.1. Some definitions&lt;/h4&gt;
+&lt;p&gt;First of all, what is &lt;font color=&#34;orange&#34;&gt;equilibrium&lt;/font&gt;, &lt;font color=&#34;orange&#34;&gt;dissipativity&lt;/font&gt; of an ODE system?&lt;/p&gt;
+&lt;div style=&#34;background-color: #E0E0F8; border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&#34;&gt;
+    &lt;strong&gt;&lt;font color=&#34;#e25083&#34;&gt;Definition (Equilibrium)&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;
+    For a polynomial ODE system $ \mathbf{x}&#39; = \mathbf{p}(\mathbf{x}) $, a point $ \mathbf{x}^* \in \mathbb{R}^n $ is called an &lt;em&gt;equilibrium&lt;/em&gt; if $ \mathbf{p}(\mathbf{x}^*) = \mathbf{0} $.
+&lt;/div&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Example:&lt;/font&gt; Consider
+\begin{equation}
+x^{\prime}=-x(x-1)(x-2) \tag{3} \label{eq:equilibrium}
+\end{equation}
+Set the RHS equal to $0$ $\Rightarrow$ three equilibria: $0, 1, 2$.&lt;/p&gt;
+&lt;div style=&#34;background-color: #E0E0F8; border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&#34;&gt;
+    &lt;strong&gt;&lt;font color=&#34;#e25083&#34;&gt;Definition (dissipativity)&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;
+    An ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$ is called &lt;em&gt;dissipative&lt;/em&gt; at an equilibrium point $\mathbf{x}^*$ if all the eigenvalues of the Jacobian $\left.J(\mathbf{p})\right|_{\mathbf{x}=\mathbf{x}^*}$ of $\mathbf{p}$ and $\mathbf{x}^*$ have negative real part.
+&lt;/div&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Important fact:&lt;/font&gt; Dissipativity at $\mathbf{x}^* \Rightarrow$ Asymptotic stability at $\mathbf{x}^* $. &lt;em&gt;(i.e. exponential convergence to $\mathbf{x}^*$ in a small neighbourhood)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Example:&lt;/font&gt; Among the three equilibria of \eqref{eq:equilibrium}, $x=0$ and $x=2$ are &lt;font color=&#34;green&#34;&gt;dissipative&lt;/font&gt;, while $x=1$ is &lt;font color=&#34;red&#34;&gt;not&lt;/font&gt;:
+$$
+\left.J(\mathbf{p})\right|_{x=1} = \left[-3x^2 + 6x -2\right] _{x=1} = [1]
+$$
+which has a positive real part in its eigenvalue. To illustrate this, we can plot the phase portrait of the system \eqref{eq:equilibrium} (Simulation code in &lt;a href = &#34;https://github.com/yubocai-poly/DQbee/blob/main/Examples/Conference_pre/conference_example.ipynb&#34; style=&#34;color: #218fd2;&#34;&gt;[conference_example.ipynb]&lt;/a&gt;):&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;figure/dissipative.png&#34;, width=&#34;600&#34;&gt;
+  &lt;figcaption&gt;&lt;div style=&#34;background-color: &#39;&#39;; border: 2px solid#218fd2; padding: 5px; color: red; font-family: Arial, sans-serif; font-size: 16px; border-radius: 10px;&#34;&gt;
+  Trajectory from $x_0 = 1.1$ converge to equilibrium $x = 2$ instead of $x = 1$
+  &lt;/div&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h4 id=&#34;52-our-algorithm&#34;&gt;5.2. Our algorithm&lt;/h4&gt;
+&lt;div style=&#34;background-color: #E0E0F8; border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&#34;&gt;
+    &lt;strong&gt;&lt;font color=&#34;#e25083&#34;&gt;Definition (Dissipative quadratization)&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;
+    Assume that a system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$ is dissipative at an equilibrium $\mathbf{x}^* \in \mathbb{R}^n$. Then a quadratization given by $\mathbf{y}=\mathbf{g}$ (new variables introduced), $\mathbf{q}_1$ and $\mathrm{q}_2$ is called dissipative at $\mathbf{x}^*$ if the system
+    $$
+    \mathbf{x}^{\prime}=\mathbf{q}_1(\mathbf{x}, \mathbf{y}), \quad \mathbf{y}^{\prime}=\mathbf{q}_2(\mathbf{x}, \mathbf{y})
+    $$
+    $\mathrm{s}$ dissipative at a point $\left(\mathbf{x}^*, \mathbf{g}\left(\mathbf{x}^*\right)\right)$.
+&lt;/div&gt;
+&lt;br&gt;
+&lt;div style=&#34;background-color: lightpink; border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&#34;&gt;
+    &lt;strong&gt;&lt;font color=&#34;#005083&#34;&gt;Theorem (Main theoretical result: existence)&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;
+    For every polynomial ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$, there exists a quadratization that is dissipative at all the dissipative equilibria of $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$.
+&lt;/div&gt;
+Our method mainly involves two steps. First, we transform the original system to an &lt;font color=&#34;purple&#34;&gt;inner-quadratic&lt;/font&gt; system, where the inner-quadratic is a &lt;font color=&#34;green&#34;&gt;combinatorial property&lt;/font&gt; and we will illustrate it in the following part. Then, we apply the &lt;font color=&#34;purple&#34;&gt;dissipative transformation&lt;/font&gt; to find our desired quadratization.
+&lt;figure&gt;
+  &lt;img src=&#34;figure/quadratization_process.png&#34;, width=&#34;600&#34;&gt;
+  &lt;figcaption&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+We take the following example to illustrate our algorithm: Back to $x^{\prime}=-x(x-1)(x-2)$, start with a quadratization via $y=x^{2}$:
+$$
+\begin{cases}
+x^{\prime}=-x y+3 x^2-2 x \\
+y^{\prime}=-2 y^2+6 x y-4 x^2
+\end{cases}
+$$
+The system is &lt;font color=&#34;purple&#34;&gt;not yet dissipative&lt;/font&gt; but has a &lt;font color=&#34;purple&#34;&gt;&#34;good&#34; combinatorial property:&lt;/font&gt; the new variable $y$ can be written as $x^2$ 
+&lt;p&gt;$\Rightarrow$&lt;/p&gt;
+&lt;p&gt;We can add $y-x^{2}$ &lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;(stabilizer)&lt;/font&gt;&lt;/strong&gt; to RHS:
+$$
+\begin{cases}
+x^{\prime}=-x y+3 x^2-2 x \\
+y^{\prime}=-2 y^2+6 x y-4 x^2 - \lambda\left(y-x^2\right)
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;Then we have the Jacobian of the previous system:&lt;/p&gt;
+&lt;p&gt;$$
+J=\underbrace{\left[\begin{array}{cc}
+-y+6 x-2 &amp;amp; -x \\
+6 y-8 x &amp;amp; -4 y+6 x
+\end{array}\right]}_{\textcolor{blue}{inner-quadratic}}-\underbrace{\lambda\left[\begin{array}{cc}
+0 &amp;amp; 0 \\
+-2 x &amp;amp; 1
+\end{array}\right]} _{\textcolor{blue}{stabilizer}}
+$$
+For $\lambda=1,2,4,8,\cdots$ we check the eigenvalues on equilibria $(0, 0)$ and $(2, 4)$, results summarized in the following table:&lt;/p&gt;
+&lt;div style=&#34;width: 400px; margin: auto;&#34;&gt;
+    &lt;table style=&#34;width: 100%; border-collapse: collapse;&#34;&gt;
+        &lt;tr style=&#34;background-color: rgba(173, 216, 230, 0.5);&#34;&gt;
+            &lt;th style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;$\lambda$&lt;/th&gt;
+            &lt;th style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;at (0, 0)&lt;/th&gt;
+            &lt;th style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;at (2, 4)&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;1&lt;/td&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;-2, -1&lt;/td&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;-2, &lt;font color=&#34;red&#34;&gt;3&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;2&lt;/td&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;-2, -2&lt;/td&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;-2, &lt;font color=&#34;red&#34;&gt;2&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;4&lt;/td&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;-2, -4&lt;/td&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;-2, &lt;font color=&#34;red&#34;&gt;0&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;8&lt;/td&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;-2, -8&lt;/td&gt;
+            &lt;td style=&#34;border: 1px solid black; padding: 8px; text-align: center; font-size: 14px;&#34;&gt;&lt;font color=&#34;green&#34;&gt;-2, -4&lt;/font&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;center&gt;
+&lt;div style=&#34;background-color: &#39;&#39;; border: 2px solid#218fd2; padding: 5px; color: red; font-family: Arial, sans-serif; font-size: 16px; border-radius: 10px;&#34;&gt;
+While the value of $\lambda$ increases, the eigenvalues are forced to shift to the left half-plane.
+&lt;/div&gt;
+&lt;/center&gt;
+&lt;div style=&#34;border: 1px solid #ccc; background-color: rgba(211, 211, 211, 0.2); border-radius: 10px; padding: 20px; margin: 20px;&#34;&gt;
+&lt;h3&gt;Input:&lt;/h3&gt;
+&lt;p&gt;a system $\mathbf{x}&#39; = \mathbf{p}(\mathbf{x})$ with a list of dissipative equilibria $\mathbf{x}^*_1, ..., \mathbf{x}^*_\ell$:&lt;/p&gt;
+&lt;h4&gt;Step 1&lt;/h4&gt;
+&lt;p&gt;Compute an &lt;strong&gt;inner-quadratic quadratization&lt;/strong&gt; with introduced variables $y_1 = g_1(\mathbf{x}), ..., y_m = g_m(\mathbf{x})$, $\mathbf{q}_1(\mathbf{x}, \mathbf{y})$, and $\mathbf{q}_2(\mathbf{x}, \mathbf{y})$.&lt;/p&gt;
+&lt;h4&gt;Step 2&lt;/h4&gt;
+&lt;p&gt;Construct the &lt;strong&gt;stabilizer&lt;/strong&gt; $\mathbf{h}(\mathbf{x}, \mathbf{y})$ for the quadratization and set the coefficient of stabilizer $\lambda = 1$.&lt;/p&gt;
+&lt;h4&gt;Step 3&lt;/h4&gt;
+&lt;p&gt;While True:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Construct a quadratic system $\Sigma_\lambda$
+      $$
+      \begin{aligned}
+      \mathbf{x}&#39; &amp;= \mathbf{q}_1(\mathbf{x}, \mathbf{y}) \\
+      \mathbf{y}&#39; &amp;= \mathbf{q}_2(\mathbf{x}, \mathbf{y}) - \lambda \mathbf{h}(\mathbf{x}, \mathbf{y})
+      \end{aligned}
+       $$
+    &lt;/li&gt;
+    &lt;li&gt;Check if $\Sigma_\lambda$ dissipative at $(\mathbf{x}^*_i, \mathbf{g}(\mathbf{x}^*_i))$ for every $1 \leq i \leq \ell$, if yes, return, otherwise, set $\lambda = 2\lambda$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As $\lambda$ is large enough, the system $\Sigma_\lambda$ is dissipative at all equilibria: Proofs in &lt;font color=&#34;green&#34;&gt;&lt;strong&gt;Proposition 2 and 3&lt;/strong&gt;&lt;/font&gt; in the paper.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;53-why-it-works&#34;&gt;5.3. Why it works?&lt;/h4&gt;
+&lt;p&gt;We need to come back to our &lt;font color=&#34;purple&#34;&gt;&amp;ldquo;good&amp;rdquo; combinatorial property&lt;/font&gt; mentioned before: &lt;font color=&#34;orange&#34;&gt;Inner-quadratic&lt;/font&gt;.
+$$
+\text{set of variables: } \left \lbrace \underbrace{x_{1},\cdots,x_{n}}_{\textcolor{blue}{original}}, \underbrace{g _{1},\cdots,g _{m}} _{\textcolor{blue}{introduced}} \right \rbrace
+$$
+&lt;font color=&#34;orange&#34;&gt;Inner-quadratic:&lt;/font&gt; $\forall 1 \leqslant i \leqslant m$, there exist (not necessarily distinct) $a, b \in  \left \lbrace x_1, \ldots, x_n, g_1, \ldots, g_m\right \rbrace$ such that $g_i=a b$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;Example:&lt;/font&gt;&lt;/strong&gt; $\lbrace x, g_1 = x^2, g_2 = x^4\rbrace$ ✔️ , $\lbrace x, g_1 = x^2, g_2 = x^5\rbrace$ ❌&lt;/p&gt;
+&lt;p&gt;A quadratization will be called inner-quadratic if the set of new variables $ \mathbf{g} $ is inner-quadratic.&lt;/p&gt;
+&lt;p&gt;How to find the inner-quadratic quadratization: &lt;strong&gt;Branch &amp;amp; Bound search.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;Retinal behind:&lt;/font&gt;&lt;/strong&gt;
+The quadratic relation between variables gives the flexibility to &lt;font color=&#34;orange&#34;&gt;&amp;ldquo;tune&amp;rdquo;&lt;/font&gt; the RHS, in this case, we can add the &lt;font color=&#34;purple&#34;&gt;stabilizers&lt;/font&gt; on the RHS toforce the trajectory to be stable.&lt;/p&gt;
+&lt;h3 id=&#34;6-applications&#34;&gt;6. Applications&lt;/h3&gt;
+&lt;h4 id=&#34;61-reachability-analysis&#34;&gt;6.1. Reachability analysis&lt;/h4&gt;
+&lt;p&gt;Given an ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$, a set $S \subseteq \mathbb{R}^n$ of possible initial conditions, and a time $t \in \mathbb{R}_{&amp;gt;0}$, compute a set containing the set
+$$
+\lbrace\mathbf{x}(t) \mid \mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x}) \text{ and }  \mathbf{x}(0) \in S\rbrace \subseteq \mathbb{R}^n
+$$
+of all points reachable from $S$ at time $t$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;Previous approach:&lt;/font&gt;&lt;/strong&gt; Taylor models.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;One recent approach:&lt;/font&gt;&lt;/strong&gt; Using Carleman linearization to reduce the problem to the linear case. &lt;font color=&#34;#218fd2&#34;&gt;(Forets, Schilling&amp;rsquo; 2021)&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;Restriction:&lt;/font&gt;&lt;/strong&gt; quadratic system with dissipativity and weak nonlinearity.&lt;/p&gt;
+&lt;center&gt;
+&lt;div style=&#34;background-color: &#39;&#39;; border: 2px solid#218fd2; padding: 5px; color: red; font-family: Arial, sans-serif; font-size: 16px; border-radius: 10px;&#34;&gt;
+Our algorithm relaxes the restriction!
+&lt;/div&gt;
+&lt;/center&gt;
+&lt;p&gt;Consider the &lt;font color=&#34;orange&#34;&gt;Duffing equation&lt;/font&gt;:
+$$
+x&amp;rsquo;&amp;rsquo; = x + x^3 - x&#39;
+$$
+rewrite as a first-order system by introducing $ x_1 := x, x_2 := x&amp;rsquo; $:
+$$
+x_1&amp;rsquo; = x_2, \quad x_2&amp;rsquo; = x_1 + x_1^3 - x_2.
+$$
+&lt;font color=&#34;orange&#34;&gt;Three equilibria:&lt;/font&gt; $ x^* = (0, 0), (-1, 0), (1, 0) $.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Dissipative equilibrium:&lt;/font&gt; Origin (0, 0).&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;purple&#34;&gt;Inner-quadratic quadratization:&lt;/font&gt; via a new variable $ y(x) = x_1^2 $:
+$$
+x_1&amp;rsquo; = x_2, \quad x_2&amp;rsquo; = x_1 y - x_2 + x_1, \quad y&amp;rsquo; = 2 x_1 x_2.
+$$&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;purple&#34;&gt;Dissipative quadratization:&lt;/font&gt; take $ \lambda = 1 $ and add the stabilizer:
+$$
+\begin{cases}
+x_1&amp;rsquo; = x_2, \\
+x_2&amp;rsquo; = x_1 y + x_1 - x_2, \\
+y&amp;rsquo; = -y + x_1^2 + 2 x_1 x_2
+\end{cases}
+$$&lt;/p&gt;
+&lt;p&gt;For the initial conditions $x_1(0)=0.1, x_2(0)=0.1, y(0)=x_1(0)^2=0.01$, the system satisfies dissipativity and weak nonlinearity, we apply the reachability algorithm with truncation order $N=5$:&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&#34;figure/reachability.png&#34;&gt;
+  &lt;figcaption&gt;&lt;h4&gt;&lt;font color=&#34;#218fd2&#34;&gt;Figure 2:&lt;/font&gt; Reachability analysis results with the computed trajectory (gray) and overapproximation of the reachable set (light blue). The estimate reevaluation time $t=4$.&lt;/h4&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h4 id=&#34;62-coupled-duffing-oscillators-how-far-it-can-go-with-our-package&#34;&gt;6.2. Coupled duffing oscillators (How far it can go with our package?)&lt;/h4&gt;
+&lt;p&gt;Consider a coupled duffing system with $n$ oscillators where $A \in \mathbb{R}^{n \times n}$, $\delta \in \mathbb{R}$ :
+$$
+\mathbf{x}^{\prime \prime}=A \mathbf{x}-(A \mathbf{x})^3-\delta \mathbf{x}^{\prime},
+$$&lt;/p&gt;
+&lt;p&gt;Transfer to first order: $\mathbf{z}=\left[z_1, \ldots, z_n\right]^{\top}$ for the derivatives of $\mathbf{x}$ :
+$$
+\dot{\mathbf{x}}=\mathbf{z}, \quad \mathbf{z}^{\prime}=A \mathbf{x}-(A \mathbf{x})^3-\delta \mathbf{z} .
+$$&lt;/p&gt;
+&lt;p&gt;We have &lt;font color=&#34;orange&#34;&gt;$2^n$ dissipative equilibria&lt;/font&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;purple&#34;&gt;Setting:&lt;/font&gt; $n=1, \ldots, 8$ taking $\delta=2$ and $A$ being the tridiagonal matrix with ones on the diagonal and $\frac{1}{3}$ on the adjacent diagonals.&lt;/p&gt;
+&lt;table border=&#34;1&#34; style=&#34;border-collapse: collapse; width: 100%; font-size: 15px; text-align: center;&#34;&gt;
+    &lt;caption&gt;Table: Runtimes (in seconds) for n coupled Duffing oscillators, results were obtained on a laptop with the following parameters: Apple M2 Pro CPU @ 3.2 GHz, MacOS Ventura 13.3.1, CPython 3.9.1.&lt;/caption&gt;
+    &lt;thead style=&#34;background-color: rgba(173, 216, 230, 0.5);&#34;&gt; &lt;!-- 淡蓝色背景，50%透明度 --&gt;
+        &lt;tr&gt;
+            &lt;th rowspan=&#34;2&#34;&gt;n&lt;/th&gt; &lt;!-- 合并上下行 --&gt;
+            &lt;th rowspan=&#34;2&#34;&gt;dimension&lt;/th&gt;
+            &lt;th rowspan=&#34;2&#34;&gt;# equilibria&lt;/th&gt;
+            &lt;th rowspan=&#34;2&#34;&gt;# new vars&lt;/th&gt;
+            &lt;th rowspan=&#34;2&#34;&gt;time (inner-quadratic)&lt;/th&gt;
+            &lt;th colspan=&#34;2&#34;&gt;time (dissipative)&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;NUMPY&lt;/th&gt;
+            &lt;th&gt;ROUTH-HURWITZ&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;0.02&lt;/td&gt;
+            &lt;td&gt;0.05&lt;/td&gt;
+            &lt;td&gt;0.07&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;4&lt;/td&gt;
+            &lt;td&gt;4&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;0.07&lt;/td&gt;
+            &lt;td&gt;0.19&lt;/td&gt;
+            &lt;td&gt;0.65&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;6&lt;/td&gt;
+            &lt;td&gt;8&lt;/td&gt;
+            &lt;td&gt;4&lt;/td&gt;
+            &lt;td&gt;0.20&lt;/td&gt;
+            &lt;td&gt;0.74&lt;/td&gt;
+            &lt;td&gt;36.57&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;4&lt;/td&gt;
+            &lt;td&gt;8&lt;/td&gt;
+            &lt;td&gt;16&lt;/td&gt;
+            &lt;td&gt;5&lt;/td&gt;
+            &lt;td&gt;0.39&lt;/td&gt;
+            &lt;td&gt;1.62&lt;/td&gt;
+            &lt;td&gt;1179.33&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;5&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+            &lt;td&gt;32&lt;/td&gt;
+            &lt;td&gt;7&lt;/td&gt;
+            &lt;td&gt;0.72&lt;/td&gt;
+            &lt;td&gt;4.30&lt;/td&gt;
+            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;6&lt;/td&gt;
+            &lt;td&gt;12&lt;/td&gt;
+            &lt;td&gt;64&lt;/td&gt;
+            &lt;td&gt;9&lt;/td&gt;
+            &lt;td&gt;1.20&lt;/td&gt;
+            &lt;td&gt;11.28&lt;/td&gt;
+            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;7&lt;/td&gt;
+            &lt;td&gt;14&lt;/td&gt;
+            &lt;td&gt;128&lt;/td&gt;
+            &lt;td&gt;10&lt;/td&gt;
+            &lt;td&gt;1.75&lt;/td&gt;
+            &lt;td&gt;28.23&lt;/td&gt;
+            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;8&lt;/td&gt;
+            &lt;td&gt;16&lt;/td&gt;
+            &lt;td&gt;256&lt;/td&gt;
+            &lt;td&gt;12&lt;/td&gt;
+            &lt;td&gt;2.63&lt;/td&gt;
+            &lt;td&gt;78.70&lt;/td&gt;
+            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We proved that in any dissipative equilibria of the polynomial ODE system, the dissipative quadratization exists.&lt;/li&gt;
+&lt;li&gt;We presented an algorithm capable of computing dissipative quadratization by first transforming the system into an inner-quadratic system.&lt;/li&gt;
+&lt;li&gt;We showed applications in reachability analysis and numerical simulations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;future-work&#34;&gt;Future work:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Extend the results and algorithms beyond the polynomial system&lt;/li&gt;
+&lt;li&gt;Exploring the preservation of other stability properties, such as limit cycles, attractors, and Lyapunov functions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;center&gt;
+&lt;div style=&#34;background-color: &#39;&#39;; border: 2px solid#218fd2; padding: 5px; color: red; font-family: Arial, sans-serif; font-size: 16px; border-radius: 10px;&#34;&gt;
+Package DQbee: &lt;a href = &#34;https://github.com/yubocai-poly/DQbee&#34; style=&#34;color: #218fd2;&#34;&gt;https://github.com/yubocai-poly/DQbee&lt;/a&gt;
+&lt;/div&gt;
+&lt;/center&gt;</description>
     </item>
     
   </channel>
