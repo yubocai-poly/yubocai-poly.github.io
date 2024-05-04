@@ -1061,7 +1061,7 @@ We can <font color="orange">numerically integrate</font> the system \ref{eq:stab
 <h3 id="5-our-solution-dissipative-quadratization">5. Our solution: Dissipative Quadratization</h3>
 <h4 id="51-some-definitions">5.1. Some definitions</h4>
 <p>First of all, what is <font color="orange">equilibrium</font>, <font color="orange">dissipativity</font> of an ODE system?</p>
-<div style="background-color: #E0E0F8; border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;">
+<div style="background-color: rgba(224, 224, 248, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;">
     <strong><font color="#e25083">Definition (Equilibrium)</font></strong><br>
     For a polynomial ODE system $ \mathbf{x}' = \mathbf{p}(\mathbf{x}) $, a point $ \mathbf{x}^* \in \mathbb{R}^n $ is called an <em>equilibrium</em> if $ \mathbf{p}(\mathbf{x}^*) = \mathbf{0} $.
 </div>
@@ -1070,7 +1070,7 @@ We can <font color="orange">numerically integrate</font> the system \ref{eq:stab
 x^{\prime}=-x(x-1)(x-2) \tag{3} \label{eq:equilibrium}
 \end{equation}
 Set the RHS equal to $0$ $\Rightarrow$ three equilibria: $0, 1, 2$.</p>
-<div style="background-color: #E0E0F8; border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;">
+<div style="background-color: rgba(224, 224, 248, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;>
     <strong><font color="#e25083">Definition (dissipativity)</font></strong><br>
     An ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$ is called <em>dissipative</em> at an equilibrium point $\mathbf{x}^*$ if all the eigenvalues of the Jacobian $\left.J(\mathbf{p})\right|_{\mathbf{x}=\mathbf{x}^*}$ of $\mathbf{p}$ and $\mathbf{x}^*$ have negative real part.
 </div>
@@ -1088,7 +1088,7 @@ which has a positive real part in its eigenvalue. To illustrate this, we can plo
   </figcaption>
 </figure>
 <h4 id="52-our-algorithm">5.2. Our algorithm</h4>
-<div style="background-color: #E0E0F8; border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;">
+<div style="background-color: rgba(224, 224, 248, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;">
     <strong><font color="#e25083">Definition (Dissipative quadratization)</font></strong><br>
     Assume that a system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$ is dissipative at an equilibrium $\mathbf{x}^* \in \mathbb{R}^n$. Then a quadratization given by $\mathbf{y}=\mathbf{g}$ (new variables introduced), $\mathbf{q}_1$ and $\mathrm{q}_2$ is called dissipative at $\mathbf{x}^*$ if the system
     $$
@@ -1097,7 +1097,7 @@ which has a positive real part in its eigenvalue. To illustrate this, we can plo
     $\mathrm{s}$ dissipative at a point $\left(\mathbf{x}^*, \mathbf{g}\left(\mathbf{x}^*\right)\right)$.
 </div>
 <br>
-<div style="background-color: lightpink; border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;">
+<div style="background-color: rgb(255,182,193, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;">
     <strong><font color="#005083">Theorem (Main theoretical result: existence)</font></strong><br>
     For every polynomial ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$, there exists a quadratization that is dissipative at all the dissipative equilibria of $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$.
 </div>
