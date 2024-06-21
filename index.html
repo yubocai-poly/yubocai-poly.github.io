@@ -127,6 +127,8 @@
       
         
       
+        
+      
     
     
     
@@ -281,7 +283,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.e9501cf322343cf8af8480959f19c698.css" />
+  <link rel="stylesheet" href="/css/wowchemy.8e7e38156e862a22a279c92a5e5ee833.css" />
 
   
 
@@ -565,13 +567,15 @@
 
           
           <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching and Honors</span><span class="caret"></span>
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Teaching, Courses, and Honors</span><span class="caret"></span>
             </a>
             <div class="dropdown-menu">
               
                 <a class="dropdown-item" href="/teaching/" data-target="teaching/"><span>Teaching Experience</span></a>
               
                 <a class="dropdown-item" href="/honor/" data-target="honor/"><span>Honors</span></a>
+              
+                <a class="dropdown-item" href="/courses/" data-target="courses/"><span>Courses</span></a>
               
             </div>
           </li>
@@ -917,6 +921,111 @@
 I also worked on my the project on **Dissipative quadratizations of polynomial ODE systems** at **LIX** and **CNRS** with [Prof. Gleb Pogudin](http://www.lix.polytechnique.fr/Labo/Gleb.POGUDIN/) for the whole year of 2023. Please find out our paper [[here]](https://arxiv.org/abs/2311.02508). The paper has been **<font color='orange'>accepted by</font>** [30th International Conference on Tools and Algorithms for the Construction and Analysis of Systems, TACAS 2024](https://etaps.org/2024/conferences/tacas/).
 
 During my study, I'm honoured to be awarded the **<font color='purple'>Mitacs Globalink Research Scholarship</font>** and **<font color='purple'>INFORMS Undergraduates Scholar</font>**. I am currently looking for research project/internship in Operation Research/Management Science/Computational Science. Also, I am looking for Phd position in relavant areas. -->
+<p><strong><font color='red'>REMARK.</font></strong> Here are some of my course notes from École Polytechnique, mainly focused on <strong>applied mathematics</strong>, such as <strong>numerical analysis</strong> and <strong>optimization</strong>. Click the link below to access them.</p>
+<div style="display: flex; justify-content: center; margin-top: 20px;">
+    <button class="btn" onclick="startLoading()">
+        <span class="text">
+            Course Notes
+        </span>
+        <span class="loading-animate"></span>
+    </button>
+</div>
+<style>
+    .btn {
+        background: #49D75C;
+        border: 0px solid #49D75C;
+        border-radius: 35px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        outline: none;
+        transition: all .25s ease;
+        width: 210px;
+        height: 60px;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+    }
+    .btn:not(.loading):hover {
+        box-shadow: 0px 10px 25px 0px rgba(73, 215, 92,.4);
+    }
+    .btn:not(.loading):hover .text {
+        transform: translate(7px);
+    }
+    .text {
+        font-size: 1.45rem;
+        pointer-events: none;
+        transition: all .25s ease;
+    }
+    .loading-animate {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        z-index: 100;
+        border-radius: 50%;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: none;
+        opacity: 0;
+        transition: all .25s ease;
+    }
+    .loading-animate:after {
+        content: '';
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-left: 3px solid #fff;
+        animation: loading infinite .8s ease .05s;
+        position: absolute;
+    }
+    .loading-animate:before {
+        content: '';
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        border-left: 3px solid #fff;
+        animation: loading infinite .8s linear;
+        position: absolute;
+        opacity: .6;
+    }
+    .btn.loading {
+        width: 60px;
+    }
+    .btn.loading .text {
+        transform: translate(-140px);
+    }
+    .btn.loading .loading-animate {
+        opacity: 1;
+    }
+    @keyframes loading {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<script>
+    function startLoading() {
+        const button = document.querySelector('.btn');
+        button.classList.add('loading');
+        
+        setTimeout(() => {
+            window.location.href = 'https://yubocai-poly.github.io/courses/';
+        }, 1000);
+    }
+</script>
+<br>
 <div style="border:2px solid black; padding:10px; border-radius: 10px; width: 100%; background-color: #f2f2f2;">
     <p>Hi, welcome to Yubo Cai's personal website. I am currently a bachelor student at Ecole Polytechnique double major in applied mathematics and computer sciences. I am now working on my <strong><font color='2290D7'>Bachelor Thesis</font></strong> at <strong>HEC Paris ISOM</strong> with <a href="https://vvdigalakis.github.io/">Prof. Vassilis Digalakis Jr</a> and <a href="https://www.michaellz.com/">Prof. Michael Lingzhi Li</a> from Harvard Business School on the project <strong>Featured Incremental Machine Learning</strong>. I spent my summer as a visiting research at <strong>HEC Montreal</strong> and <strong>University of Montreal</strong>, Department of Decision Sciences and Operations Research, working on the project of <strong>Mathematical Programming Methods for Semantic Web and Logical Inference</strong> and <strong>Robust Optimization in Job-shop problem</strong>.</p>
     <p>I also worked on my the project on <strong>Dissipative quadratizations of polynomial ODE systems</strong> at <strong>LIX</strong> and <strong>CNRS</strong> with <a href="http://www.lix.polytechnique.fr/Labo/Gleb.POGUDIN/">Prof. Gleb Pogudin</a> for the whole year of 2023. Please find out our paper <a href="https://arxiv.org/abs/2311.02508">here</a> and it has been <strong><font color='orange'>accepted by</font></strong> <a href="https://etaps.org/2024/conferences/tacas/">30th International Conference on Tools and Algorithms for the Construction and Analysis of Systems, TACAS 2024</a>.</p>
@@ -971,7 +1080,7 @@ During my study, I'm honoured to be awarded the **<font color='purple'>Mitacs Gl
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
               <p class="course">BSc in Applied Mathematics and Computer Sciences, 2021-2024</p>
-              <p class="institution">Ecole Polytechnique</p>
+              <p class="institution">École Polytechnique</p>
             </div>
           </li>
           

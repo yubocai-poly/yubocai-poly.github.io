@@ -771,6 +771,32 @@ Here $S_n(\omega)=p \times S_{n-1}(\omega-\omega_n)$, where $p=2$ if ${\omega_n}
     </item>
     
     <item>
+      <title>École polytechnique - MAA106 - Introduction to Numerical Analysis</title>
+      <link>https://example.com/courses/maa106/</link>
+      <pubDate>Mon, 20 Jun 2022 16:30:00 +0000</pubDate>
+      <guid>https://example.com/courses/maa106/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;&lt;font color=&#39;orange&#39;&gt;Summary:&lt;/font&gt;&lt;/strong&gt; The aim of this course is to provide students with a working knowledge of basic mathematical algorithms and associated computer programming. We will cover several notions such as representation of numbers, rootfinding, polynomial approximation, numerical integration, and error analysis. A significant portion of the course will be devoted to implementation and experiments using Jupyter Notebooks with Python.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;font color=&#39;orange&#39;&gt;Teaching coordinator:&lt;/font&gt;&lt;/strong&gt; &lt;em&gt;Breden Maxime&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;chapter-0---introduction-to-numpy-and-matplotlib&#34;&gt;Chapter 0 - Introduction to Numpy and Matplotlib&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yubocai-poly.github.io/files/MAA106/Introduction/0-IntroNumpyMatplotlib-Corr.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tutorial 0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;chapter-1---root-finding-for-a-function-of-one-variable&#34;&gt;Chapter 1 - Root-finding for a function of one variable、&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yubocai-poly.github.io/files/MAA106/RootFinding/1-RootFinding-Corr.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tutorial 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;chapter-2---polynomial-approximation-of-functions-of-one-variable&#34;&gt;Chapter 2 - Polynomial approximation of functions of one variable&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yubocai-poly.github.io/files/MAA106/Polynomial/2-PolynomialApproximation-Corr.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tutorial 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;chapter-3---numerical-integration&#34;&gt;Chapter 3 - Numerical integration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://yubocai-poly.github.io/files/MAA106/Integration/3-NumericalIntegration-Corr.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tutorial 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Joe Hisaishi Concert</title>
       <link>https://example.com/talk/joe-hisaishi-concert/</link>
       <pubDate>Sat, 07 May 2022 20:00:00 +0000</pubDate>

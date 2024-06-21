@@ -108,6 +108,14 @@
   <url>
     <loc>https://example.com/software/paperfriend/</loc><lastmod>2022-08-27T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://example.com/tag/applied-mathematics/</loc><lastmod>2022-06-20T16:30:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://example.com/courses/</loc><lastmod>2022-06-20T16:30:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://example.com/courses/maa106/</loc><lastmod>2022-06-20T16:30:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://example.com/tag/first-year-course/</loc><lastmod>2022-06-20T16:30:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://example.com/talk/joe-hisaishi-concert/</loc><lastmod>2022-05-07T20:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://example.com/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
