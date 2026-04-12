@@ -5,12 +5,28 @@
     <link>https://example.com/</link>
       <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Yubo CAI 蔡宇博</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 10 Apr 2024 16:30:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
+      <url>https://example.com/media/icon_hu_9e5fad91b6bc7daa.png</url>
       <title>Yubo CAI 蔡宇博</title>
       <link>https://example.com/</link>
     </image>
+    
+    <item>
+      <title>A Globally Convergent Third-Order Newton Method via Unified Semidefinite Programming Subproblems</title>
+      <link>https://example.com/publication/almton/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/almton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable Co-Design via Linear Design Problems: Compositional Theory and Algorithms</title>
+      <link>https://example.com/publication/codesign/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/codesign/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>My first academic presentation at TACAS 2024</title>
@@ -21,15 +37,7 @@
     </item>
     
     <item>
-      <title>ETAPS Student Scholarship</title>
-      <link>https://example.com/honor/tacas/</link>
-      <pubDate>Sat, 17 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.com/honor/tacas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Dissipative quadratizations of polynomial ODE systems</title>
+      <title>Dissipative quadratizations of polynomial ODE systems</title>
       <link>https://example.com/publication/dissipative/</link>
       <pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/publication/dissipative/</guid>
@@ -75,7 +83,7 @@ $$
 &lt;p&gt;&lt;strong&gt;&lt;font color=&#39;#218fd2&#39;&gt;Solution:&lt;/font&gt;&lt;/strong&gt; We introduce $y=x^{3}$:
 $$
 \begin{cases}
-x^{\prime}=\underline{x y} \\
+x^{\prime}=\underline{x y} \
 y^{\prime}=3 x^2 x^{\prime} =3 x^6 = \underline{3 y^2}
 \end{cases}
 $$
@@ -158,18 +166,18 @@ We can &lt;font color=&#34;orange&#34;&gt;numerically integrate&lt;/font&gt; the
 x^{\prime}=-x(x-1)(x-2) \tag{3} \label{eq:equilibrium}
 \end{equation}
 Set the RHS equal to $0$ $\Rightarrow$ three equilibria: $0, 1, 2$.&lt;/p&gt;
-&lt;div style=&#34;background-color: rgba(224, 224, 248, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&gt;
+&lt;div style=&#34;background-color: rgba(224, 224, 248, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&#34;&gt;
     &lt;strong&gt;&lt;font color=&#34;#e25083&#34;&gt;Definition (dissipativity)&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;
     An ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$ is called &lt;em&gt;dissipative&lt;/em&gt; at an equilibrium point $\mathbf{x}^*$ if all the eigenvalues of the Jacobian $\left.J(\mathbf{p})\right|_{\mathbf{x}=\mathbf{x}^*}$ of $\mathbf{p}$ and $\mathbf{x}^*$ have negative real part.
 &lt;/div&gt;
-&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Important fact:&lt;/font&gt; Dissipativity at $\mathbf{x}^* \Rightarrow$ Asymptotic stability at $\mathbf{x}^* $. &lt;em&gt;(i.e. exponential convergence to $\mathbf{x}^*$ in a small neighbourhood)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Important fact:&lt;/font&gt; Dissipativity at $\mathbf{x}^* \Rightarrow$ Asymptotic stability at $\mathbf{x}^* $. &lt;em&gt;(i.e. exponential convergence to $\mathbf{x}^&lt;/em&gt;$ in a small neighbourhood)*&lt;/p&gt;
 &lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Example:&lt;/font&gt; Among the three equilibria of \eqref{eq:equilibrium}, $x=0$ and $x=2$ are &lt;font color=&#34;green&#34;&gt;dissipative&lt;/font&gt;, while $x=1$ is &lt;font color=&#34;red&#34;&gt;not&lt;/font&gt;:
 $$
 \left.J(\mathbf{p})\right|_{x=1} = \left[-3x^2 + 6x -2\right] _{x=1} = [1]
 $$
 which has a positive real part in its eigenvalue. To illustrate this, we can plot the phase portrait of the system \eqref{eq:equilibrium} (Simulation code in &lt;a href = &#34;https://github.com/yubocai-poly/DQbee/blob/main/Examples/Conference_pre/conference_example.ipynb&#34; style=&#34;color: #218fd2;&#34;&gt;[conference_example.ipynb]&lt;/a&gt;):&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;figure/dissipative.png&#34;, width=&#34;600&#34;&gt;
+  &lt;img src=&#34;figure/dissipative.png&#34; width=&#34;600&#34;&gt;
   &lt;figcaption&gt;&lt;div style=&#34;background-color: &#39;&#39;; border: 2px solid#218fd2; padding: 5px; color: red; font-family: Arial, sans-serif; font-size: 16px; border-radius: 10px;&#34;&gt;
   Trajectory from $x_0 = 1.1$ converge to equilibrium $x = 2$ instead of $x = 1$
   &lt;/div&gt;
@@ -182,42 +190,42 @@ which has a positive real part in its eigenvalue. To illustrate this, we can plo
     $$
     \mathbf{x}^{\prime}=\mathbf{q}_1(\mathbf{x}, \mathbf{y}), \quad \mathbf{y}^{\prime}=\mathbf{q}_2(\mathbf{x}, \mathbf{y})
     $$
-    $\mathrm{s}$ dissipative at a point $\left(\mathbf{x}^*, \mathbf{g}\left(\mathbf{x}^*\right)\right)$.
+    is dissipative at a point $\left(\mathbf{x}^*, \mathbf{g}\left(\mathbf{x}^*\right)\right)$.
 &lt;/div&gt;
 &lt;br&gt;
 &lt;div style=&#34;background-color: rgb(255,182,193, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&#34;&gt;
     &lt;strong&gt;&lt;font color=&#34;#005083&#34;&gt;Theorem (Main theoretical result: existence)&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;
     For every polynomial ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$, there exists a quadratization that is dissipative at all the dissipative equilibria of $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$.
 &lt;/div&gt;
-Our method mainly involves two steps. First, we transform the original system to an &lt;font color=&#34;purple&#34;&gt;inner-quadratic&lt;/font&gt; system, where the inner-quadratic is a &lt;font color=&#34;green&#34;&gt;combinatorial property&lt;/font&gt; and we will illustrate it in the following part. Then, we apply the &lt;font color=&#34;purple&#34;&gt;dissipative transformation&lt;/font&gt; to find our desired quadratization.
+&lt;p&gt;Our method mainly involves two steps. First, we transform the original system to an &lt;font color=&#34;purple&#34;&gt;inner-quadratic&lt;/font&gt; system, where the inner-quadratic is a &lt;font color=&#34;green&#34;&gt;combinatorial property&lt;/font&gt; and we will illustrate it in the following part. Then, we apply the &lt;font color=&#34;purple&#34;&gt;dissipative transformation&lt;/font&gt; to find our desired quadratization.&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;figure/quadratization_process.png&#34;, width=&#34;600&#34;&gt;
+  &lt;img src=&#34;figure/quadratization_process.png&#34; width=&#34;600&#34;&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
-We take the following example to illustrate our algorithm: Back to $x^{\prime}=-x(x-1)(x-2)$, start with a quadratization via $y=x^{2}$:
+&lt;p&gt;We take the following example to illustrate our algorithm: Back to $x^{\prime}=-x(x-1)(x-2)$, start with a quadratization via $y=x^{2}$:
 $$
 \begin{cases}
-x^{\prime}=-x y+3 x^2-2 x \\
+x^{\prime}=-x y+3 x^2-2 x \
 y^{\prime}=-2 y^2+6 x y-4 x^2
 \end{cases}
 $$
-The system is &lt;font color=&#34;purple&#34;&gt;not yet dissipative&lt;/font&gt; but has a &lt;font color=&#34;purple&#34;&gt;&#34;good&#34; combinatorial property:&lt;/font&gt; the new variable $y$ can be written as $x^2$ 
+The system is &lt;font color=&#34;purple&#34;&gt;not yet dissipative&lt;/font&gt; but has a &lt;font color=&#34;purple&#34;&gt;&amp;ldquo;good&amp;rdquo; combinatorial property:&lt;/font&gt; the new variable $y$ can be written as $x^2$&lt;/p&gt;
 &lt;p&gt;$\Rightarrow$&lt;/p&gt;
 &lt;p&gt;We can add $y-x^{2}$ &lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;(stabilizer)&lt;/font&gt;&lt;/strong&gt; to RHS:
 $$
 \begin{cases}
-x^{\prime}=-x y+3 x^2-2 x \\
+x^{\prime}=-x y+3 x^2-2 x \
 y^{\prime}=-2 y^2+6 x y-4 x^2 - \lambda\left(y-x^2\right)
 \end{cases}
 $$&lt;/p&gt;
 &lt;p&gt;Then we have the Jacobian of the previous system:&lt;/p&gt;
 &lt;p&gt;$$
 J=\underbrace{\left[\begin{array}{cc}
--y+6 x-2 &amp;amp; -x \\
+-y+6 x-2 &amp;amp; -x \
 6 y-8 x &amp;amp; -4 y+6 x
 \end{array}\right]}_{\textcolor{blue}{inner-quadratic}}-\underbrace{\lambda\left[\begin{array}{cc}
-0 &amp;amp; 0 \\
+0 &amp;amp; 0 \
 -2 x &amp;amp; 1
 \end{array}\right]} _{\textcolor{blue}{stabilizer}}
 $$
@@ -288,7 +296,7 @@ $$
 &lt;p&gt;A quadratization will be called inner-quadratic if the set of new variables $ \mathbf{g} $ is inner-quadratic.&lt;/p&gt;
 &lt;p&gt;How to find the inner-quadratic quadratization: &lt;strong&gt;Branch &amp;amp; Bound search.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;Retinal behind:&lt;/font&gt;&lt;/strong&gt;
-The quadratic relation between variables gives the flexibility to &lt;font color=&#34;orange&#34;&gt;&amp;ldquo;tune&amp;rdquo;&lt;/font&gt; the RHS, in this case, we can add the &lt;font color=&#34;purple&#34;&gt;stabilizers&lt;/font&gt; on the RHS toforce the trajectory to be stable.&lt;/p&gt;
+The quadratic relation between variables gives the flexibility to &lt;font color=&#34;orange&#34;&gt;&amp;ldquo;tune&amp;rdquo;&lt;/font&gt; the RHS, in this case, we can add the &lt;font color=&#34;purple&#34;&gt;stabilizers&lt;/font&gt; on the RHS to force the trajectory to be stable.&lt;/p&gt;
 &lt;h3 id=&#34;6-applications&#34;&gt;6. Applications&lt;/h3&gt;
 &lt;h4 id=&#34;61-reachability-analysis&#34;&gt;6.1. Reachability analysis&lt;/h4&gt;
 &lt;p&gt;Given an ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$, a set $S \subseteq \mathbb{R}^n$ of possible initial conditions, and a time $t \in \mathbb{R}_{&amp;gt;0}$, compute a set containing the set
@@ -321,8 +329,8 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;font color=&#34;purple&#34;&gt;Dissipative quadratization:&lt;/font&gt; take $ \lambda = 1 $ and add the stabilizer:
 $$
 \begin{cases}
-x_1&amp;rsquo; = x_2, \\
-x_2&amp;rsquo; = x_1 y + x_1 - x_2, \\
+x_1&amp;rsquo; = x_2, \
+x_2&amp;rsquo; = x_1 y + x_1 - x_2, \
 y&amp;rsquo; = -y + x_1^2 + 2 x_1 x_2
 \end{cases}
 $$&lt;/p&gt;
@@ -344,9 +352,9 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;font color=&#34;purple&#34;&gt;Setting:&lt;/font&gt; $n=1, \ldots, 8$ taking $\delta=2$ and $A$ being the tridiagonal matrix with ones on the diagonal and $\frac{1}{3}$ on the adjacent diagonals.&lt;/p&gt;
 &lt;table border=&#34;1&#34; style=&#34;border-collapse: collapse; width: 100%; font-size: 15px; text-align: center;&#34;&gt;
     &lt;caption&gt;Table: Runtimes (in seconds) for n coupled Duffing oscillators, results were obtained on a laptop with the following parameters: Apple M2 Pro CPU @ 3.2 GHz, MacOS Ventura 13.3.1, CPython 3.9.1.&lt;/caption&gt;
-    &lt;thead style=&#34;background-color: rgba(173, 216, 230, 0.5);&#34;&gt; &lt;!-- 淡蓝色背景，50%透明度 --&gt;
+    &lt;thead style=&#34;background-color: rgba(173, 216, 230, 0.5);&#34;&gt;
         &lt;tr&gt;
-            &lt;th rowspan=&#34;2&#34;&gt;n&lt;/th&gt; &lt;!-- 合并上下行 --&gt;
+            &lt;th rowspan=&#34;2&#34;&gt;n&lt;/th&gt;
             &lt;th rowspan=&#34;2&#34;&gt;dimension&lt;/th&gt;
             &lt;th rowspan=&#34;2&#34;&gt;# equilibria&lt;/th&gt;
             &lt;th rowspan=&#34;2&#34;&gt;# new vars&lt;/th&gt;
@@ -359,78 +367,14 @@ $$&lt;/p&gt;
         &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;0.02&lt;/td&gt;
-            &lt;td&gt;0.05&lt;/td&gt;
-            &lt;td&gt;0.07&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;4&lt;/td&gt;
-            &lt;td&gt;4&lt;/td&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;0.07&lt;/td&gt;
-            &lt;td&gt;0.19&lt;/td&gt;
-            &lt;td&gt;0.65&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;6&lt;/td&gt;
-            &lt;td&gt;8&lt;/td&gt;
-            &lt;td&gt;4&lt;/td&gt;
-            &lt;td&gt;0.20&lt;/td&gt;
-            &lt;td&gt;0.74&lt;/td&gt;
-            &lt;td&gt;36.57&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;4&lt;/td&gt;
-            &lt;td&gt;8&lt;/td&gt;
-            &lt;td&gt;16&lt;/td&gt;
-            &lt;td&gt;5&lt;/td&gt;
-            &lt;td&gt;0.39&lt;/td&gt;
-            &lt;td&gt;1.62&lt;/td&gt;
-            &lt;td&gt;1179.33&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;5&lt;/td&gt;
-            &lt;td&gt;10&lt;/td&gt;
-            &lt;td&gt;32&lt;/td&gt;
-            &lt;td&gt;7&lt;/td&gt;
-            &lt;td&gt;0.72&lt;/td&gt;
-            &lt;td&gt;4.30&lt;/td&gt;
-            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;6&lt;/td&gt;
-            &lt;td&gt;12&lt;/td&gt;
-            &lt;td&gt;64&lt;/td&gt;
-            &lt;td&gt;9&lt;/td&gt;
-            &lt;td&gt;1.20&lt;/td&gt;
-            &lt;td&gt;11.28&lt;/td&gt;
-            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;7&lt;/td&gt;
-            &lt;td&gt;14&lt;/td&gt;
-            &lt;td&gt;128&lt;/td&gt;
-            &lt;td&gt;10&lt;/td&gt;
-            &lt;td&gt;1.75&lt;/td&gt;
-            &lt;td&gt;28.23&lt;/td&gt;
-            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;8&lt;/td&gt;
-            &lt;td&gt;16&lt;/td&gt;
-            &lt;td&gt;256&lt;/td&gt;
-            &lt;td&gt;12&lt;/td&gt;
-            &lt;td&gt;2.63&lt;/td&gt;
-            &lt;td&gt;78.70&lt;/td&gt;
-            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
-        &lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0.02&lt;/td&gt;&lt;td&gt;0.05&lt;/td&gt;&lt;td&gt;0.07&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0.07&lt;/td&gt;&lt;td&gt;0.19&lt;/td&gt;&lt;td&gt;0.65&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;0.20&lt;/td&gt;&lt;td&gt;0.74&lt;/td&gt;&lt;td&gt;36.57&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;0.39&lt;/td&gt;&lt;td&gt;1.62&lt;/td&gt;&lt;td&gt;1179.33&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;0.72&lt;/td&gt;&lt;td&gt;4.30&lt;/td&gt;&lt;td&gt;&amp;gt; 2000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;64&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;1.20&lt;/td&gt;&lt;td&gt;11.28&lt;/td&gt;&lt;td&gt;&amp;gt; 2000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;td&gt;128&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;1.75&lt;/td&gt;&lt;td&gt;28.23&lt;/td&gt;&lt;td&gt;&amp;gt; 2000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;256&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;2.63&lt;/td&gt;&lt;td&gt;78.70&lt;/td&gt;&lt;td&gt;&amp;gt; 2000&lt;/td&gt;&lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
@@ -448,15 +392,8 @@ $$&lt;/p&gt;
 &lt;div style=&#34;background-color: &#39;&#39;; border: 2px solid#218fd2; padding: 5px; color: red; font-family: Arial, sans-serif; font-size: 16px; border-radius: 10px;&#34;&gt;
 Package DQbee: &lt;a href = &#34;https://github.com/yubocai-poly/DQbee&#34; style=&#34;color: #218fd2;&#34;&gt;https://github.com/yubocai-poly/DQbee&lt;/a&gt;
 &lt;/div&gt;
-&lt;/center&gt;</description>
-    </item>
-    
-    <item>
-      <title>Analysis of city composition based on basic amenities including public transport</title>
-      <link>https://example.com/publication/bato/</link>
-      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/bato/</guid>
-      <description></description>
+&lt;/center&gt;
+</description>
     </item>
     
     <item>
@@ -464,30 +401,6 @@ Package DQbee: &lt;a href = &#34;https://github.com/yubocai-poly/DQbee&#34; styl
       <link>https://example.com/software/dqbee/</link>
       <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/software/dqbee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>INFORMS Undergraduate Scholarship</title>
-      <link>https://example.com/honor/inform/</link>
-      <pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/honor/inform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OCR for Chinese Characters with CNN and EfficientNet</title>
-      <link>https://example.com/project/cse204/</link>
-      <pubDate>Tue, 20 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/cse204/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Numerical Optimization</title>
-      <link>https://example.com/project/maa209/</link>
-      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/maa209/</guid>
       <description></description>
     </item>
     
@@ -500,269 +413,6 @@ Package DQbee: &lt;a href = &#34;https://github.com/yubocai-poly/DQbee&#34; styl
     </item>
     
     <item>
-      <title>ANR JCJC project OCCAM research intern scholarship</title>
-      <link>https://example.com/honor/anr/</link>
-      <pubDate>Fri, 26 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/honor/anr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title> Quadratization preprocessing for the reachability Problem</title>
-      <link>https://example.com/publication/preprint/</link>
-      <pubDate>Fri, 07 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    More Information on this &lt;a href=&#34;https://yubocai-poly.github.io/intro.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.
-  &lt;/div&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MITACS Globalink Research Scholarship</title>
-      <link>https://example.com/honor/mitacs/</link>
-      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/honor/mitacs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Algorithms for Numerical Analysis of Catalan Numbers</title>
-      <link>https://example.com/project/205/</link>
-      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/205/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nim Games with Coq</title>
-      <link>https://example.com/project/203/</link>
-      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/203/</guid>
-      <description>&lt;h1 id=&#34;nim-game&#34;&gt;Nim Game&lt;/h1&gt;
-&lt;p&gt;This is the final project for CSE203 - Logic and Proof at Ecole Polytechnique. The project was finished by &lt;a href=&#34;https://github.com/frank2002&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junyuan Wang&lt;/a&gt; and me, under the supervision from &lt;a href=&#34;http://www.strub.nu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Pierre-Yves Strub&lt;/a&gt; and &lt;a href=&#34;http://www.lix.polytechnique.fr/Labo/Benjamin.Werner/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Benjamin Werner&lt;/a&gt;. The project was finally defended under the supervision of &lt;a href=&#34;http://www.strub.nu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. Pierre-Yves Strub&lt;/a&gt;. You can find the code and slide from following link.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;[Code] - &lt;a href=&#34;https://github.com/yubocai-poly/Nim-Game/blob/main/Project/nim.v&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;[Slides] - &lt;a href=&#34;https://github.com/yubocai-poly/Nim-Game/blob/main/Project/CSE203_Final_Project.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;introduction-to-the-project&#34;&gt;Introduction to the Project&lt;/h2&gt;
-&lt;hr&gt;
-&lt;p&gt;Nim is a mathematical game of strategy in which two players take turns removing objects from distinct heaps or piles. For more information, you can access the &lt;a href=&#34;https://en.wikipedia.org/wiki/Nim#Game_play_and_illustration&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[wiki page]&lt;/a&gt; of nim game. The purpose of this project is to try to accomplish a formal proof of the winning strategy of the nim game through the &lt;strong&gt;Coq&lt;/strong&gt; language. For more information about Nim Game&amp;rsquo;s winning strategy you can visit the following &lt;a href=&#34;https://en.wikipedia.org/wiki/Nim#Mathematical_theory&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;[link]&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;winning-strategy-of-nim-game&#34;&gt;Winning Strategy of Nim Game&lt;/h2&gt;
-&lt;hr&gt;
-&lt;p&gt;In a normal Nim game, the player making the first move has a winning strategyu if and only if the nim-sum of the sizes of the heaps is not zero. Otherwise, the second player has a winning strategy. The winning strategy is to make the nim sum becomes 0 after each move.&lt;/p&gt;
-&lt;p&gt;Notice that the nim-sum $(\oplus)$ obeys the usual associative and commutative laws of addition (+) and also satisfies an additional property, $x \oplus x = 0$.&lt;/p&gt;
-&lt;p&gt;Let $x_1, \ldots, x_n$ be the sizes of the heaps before a move, and $y_1, \ldots, y_n$ the corresponding sizes after a move. Let $s=x_1 \oplus \ldots \oplus x_n$ and $t=y_1 \oplus \ldots \oplus y_n$. If the move was in heap $k$, we have $x_i=y_i$ for all $i \neq k$, and $x_k&amp;gt;y_k$. By the properties of $\oplus$ mentioned above, we have&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    t = 0 ⊕ t
-      = s ⊕ s ⊕ t
-      = s ⊕ (x1 ⊕ ... ⊕ xn) ⊕ (y1 ⊕ ... ⊕ yn)
-      = s ⊕ (x1 ⊕ y1) ⊕ ... ⊕ (xn ⊕ yn)
-      = s ⊕ 0 ⊕ ... ⊕ 0 ⊕ (xk ⊕ yk) ⊕ 0 ⊕ ... ⊕ 0
-      = s ⊕ xk ⊕ yk
- 
-(*) t = s ⊕ xk ⊕ yk.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, the theorem follows by induction on the length of the game from these two lemmas. Here we denote $s$ is the state before move and $t$ (or $s&amp;rsquo;$) is the state after move. Also, the number here means nim sum.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Lemma 1.&lt;/strong&gt; If $s=0$, then $t \neq 0$ no matter what move is going to have next. (&lt;strong&gt;Lemma z2nz&lt;/strong&gt; in Coq)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Lemma 2.&lt;/strong&gt; If $s\neq 0$, there exist one move that make $t=0$. (&lt;strong&gt;Lemma nz2z&lt;/strong&gt; in Coq)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;structure-of-the-code-for-project&#34;&gt;Structure of the code for project&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Part 1.&lt;/strong&gt; Numberical Lemma on list, binary numbers and bxor operations&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Part 2.&lt;/strong&gt; Definition for state, rows, bijective relation&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Part 3.&lt;/strong&gt; Operations and Lemma on weights&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Part 4.&lt;/strong&gt; Proof for &lt;strong&gt;turn_weight&lt;/strong&gt;, &lt;strong&gt;z2nz&lt;/strong&gt;, and &lt;strong&gt;nz2z&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;code-for-operations-and-lemma-on-weights&#34;&gt;Code for Operations and Lemma on weights&lt;/h2&gt;
-&lt;hr&gt;
-&lt;p&gt;This part of code are operations and Lemma on weights, we prove by induction and operations in bxor.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-coq&#34; data-lang=&#34;coq&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;Lemma&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight_empty&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;fun&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;Lemma&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight_r0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight_r&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nil&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bits0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;Lemma&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight_r1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;nat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;):&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight_r&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[::&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n2b&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;Lemma&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight_rS&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;nat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ns&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;list&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;nat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;weight_r&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;::&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n2b&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight_r&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;Lemma&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight_rD&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;list&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;nat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;weight_r&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;r&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;++&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;bxor&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;weight_r&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;r&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;weight_r&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;).&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;proof-for-z2nz&#34;&gt;Proof for z2nz&lt;/h2&gt;
-&lt;hr&gt;
-&lt;p&gt;We apply contradiction to prove &lt;strong&gt;z2nz&lt;/strong&gt; that if $s = 0$, then $t \neq 0$ no matter what move is made.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-coq&#34; data-lang=&#34;coq&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;Lemma&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;z2nz&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;I_p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;R&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s1&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;B&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;weight&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;B&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We need to prove other two Lemma where $x \oplus x=0$ and $\forall n \in \mathbb{N}, n &amp;lt; n, \rightarrow false$ in order to create contradiction.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-coq&#34; data-lang=&#34;coq&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;Lemma&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b02bnbb&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;I_p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;state&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;B&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n2b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n2b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;s&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;).&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;Lemma&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ltf&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;nat&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;):&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;bp&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We have &lt;strong&gt;n2b_inj&lt;/strong&gt; that we can duduce that &lt;strong&gt;s2 i = s1 i&lt;/strong&gt; which is contradiction with the assupmtion that &lt;strong&gt;s2 i &amp;lt; s1 i&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;proof-for-nz2z&#34;&gt;Proof for nz2z&lt;/h2&gt;
-&lt;hr&gt;
-&lt;p&gt;We prove if $s \neq 0$, it is possible to make a move so that $s^{\prime}=0$ $\mathbf{n z 2 z}$ in following steps. We denote $x_1, \cdots, x_n$ is the number for each row before the move, $y_1, \cdots, y_n$ is the number for each row after the move&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;$d$ be the position of leftmost nonzero bit in the binary representation of $s$ exists.&lt;/li&gt;
-&lt;li&gt;Prove $\exists k$ such that $x_{k}[d] \neq 0$. We prove this by contradiction.&lt;/li&gt;
-&lt;li&gt;We set $y_{k} = s \oplus x_k$ and assume $y_{k} &amp;lt; x_{k}$, then we prove $\forall i, d &amp;lt; i \rightarrow x_{k}=y_{k}$.&lt;/li&gt;
-&lt;li&gt;Finish the prove with weight $s&amp;rsquo; = 0%:B$ or R k s s&#39;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Rigorous Proof of Frobenius Reduction</title>
-      <link>https://example.com/papers/201/</link>
-      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/papers/201/</guid>
-      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;This work is originally from the Homework of the abstract algebra course at Ecole Polytechnique for &lt;strong&gt;MAA201-Reduction of Endomorphisms&lt;/strong&gt;. And I spend this work on this project.&lt;/p&gt;
-&lt;p&gt;In the first part you can see some rigorous proof of &lt;strong&gt;Gauss’s Lemma&lt;/strong&gt; and &lt;strong&gt;Eisenstein’s Criterion&lt;/strong&gt;, and some application in the analysis of the reducibility of the monic polynomials.&lt;/p&gt;
-&lt;p&gt;And in the second part, we will see the proof of &lt;strong&gt;Frobenius Reduction&lt;/strong&gt; which in French is &lt;strong&gt;Decomposition de Frobenius&lt;/strong&gt;. Since there is no really detailed proof of this in English so here you can find the Lemma and proof relatively in order to prove this theorem.&lt;/p&gt;
-&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
-&lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Pricing an option with binomial models</title>
-      <link>https://example.com/papers/107/</link>
-      <pubDate>Sun, 04 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/papers/107/</guid>
-      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
-&lt;p&gt;The objective is to study how can we apply binomial models in the pricing of some financial products like saving, stocks and options.&lt;/p&gt;
-&lt;p&gt;In the first part of the project we discuss more general situations about the non-risky products like savings and risky products like stocks which evolve randomly with respect to time. Then in the second part of the project, we gonna discuss options in different time periods and give the general case with more details.&lt;/p&gt;
-&lt;p&gt;At the end of the project, we give another expression and our conclusion and remarks.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;general-assumptions-and-underlying-models&#34;&gt;General assumptions and underlying models&lt;/h2&gt;
-&lt;p&gt;To begin with, we assume that all the financial assets in our problem can be infinitely divided. Also, we regard that they can be sold even if the agent does not have them. That is, we can own actually negative units of a certain financial asset. In our project, we will always consider a simple financial market that only contains the following three types of financial assets:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Non-risky products (savings in particular) with an interest $r$.&lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Risky products (stocks in particular) which evolves randomly with respect to time.&lt;/strong&gt;
-We can model the price of stocks (denoted by S) in the following way. Assume at each step, the price will either be multiplied by a scalar u ($ u \geq 1$), or be multiplied by another scalar d ($d \leq 1$). To note that  this process is assumed to be perfectly fair. That is to say, the price will either go through a fixed rising process or a fixed decreasing process and the probability of which is equal. We denote the rising process as  H  and the decreasing process as  T  and use them to manifest the index of the price. For instance, if the price first went up, then went down for successively two times, we can denote the index as (H, T, T). The figure below gives a more complete example. We will denote $\Omega$ as the set of all the possible indices at the last stage involved in the process. We have:
-
-   $$
-   \Omega=\left\{\begin{array}{l}
-   \{H H, H T, T H, T T\}, \text { after two steps } \\
-   \{H H H, H H T, H T H, H T T, T H H, T H T, T T H, T T T\}, \text { after three steps }
-   \end{array}\right.
-   $$
-   
-If $\omega$ is an element of $\Omega$, we will denote $\omega_{k}$ as the $k^{th}$ component of $\omega$. The price of the stock with all the possible outcomes up to two steps with $S_0=4$, $u=2$ and $d=\frac{1}{2}$ is given below:
-&lt;img src=&#34;pic1.png&#34;&gt;
-Here $S_n(\omega)=p \times S_{n-1}(\omega-\omega_n)$, where $p=2$ if ${\omega_n}=H$ and $p=\frac{1}{2}$ if ${\omega_n}=T$.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Another risky product: option.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;We will consider a European option, which is, by definition, a version of an options contract that limits execution to its expiration date. In other words, if the underlying security has moved in price, an investor would not be able to exercise the option early and take delivery of or sell the shares. If the strike price of an option is denoted by K and the expiration is n years, our final payoff of such a call option denoted by $V_{n}$ will satisfy that $V_{n}(\omega) = max{0, S_{n}(\omega)-K}$. Indeed, under an index $\omega$ of the stock price, if the price is higher than the strike price, we will sell the stocks and get some money, if the price is lower than the strike price, the best choice is obviously to do nothing as one will lose money otherwise.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
-&lt;p&gt;Copyright by &lt;code&gt;Yubo Cai&lt;/code&gt;, &lt;code&gt;Tianli Xu&lt;/code&gt;, &lt;code&gt;Zhuoya Zhang&lt;/code&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Collected Game Website</title>
-      <link>https://example.com/project/104/</link>
-      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/104/</guid>
-      <description>&lt;p&gt;CSE104 is the courses held by Professor Rohmer Damien at Ecole Polytechnique. And this is the final project related to this course. In this project, we tried to create an integrated website by using HTML, CSS and Javascript, with a recreation of the classic trivia game with those tools.&lt;/p&gt;
-&lt;h2 id=&#34;website&#34;&gt;Website&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://webgamecse104.netlify.app/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://imagecomputing.net/damien.rohmer/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Rohmer Damien&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/frank2002&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Junyuan Wang&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
-&lt;p&gt;VScode, HTML, CSS, Javascript&lt;/p&gt;
-&lt;h2 id=&#34;copyright&#34;&gt;Copyright&lt;/h2&gt;
-&lt;p&gt;Copyright by Yubo Cai and Junyuan Wang&lt;/p&gt;
-&lt;iframe id=&#34;myframe&#34;
-      src=&#34;https://docdro.id/Z02e8Wp&#34;
-      width=&#34;100%&#34; height=&#34;800&#34; frameborder=&#34;1&#34;&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lossy Image Compression</title>
-      <link>https://example.com/project/example/</link>
-      <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/</guid>
-      <description>&lt;h1 id=&#34;cse102-advanced-programming-final-project&#34;&gt;CSE102-Advanced-Programming-Final-Project&lt;/h1&gt;
-&lt;h2 id=&#34;project-instruction&#34;&gt;Project Instruction&lt;/h2&gt;
-&lt;p&gt;The goal of this project is to develop a lossy image compression format close to JPEG. Lossy compression algorithms allow to greatly reduce the size of image files at the price of loosing some data from the original image. In general, a lossy image compression works by pruning the information the human eye is not sensible to. This is the case, for instance, in the JPEG file format.&lt;/p&gt;
-&lt;p&gt;The JPEG compression algorithm can be decomposed into several steps:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;In theory, JPEG-based compression schemes are independent of the image color-space (e.g. Red-Green-Blue). However the best rates of compression are obtained in a color space that separates the light-intensity (luminance) from the color information (chrominance). Indeed, the human eye is quite sensitive to luminance but little to chrominance and we can then afford to lose more chrominance information.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Hence, the algorithm starts by converting the original image from its initial RGB (Red-Green-Blue) colorimetric model towards the YCbCr model of type luminance/chrominance. In this model, Y is the information of luminance, and Cb and Cr give chrominance values, respectively the blue minus Y and the red minus Y.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;This low sensitivity of the human eye to chrominance is exploited by performing a subsampling of the color signals. The principle of the operation is to reduce the size of several blocks of chrominance in a single value.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;The image is then split into blocks of 8×8 subpixels.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;A 2D DCT (Discrete Cosine Transform) is then applied to each block. The DCT is a variant of the Fourier transform. It decomposes a block, considered as a function in two variables, into a sum of cosine functions. Each block is thus described in a map of frequencies and amplitudes rather than in pixels and color information.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Then, a quantization step takes place. The quantization consists in dividing the DCT matrix by another one, called quantization matrix. The goal here is to attenuate the high frequencies, i.e. those to which the human eye is very insensitive. These frequencies have low amplitudes, and they are further attenuated by quantization (some coefficients are even often reduced to 0).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Finally, each block is coded using a variation of the Run-length encoding associated with an arithmetic coding – both are lossless data compression algorithm.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;project-schedule&#34;&gt;Project Schedule&lt;/h2&gt;
-&lt;p&gt;The goal of this project is to write a JPEG-like image encoder/decoder. This is a 3-week project:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;during the first week, we will focus on:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;loading / saving image files,&lt;/li&gt;
-&lt;li&gt;converting images between the RGB &amp;amp; the YCbCr color space, and&lt;/li&gt;
-&lt;li&gt;performing channels subsampling.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;during the second week, we will focus on the DCT transform, and&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;during the third week, we will consider the RLE &amp;amp; arithmetic coding.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;professors&#34;&gt;Professors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.strub.nu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pierre-Yves Strub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;contributors&#34;&gt;Contributors&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yubocai-poly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yubo Cai&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;tools-of-this-course&#34;&gt;Tools of this course&lt;/h2&gt;
-&lt;p&gt;VScode, Python, Numpy, matplotlib, mathematical analysis&lt;/p&gt;
-&lt;p&gt;In this project, you need some basic knowledge about Linear Algebra like &lt;strong&gt;Matrix multplication&lt;/strong&gt; and &lt;strong&gt;Fouier Transformation&lt;/strong&gt;. However &lt;strong&gt;Numpy&lt;/strong&gt; is forbiddened in this project.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>PaperFriend-Desktop</title>
       <link>https://example.com/software/paperfriend/</link>
       <pubDate>Sat, 27 Aug 2022 00:00:00 +0000</pubDate>
@@ -771,17 +421,17 @@ Here $S_n(\omega)=p \times S_{n-1}(\omega-\omega_n)$, where $p=2$ if ${\omega_n}
     </item>
     
     <item>
-      <title>École polytechnique - MAA106 - Introduction to Numerical Analysis</title>
+      <title>Ecole polytechnique - MAA106 - Introduction to Numerical Analysis</title>
       <link>https://example.com/courses/maa106/</link>
       <pubDate>Mon, 20 Jun 2022 16:30:00 +0000</pubDate>
       <guid>https://example.com/courses/maa106/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;&lt;font color=&#39;orange&#39;&gt;Summary:&lt;/font&gt;&lt;/strong&gt; The aim of this course is to provide students with a working knowledge of basic mathematical algorithms and associated computer programming. We will cover several notions such as representation of numbers, rootfinding, polynomial approximation, numerical integration, and error analysis. A significant portion of the course will be devoted to implementation and experiments using Jupyter Notebooks with Python.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;font color=&#39;orange&#39;&gt;Teaching coordinator:&lt;/font&gt;&lt;/strong&gt; &lt;em&gt;Breden Maxime&lt;/em&gt;&lt;/p&gt;
+      <description>&lt;p&gt;The aim of this course is to provide students with a working knowledge of basic mathematical algorithms and associated computer programming. We will cover several notions such as representation of numbers, rootfinding, polynomial approximation, numerical integration, and error analysis. A significant portion of the course will be devoted to implementation and experiments using Jupyter Notebooks with Python.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Teaching coordinator:&lt;/strong&gt; &lt;em&gt;Breden Maxime&lt;/em&gt;&lt;/p&gt;
 &lt;h3 id=&#34;chapter-0---introduction-to-numpy-and-matplotlib&#34;&gt;Chapter 0 - Introduction to Numpy and Matplotlib&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://yubocai-poly.github.io/files/MAA106/Introduction/0-IntroNumpyMatplotlib-Corr.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tutorial 0&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;chapter-1---root-finding-for-a-function-of-one-variable&#34;&gt;Chapter 1 - Root-finding for a function of one variable、&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-1---root-finding-for-a-function-of-one-variable&#34;&gt;Chapter 1 - Root-finding for a function of one variable&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://yubocai-poly.github.io/files/MAA106/RootFinding/1-RootFinding-Corr.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tutorial 1&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -807,143 +457,10 @@ Here $S_n(\omega)=p \times S_{n-1}(\omega-\omega_n)$, where $p=2$ if ${\omega_n}
     </item>
     
     <item>
-      <title>Slides</title>
-      <link>https://example.com/slides/example/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/slides/example/</guid>
-      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
-&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
-&lt;li&gt;Supports speaker notes&lt;/li&gt;
-&lt;li&gt;Mobile friendly slides&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
-&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Code block:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
-&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
-&lt;p&gt;Block math:&lt;/p&gt;
-&lt;p&gt;$$
-f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
-&lt;p&gt;Make content appear incrementally&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  One
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  &lt;strong&gt;Two&lt;/strong&gt;
-&lt;/span&gt;
-&lt;span class=&#34;fragment &#34; &gt;
-  Three
-&lt;/span&gt;
-&lt;hr&gt;
-&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
-&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% speaker_note %}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Only the speaker can read these notes
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Press &lt;span class=&#34;sb&#34;&gt;`S`&lt;/span&gt; key to view
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{% /speaker_note %}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
-&lt;aside class=&#34;notes&#34;&gt;
-  &lt;ul&gt;
-&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
-&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;/aside&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
-&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
-&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
-&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ul&gt;
-&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
-&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
-&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
-&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-
-&lt;section data-noprocess data-shortcode-slide
-  
-      
-      data-background-image=&#34;/media/boards.jpg&#34;
-  &gt;
-
-&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
-&lt;p&gt;Customize the slide style and background&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/media/boards.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
-&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
-&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;navy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
-&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title></title>
       <link>https://example.com/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.com/admin/config.yml</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HEC Montreal - MATH 20604A - Linear Optimisation Models</title>
-      <link>https://example.com/post/algorithms_for_discrete_math/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/algorithms_for_discrete_math/</guid>
       <description></description>
     </item>
     

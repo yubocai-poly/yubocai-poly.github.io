@@ -5,18 +5,26 @@
     <link>https://example.com/publication-type/3/</link>
       <atom:link href="https://example.com/publication-type/3/index.xml" rel="self" type="application/rss+xml" />
     <description>3</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
+      <url>https://example.com/media/icon_hu_9e5fad91b6bc7daa.png</url>
       <title>3</title>
       <link>https://example.com/publication-type/3/</link>
     </image>
     
     <item>
-      <title>Analysis of city composition based on basic amenities including public transport</title>
-      <link>https://example.com/publication/bato/</link>
-      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/bato/</guid>
+      <title>A Globally Convergent Third-Order Newton Method via Unified Semidefinite Programming Subproblems</title>
+      <link>https://example.com/publication/almton/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/almton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scalable Co-Design via Linear Design Problems: Compositional Theory and Algorithms</title>
+      <link>https://example.com/publication/codesign/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/codesign/</guid>
       <description></description>
     </item>
     

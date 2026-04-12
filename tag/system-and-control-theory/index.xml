@@ -7,13 +7,13 @@
     <description>System and Control Theory</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 21 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu7b727f29fe192dd60caa35df48776129_3965_512x512_fill_lanczos_center_3.png</url>
+      <url>https://example.com/media/icon_hu_9e5fad91b6bc7daa.png</url>
       <title>System and Control Theory</title>
       <link>https://example.com/tag/system-and-control-theory/</link>
     </image>
     
     <item>
-      <title> Dissipative quadratizations of polynomial ODE systems</title>
+      <title>Dissipative quadratizations of polynomial ODE systems</title>
       <link>https://example.com/publication/dissipative/</link>
       <pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://example.com/publication/dissipative/</guid>
@@ -59,7 +59,7 @@ $$
 &lt;p&gt;&lt;strong&gt;&lt;font color=&#39;#218fd2&#39;&gt;Solution:&lt;/font&gt;&lt;/strong&gt; We introduce $y=x^{3}$:
 $$
 \begin{cases}
-x^{\prime}=\underline{x y} \\
+x^{\prime}=\underline{x y} \
 y^{\prime}=3 x^2 x^{\prime} =3 x^6 = \underline{3 y^2}
 \end{cases}
 $$
@@ -142,18 +142,18 @@ We can &lt;font color=&#34;orange&#34;&gt;numerically integrate&lt;/font&gt; the
 x^{\prime}=-x(x-1)(x-2) \tag{3} \label{eq:equilibrium}
 \end{equation}
 Set the RHS equal to $0$ $\Rightarrow$ three equilibria: $0, 1, 2$.&lt;/p&gt;
-&lt;div style=&#34;background-color: rgba(224, 224, 248, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&gt;
+&lt;div style=&#34;background-color: rgba(224, 224, 248, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&#34;&gt;
     &lt;strong&gt;&lt;font color=&#34;#e25083&#34;&gt;Definition (dissipativity)&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;
     An ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$ is called &lt;em&gt;dissipative&lt;/em&gt; at an equilibrium point $\mathbf{x}^*$ if all the eigenvalues of the Jacobian $\left.J(\mathbf{p})\right|_{\mathbf{x}=\mathbf{x}^*}$ of $\mathbf{p}$ and $\mathbf{x}^*$ have negative real part.
 &lt;/div&gt;
-&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Important fact:&lt;/font&gt; Dissipativity at $\mathbf{x}^* \Rightarrow$ Asymptotic stability at $\mathbf{x}^* $. &lt;em&gt;(i.e. exponential convergence to $\mathbf{x}^*$ in a small neighbourhood)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Important fact:&lt;/font&gt; Dissipativity at $\mathbf{x}^* \Rightarrow$ Asymptotic stability at $\mathbf{x}^* $. &lt;em&gt;(i.e. exponential convergence to $\mathbf{x}^&lt;/em&gt;$ in a small neighbourhood)*&lt;/p&gt;
 &lt;p&gt;&lt;font color=&#34;orange&#34;&gt;Example:&lt;/font&gt; Among the three equilibria of \eqref{eq:equilibrium}, $x=0$ and $x=2$ are &lt;font color=&#34;green&#34;&gt;dissipative&lt;/font&gt;, while $x=1$ is &lt;font color=&#34;red&#34;&gt;not&lt;/font&gt;:
 $$
 \left.J(\mathbf{p})\right|_{x=1} = \left[-3x^2 + 6x -2\right] _{x=1} = [1]
 $$
 which has a positive real part in its eigenvalue. To illustrate this, we can plot the phase portrait of the system \eqref{eq:equilibrium} (Simulation code in &lt;a href = &#34;https://github.com/yubocai-poly/DQbee/blob/main/Examples/Conference_pre/conference_example.ipynb&#34; style=&#34;color: #218fd2;&#34;&gt;[conference_example.ipynb]&lt;/a&gt;):&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;figure/dissipative.png&#34;, width=&#34;600&#34;&gt;
+  &lt;img src=&#34;figure/dissipative.png&#34; width=&#34;600&#34;&gt;
   &lt;figcaption&gt;&lt;div style=&#34;background-color: &#39;&#39;; border: 2px solid#218fd2; padding: 5px; color: red; font-family: Arial, sans-serif; font-size: 16px; border-radius: 10px;&#34;&gt;
   Trajectory from $x_0 = 1.1$ converge to equilibrium $x = 2$ instead of $x = 1$
   &lt;/div&gt;
@@ -166,42 +166,42 @@ which has a positive real part in its eigenvalue. To illustrate this, we can plo
     $$
     \mathbf{x}^{\prime}=\mathbf{q}_1(\mathbf{x}, \mathbf{y}), \quad \mathbf{y}^{\prime}=\mathbf{q}_2(\mathbf{x}, \mathbf{y})
     $$
-    $\mathrm{s}$ dissipative at a point $\left(\mathbf{x}^*, \mathbf{g}\left(\mathbf{x}^*\right)\right)$.
+    is dissipative at a point $\left(\mathbf{x}^*, \mathbf{g}\left(\mathbf{x}^*\right)\right)$.
 &lt;/div&gt;
 &lt;br&gt;
 &lt;div style=&#34;background-color: rgb(255,182,193, 0.5); border-radius: 10px; padding: 10px; border: 1px solid #B0B0D0;&#34;&gt;
     &lt;strong&gt;&lt;font color=&#34;#005083&#34;&gt;Theorem (Main theoretical result: existence)&lt;/font&gt;&lt;/strong&gt;&lt;br&gt;
     For every polynomial ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$, there exists a quadratization that is dissipative at all the dissipative equilibria of $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$.
 &lt;/div&gt;
-Our method mainly involves two steps. First, we transform the original system to an &lt;font color=&#34;purple&#34;&gt;inner-quadratic&lt;/font&gt; system, where the inner-quadratic is a &lt;font color=&#34;green&#34;&gt;combinatorial property&lt;/font&gt; and we will illustrate it in the following part. Then, we apply the &lt;font color=&#34;purple&#34;&gt;dissipative transformation&lt;/font&gt; to find our desired quadratization.
+&lt;p&gt;Our method mainly involves two steps. First, we transform the original system to an &lt;font color=&#34;purple&#34;&gt;inner-quadratic&lt;/font&gt; system, where the inner-quadratic is a &lt;font color=&#34;green&#34;&gt;combinatorial property&lt;/font&gt; and we will illustrate it in the following part. Then, we apply the &lt;font color=&#34;purple&#34;&gt;dissipative transformation&lt;/font&gt; to find our desired quadratization.&lt;/p&gt;
 &lt;figure&gt;
-  &lt;img src=&#34;figure/quadratization_process.png&#34;, width=&#34;600&#34;&gt;
+  &lt;img src=&#34;figure/quadratization_process.png&#34; width=&#34;600&#34;&gt;
   &lt;figcaption&gt;
   &lt;/figcaption&gt;
 &lt;/figure&gt;
-We take the following example to illustrate our algorithm: Back to $x^{\prime}=-x(x-1)(x-2)$, start with a quadratization via $y=x^{2}$:
+&lt;p&gt;We take the following example to illustrate our algorithm: Back to $x^{\prime}=-x(x-1)(x-2)$, start with a quadratization via $y=x^{2}$:
 $$
 \begin{cases}
-x^{\prime}=-x y+3 x^2-2 x \\
+x^{\prime}=-x y+3 x^2-2 x \
 y^{\prime}=-2 y^2+6 x y-4 x^2
 \end{cases}
 $$
-The system is &lt;font color=&#34;purple&#34;&gt;not yet dissipative&lt;/font&gt; but has a &lt;font color=&#34;purple&#34;&gt;&#34;good&#34; combinatorial property:&lt;/font&gt; the new variable $y$ can be written as $x^2$ 
+The system is &lt;font color=&#34;purple&#34;&gt;not yet dissipative&lt;/font&gt; but has a &lt;font color=&#34;purple&#34;&gt;&amp;ldquo;good&amp;rdquo; combinatorial property:&lt;/font&gt; the new variable $y$ can be written as $x^2$&lt;/p&gt;
 &lt;p&gt;$\Rightarrow$&lt;/p&gt;
 &lt;p&gt;We can add $y-x^{2}$ &lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;(stabilizer)&lt;/font&gt;&lt;/strong&gt; to RHS:
 $$
 \begin{cases}
-x^{\prime}=-x y+3 x^2-2 x \\
+x^{\prime}=-x y+3 x^2-2 x \
 y^{\prime}=-2 y^2+6 x y-4 x^2 - \lambda\left(y-x^2\right)
 \end{cases}
 $$&lt;/p&gt;
 &lt;p&gt;Then we have the Jacobian of the previous system:&lt;/p&gt;
 &lt;p&gt;$$
 J=\underbrace{\left[\begin{array}{cc}
--y+6 x-2 &amp;amp; -x \\
+-y+6 x-2 &amp;amp; -x \
 6 y-8 x &amp;amp; -4 y+6 x
 \end{array}\right]}_{\textcolor{blue}{inner-quadratic}}-\underbrace{\lambda\left[\begin{array}{cc}
-0 &amp;amp; 0 \\
+0 &amp;amp; 0 \
 -2 x &amp;amp; 1
 \end{array}\right]} _{\textcolor{blue}{stabilizer}}
 $$
@@ -272,7 +272,7 @@ $$
 &lt;p&gt;A quadratization will be called inner-quadratic if the set of new variables $ \mathbf{g} $ is inner-quadratic.&lt;/p&gt;
 &lt;p&gt;How to find the inner-quadratic quadratization: &lt;strong&gt;Branch &amp;amp; Bound search.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;font color=&#34;orange&#34;&gt;Retinal behind:&lt;/font&gt;&lt;/strong&gt;
-The quadratic relation between variables gives the flexibility to &lt;font color=&#34;orange&#34;&gt;&amp;ldquo;tune&amp;rdquo;&lt;/font&gt; the RHS, in this case, we can add the &lt;font color=&#34;purple&#34;&gt;stabilizers&lt;/font&gt; on the RHS toforce the trajectory to be stable.&lt;/p&gt;
+The quadratic relation between variables gives the flexibility to &lt;font color=&#34;orange&#34;&gt;&amp;ldquo;tune&amp;rdquo;&lt;/font&gt; the RHS, in this case, we can add the &lt;font color=&#34;purple&#34;&gt;stabilizers&lt;/font&gt; on the RHS to force the trajectory to be stable.&lt;/p&gt;
 &lt;h3 id=&#34;6-applications&#34;&gt;6. Applications&lt;/h3&gt;
 &lt;h4 id=&#34;61-reachability-analysis&#34;&gt;6.1. Reachability analysis&lt;/h4&gt;
 &lt;p&gt;Given an ODE system $\mathbf{x}^{\prime}=\mathbf{p}(\mathbf{x})$, a set $S \subseteq \mathbb{R}^n$ of possible initial conditions, and a time $t \in \mathbb{R}_{&amp;gt;0}$, compute a set containing the set
@@ -305,8 +305,8 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;font color=&#34;purple&#34;&gt;Dissipative quadratization:&lt;/font&gt; take $ \lambda = 1 $ and add the stabilizer:
 $$
 \begin{cases}
-x_1&amp;rsquo; = x_2, \\
-x_2&amp;rsquo; = x_1 y + x_1 - x_2, \\
+x_1&amp;rsquo; = x_2, \
+x_2&amp;rsquo; = x_1 y + x_1 - x_2, \
 y&amp;rsquo; = -y + x_1^2 + 2 x_1 x_2
 \end{cases}
 $$&lt;/p&gt;
@@ -328,9 +328,9 @@ $$&lt;/p&gt;
 &lt;p&gt;&lt;font color=&#34;purple&#34;&gt;Setting:&lt;/font&gt; $n=1, \ldots, 8$ taking $\delta=2$ and $A$ being the tridiagonal matrix with ones on the diagonal and $\frac{1}{3}$ on the adjacent diagonals.&lt;/p&gt;
 &lt;table border=&#34;1&#34; style=&#34;border-collapse: collapse; width: 100%; font-size: 15px; text-align: center;&#34;&gt;
     &lt;caption&gt;Table: Runtimes (in seconds) for n coupled Duffing oscillators, results were obtained on a laptop with the following parameters: Apple M2 Pro CPU @ 3.2 GHz, MacOS Ventura 13.3.1, CPython 3.9.1.&lt;/caption&gt;
-    &lt;thead style=&#34;background-color: rgba(173, 216, 230, 0.5);&#34;&gt; &lt;!-- 淡蓝色背景，50%透明度 --&gt;
+    &lt;thead style=&#34;background-color: rgba(173, 216, 230, 0.5);&#34;&gt;
         &lt;tr&gt;
-            &lt;th rowspan=&#34;2&#34;&gt;n&lt;/th&gt; &lt;!-- 合并上下行 --&gt;
+            &lt;th rowspan=&#34;2&#34;&gt;n&lt;/th&gt;
             &lt;th rowspan=&#34;2&#34;&gt;dimension&lt;/th&gt;
             &lt;th rowspan=&#34;2&#34;&gt;# equilibria&lt;/th&gt;
             &lt;th rowspan=&#34;2&#34;&gt;# new vars&lt;/th&gt;
@@ -343,78 +343,14 @@ $$&lt;/p&gt;
         &lt;/tr&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;1&lt;/td&gt;
-            &lt;td&gt;0.02&lt;/td&gt;
-            &lt;td&gt;0.05&lt;/td&gt;
-            &lt;td&gt;0.07&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;4&lt;/td&gt;
-            &lt;td&gt;4&lt;/td&gt;
-            &lt;td&gt;2&lt;/td&gt;
-            &lt;td&gt;0.07&lt;/td&gt;
-            &lt;td&gt;0.19&lt;/td&gt;
-            &lt;td&gt;0.65&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;3&lt;/td&gt;
-            &lt;td&gt;6&lt;/td&gt;
-            &lt;td&gt;8&lt;/td&gt;
-            &lt;td&gt;4&lt;/td&gt;
-            &lt;td&gt;0.20&lt;/td&gt;
-            &lt;td&gt;0.74&lt;/td&gt;
-            &lt;td&gt;36.57&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;4&lt;/td&gt;
-            &lt;td&gt;8&lt;/td&gt;
-            &lt;td&gt;16&lt;/td&gt;
-            &lt;td&gt;5&lt;/td&gt;
-            &lt;td&gt;0.39&lt;/td&gt;
-            &lt;td&gt;1.62&lt;/td&gt;
-            &lt;td&gt;1179.33&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;5&lt;/td&gt;
-            &lt;td&gt;10&lt;/td&gt;
-            &lt;td&gt;32&lt;/td&gt;
-            &lt;td&gt;7&lt;/td&gt;
-            &lt;td&gt;0.72&lt;/td&gt;
-            &lt;td&gt;4.30&lt;/td&gt;
-            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;6&lt;/td&gt;
-            &lt;td&gt;12&lt;/td&gt;
-            &lt;td&gt;64&lt;/td&gt;
-            &lt;td&gt;9&lt;/td&gt;
-            &lt;td&gt;1.20&lt;/td&gt;
-            &lt;td&gt;11.28&lt;/td&gt;
-            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;7&lt;/td&gt;
-            &lt;td&gt;14&lt;/td&gt;
-            &lt;td&gt;128&lt;/td&gt;
-            &lt;td&gt;10&lt;/td&gt;
-            &lt;td&gt;1.75&lt;/td&gt;
-            &lt;td&gt;28.23&lt;/td&gt;
-            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;8&lt;/td&gt;
-            &lt;td&gt;16&lt;/td&gt;
-            &lt;td&gt;256&lt;/td&gt;
-            &lt;td&gt;12&lt;/td&gt;
-            &lt;td&gt;2.63&lt;/td&gt;
-            &lt;td&gt;78.70&lt;/td&gt;
-            &lt;td&gt;&amp;gt; 2000&lt;/td&gt;
-        &lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0.02&lt;/td&gt;&lt;td&gt;0.05&lt;/td&gt;&lt;td&gt;0.07&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;0.07&lt;/td&gt;&lt;td&gt;0.19&lt;/td&gt;&lt;td&gt;0.65&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;0.20&lt;/td&gt;&lt;td&gt;0.74&lt;/td&gt;&lt;td&gt;36.57&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;0.39&lt;/td&gt;&lt;td&gt;1.62&lt;/td&gt;&lt;td&gt;1179.33&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;32&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;0.72&lt;/td&gt;&lt;td&gt;4.30&lt;/td&gt;&lt;td&gt;&amp;gt; 2000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;64&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;td&gt;1.20&lt;/td&gt;&lt;td&gt;11.28&lt;/td&gt;&lt;td&gt;&amp;gt; 2000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;14&lt;/td&gt;&lt;td&gt;128&lt;/td&gt;&lt;td&gt;10&lt;/td&gt;&lt;td&gt;1.75&lt;/td&gt;&lt;td&gt;28.23&lt;/td&gt;&lt;td&gt;&amp;gt; 2000&lt;/td&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;16&lt;/td&gt;&lt;td&gt;256&lt;/td&gt;&lt;td&gt;12&lt;/td&gt;&lt;td&gt;2.63&lt;/td&gt;&lt;td&gt;78.70&lt;/td&gt;&lt;td&gt;&amp;gt; 2000&lt;/td&gt;&lt;/tr&gt;
     &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;summary&#34;&gt;Summary:&lt;/h3&gt;
@@ -432,7 +368,8 @@ $$&lt;/p&gt;
 &lt;div style=&#34;background-color: &#39;&#39;; border: 2px solid#218fd2; padding: 5px; color: red; font-family: Arial, sans-serif; font-size: 16px; border-radius: 10px;&#34;&gt;
 Package DQbee: &lt;a href = &#34;https://github.com/yubocai-poly/DQbee&#34; style=&#34;color: #218fd2;&#34;&gt;https://github.com/yubocai-poly/DQbee&lt;/a&gt;
 &lt;/div&gt;
-&lt;/center&gt;</description>
+&lt;/center&gt;
+</description>
     </item>
     
   </channel>

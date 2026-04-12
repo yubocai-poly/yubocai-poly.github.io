@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Third-Order Newton Method | Yubo CAI 蔡宇博</title>
+    <link>https://example.com/tag/third-order-newton-method/</link>
+      <atom:link href="https://example.com/tag/third-order-newton-method/index.xml" rel="self" type="application/rss+xml" />
+    <description>Third-Order Newton Method</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu_9e5fad91b6bc7daa.png</url>
+      <title>Third-Order Newton Method</title>
+      <link>https://example.com/tag/third-order-newton-method/</link>
+    </image>
+    
+    <item>
+      <title>A Globally Convergent Third-Order Newton Method via Unified Semidefinite Programming Subproblems</title>
+      <link>https://example.com/publication/almton/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/almton/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
